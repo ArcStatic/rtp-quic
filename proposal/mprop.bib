@@ -1,0 +1,63 @@
+@Book{BK08,
+author={C. Baier and J.-P. Katoen},
+title={Principles of Model Checking},
+publisher={MIT Press},
+year={2008},
+
+volume={},
+series={},
+address={},
+edition={},
+month={},
+note={},
+key={}
+}
+
+@article{Ruth2018,
+abstract = {For the first time since the establishment of TCP and UDP, the Internet transport layer is subject to a major change by the introduction of QUIC. Initiated by Google in 2012, QUIC provides a reliable, connection-oriented low-latency and fully encrypted transport. In this paper, we provide the first broad assessment of QUIC usage in the wild. We monitor the entire IPv4 address space since August 2016 and about 46{\%} of the DNS namespace to detected QUIC-capable infrastructures. Our scans show that the number of QUIC-capable IPs has more than tripled since then to over 617.59 K. We find around 161K domains hosted on QUIC-enabled infrastructure, but only 15K of them present valid certificates over QUIC. Second, we analyze one year of traffic traces provided by MAWI, one day of a major European tier-1 ISP and from a large IXP to understand the dominance of QUIC in the Internet traffic mix. We find QUIC to account for 2.6{\%} to 9.1{\%} of the current Internet traffic, depending on the vantage point. This share is dominated by Google pushing up to 42.1{\%} of its traffic via QUIC.},
+archivePrefix = {arXiv},
+arxivId = {1801.05168},
+author = {R{\"{u}}th, Jan and Poese, Ingmar and Dietzel, Christoph and Hohlfeld, Oliver},
+doi = {10.1007/978-3-319-76481-8_19},
+eprint = {1801.05168},
+file = {:home/vivian/Documents/L5project/papers/1801.05168.pdf:pdf},
+isbn = {9783319764801},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+mendeley-groups = {QUIC},
+pages = {255--268},
+title = {{A First Look at QUIC in the Wild}},
+volume = {10771 LNCS},
+year = {2018}
+}
+
+
+
+@Book{RTP-RFC,
+author={H. Schulzrinne and  S.  Casner and R. Frederick and V. Jacobson},
+title={RFC 3550: RTP: A Transport Protocol for Real-Time Applications},
+year={2003},
+month={July},
+}
+
+@article{Bhat2017,
+abstract = {Despite known QoE shortcomings, Dynamic Adaptive Stream-ing over HTTP (DASH) has been tied with TCP for many years now. The advent of HTTP/2 powered by transport protocols such as QUIC provides an excellent opportunity to revisit adaptive bitrate streaming with respect to QoE. QUIC promises improved congestion control, zero-RTT connection establishment and multiplexing logical streams. In this work, we adapt state-of-the-art DASH players with buffer-based and hybrid (rate/buffer-based) quality adaptation logic to use QUIC. Our main focus lies in contrasting the QoE perfor-mance of DASH algorithms running on top of QUIC versus TCP in various environments. Interestingly, we find through testbed and Internet measurements that QUIC does not provide a boost to current DASH algorithms but instead a degradation in the chosen quality bitrates.},
+annote = {QUIC does not improve DASH algorithms in their current state compared to TCP, causes a degredation in chosen quality instead. Doesn't seem to make any modifications to DASH, just highlights that QUIC should not be treated as a direct replacement to TCP.
+
+Worth reading to see if any issues described here could cause problems for RTP over QUIC.
+
+Objections raised over this paper?},
+author = {Bhat, Divyashri and Rizk, Amr and Zink, Michael},
+doi = {10.1145/3083165.3083175},
+file = {:home/vivian/Documents/L5project/papers/p13-bhat.pdf:pdf},
+isbn = {9781450350037},
+journal = {MMSys 17},
+keywords = {abr streaming,dash,qoe,quic,video quality metrics,video streaming protocols},
+mendeley-groups = {QUIC},
+pages = {1--6},
+title = {{Not so QUIC: A Performance Study of DASH over QUIC}},
+year = {2017}
+}
+
+
+
