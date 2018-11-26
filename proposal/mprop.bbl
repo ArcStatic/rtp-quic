@@ -5,6 +5,17 @@ Divyashri Bhat, Amr Rizk, and Michael Zink.
 \newblock {Not so QUIC: A Performance Study of DASH over QUIC}.
 \newblock {\em MMSys 17}, pages 1--6, 2017.
 
+\bibitem{quic-transport-16}
+J.~Iyengar and M.~Thomson.
+\newblock Quic: A udp-based multiplexed and secure transport,
+  draft-ietf-quic-transport-16.
+\newblock Oct 2018.
+
+\bibitem{RTP-retransmission-RFC}
+J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
+\newblock Rfc 4588: Rtp retransmission payload format.
+\newblock Jul 2006.
+
 \bibitem{Ruth2018}
 Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 \newblock {A First Look at QUIC in the Wild}.
@@ -14,7 +25,7 @@ Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 
 \bibitem{RTP-RFC}
 H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
-\newblock {\em RFC 3550: RTP: A Transport Protocol for Real-Time Applications}.
-\newblock July 2003.
+\newblock Rfc 3550: Rtp: A transport protocol for real-time applications.
+\newblock Jul 2003.
 
 \end{thebibliography}

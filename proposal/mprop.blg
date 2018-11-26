@@ -3,46 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mprop.aux
 The style file: plain.bst
 Database file #1: mprop.bib
-Warning--empty publisher in RTP-RFC
-You've used 3 entries,
+Warning--empty journal in quic-transport-16
+Warning--empty journal in RTP-retransmission-RFC
+Warning--empty journal in RTP-RFC
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4536 characters,
-and the built_in function-call counts, 1105 in all, are:
-= -- 103
-> -- 64
+            526 strings with 4819 characters,
+and the built_in function-call counts, 1667 in all, are:
+= -- 154
+> -- 105
 < -- 1
-+ -- 25
-- -- 22
-* -- 83
-:= -- 192
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 19
++ -- 41
+- -- 36
+* -- 122
+:= -- 299
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 39
-empty$ -- 75
-format.name$ -- 22
-if$ -- 222
+cite$ -- 8
+duplicate$ -- 57
+empty$ -- 104
+format.name$ -- 36
+if$ -- 326
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 4
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 23
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 37
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 28
 quote$ -- 0
-skip$ -- 26
+skip$ -- 42
 stack$ -- 0
-substring$ -- 56
-swap$ -- 8
+substring$ -- 66
+swap$ -- 7
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
-warning$ -- 1
-while$ -- 11
-width$ -- 4
-write$ -- 33
-(There was 1 warning)
+type$ -- 20
+warning$ -- 3
+while$ -- 15
+width$ -- 6
+write$ -- 51
+(There were 3 warnings)
