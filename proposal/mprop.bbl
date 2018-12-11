@@ -11,6 +11,36 @@ J.~Iyengar and M.~Thomson.
   draft-ietf-quic-transport-16.
 \newblock Oct 2018.
 
+\bibitem{Liang2002}
+S.~Liang, S.~Liang, D.~Cheriton, and D.~Cheriton.
+\newblock {TCP-RTM: Using TCP for real time multimedia applications}.
+\newblock {\em International Conference on Network Protocols}, pages 1--20,
+  2002.
+
+\bibitem{McQuistin2016Ossification}
+Stephen McQuistin, Colin Perkins, and Marwan Fayed.
+\newblock {Implementing Real-Time Transport Services over an Ossified Network}.
+\newblock {\em Proceedings of the 2016 workshop on Applied Networking Research
+  Workshop - ANRW 16}, pages 81--87, 2016.
+
+\bibitem{McQuistin2016}
+Stephen McQuistin, Colin Perkins, and Marwan Fayed.
+\newblock {TCP goes to hollywood}.
+\newblock {\em Proceedings of the 26th International Workshop on Network and
+  Operating Systems Support for Digital Audio and Video - NOSSDAV '16}, pages
+  1--6, 2016.
+
+\bibitem{Palmer2018}
+Mirko Palmer, Thorben Kr{\"{u}}ger, Balakrishnan Chandrasekaran, and Anja
+  Feldmann.
+\newblock {The QUIC Fix for Optimal Video Streaming}.
+\newblock (im):43--49, 2018.
+
+\bibitem{Perkins}
+Colin Perkins and J{\"{o}}rg Ott.
+\newblock {Real-time Audio-Visual Media Transport over QUIC}.
+\newblock pages 36--42.
+
 \bibitem{RTP-retransmission-RFC}
 J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
 \newblock Rfc 4588: Rtp retransmission payload format.
@@ -22,10 +52,5 @@ Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 \newblock {\em Lecture Notes in Computer Science (including subseries Lecture
   Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 10771
   LNCS:255--268, 2018.
-
-\bibitem{RTP-RFC}
-H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
-\newblock Rfc 3550: Rtp: A transport protocol for real-time applications.
-\newblock Jul 2003.
 
 \end{thebibliography}

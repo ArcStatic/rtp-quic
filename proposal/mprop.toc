@@ -1,5 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Statement of Problem}{3}
-\contentsline {section}{\numberline {3}Background Survey}{5}
-\contentsline {section}{\numberline {4}Proposed Approach}{6}
-\contentsline {section}{\numberline {5}Work Plan}{7}
+\contentsline {section}{\numberline {3}Key Differences Between Underlying Transport Protocols for RTP}{4}
+\contentsline {subsection}{\numberline {3.1}Differences in Reliability and Latency}{4}
+\contentsline {subsection}{\numberline {3.2}Semantic Differences}{5}
+\contentsline {section}{\numberline {4}Literature Survey}{6}
+\contentsline {subsection}{\numberline {4.1}Proposed Adjustments to QUIC}{6}
+\contentsline {subsection}{\numberline {4.2}Use of TCP for Streaming}{6}
+\contentsline {subsection}{\numberline {4.3}Userspace Transport Protocols}{6}
+\contentsline {section}{\numberline {5}Proposed Approach}{7}
+\contentsline {section}{\numberline {6}Work Plan}{9}
