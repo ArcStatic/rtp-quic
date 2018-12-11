@@ -57,7 +57,7 @@ ordered content and relaxed latency bounds.
 In this project, I aim to show that QUIC can be adapted for a significantly different use-case: 
 streaming interactive media using RTP over QUIC. This version will improve on similar previous 
 work, implementing deadline and dependency awareness in addition to selective restransmissions 
-rather than solely discriminating based on media frame type (ie. I-frame, B-frame, P-frame) \cite
+rather than solely discriminating based on media frame type (ie. I-frames, P-frames) \cite
 {Palmer2018}.
 
 %%%%%DISCARDED FRAGMENT, MIGHT BE USEFUL LATER%%%%%
@@ -219,7 +219,7 @@ NOTE: this will be less list-like and more of a discussion in later drafts
 
 %state how you propose to solve the software development problem. Show that your proposed approach is feasible, but identify any risks.
 
-Same as above: will be converted from a list into a discussion instead.
+Same as above: will be converted from a list into a formal discussion instead.
 
 \begin{enumerate}
   \item Create a simple application in C which creates RTP packets (correctly formatted in terms 
@@ -266,6 +266,8 @@ Same as above: will be converted from a list into a discussion instead.
   tests.
 \end{enumerate}
 
+Requires more explanation of evaluation stage - which metrics should be tested?
+
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -273,7 +275,28 @@ Same as above: will be converted from a list into a discussion instead.
 
 %show how you plan to organize your work, identifying intermediate deliverables and dates.
 
-Still need to consider this.
+Date listed indicates when that stage begins.
+
+\begin{itemize}
+  \item January 2nd: Implement simple application in C which sends RTP packets containing dummy 
+  data to peer.
+  \item January 7th: Modify the application to send valid media data using H.264 codec.
+  \item January 14th: Change underlying transport in application from UDP to QUIC, try to get all 
+  content sent on a single stream initially. (possibly two: one stream for RTCP?)
+  \item January 21st: Implement partial reliability by changing loss recovery and retransmission 
+  behaviours within QUIC, test with 10\% packet loss in unidirectional traffic on localhost to 
+  verify it works.
+  \item February 4th: Create deadline awareness using a moving average in the shim layer tracking 
+  the last 20 or so RTTs. Mark packets containing useful frames and remove packets containing 
+  stale frames from retransmission buffers.
+  \item February 18th: Improve deadline awareness to take frame dependencies into account - QUIC 
+  packets containing a stale I-frame should still be retransmitted if there are live P-frames 
+  which depend on it. (Could be potential complications if a P-frame is dependent on an I-frame 
+  in another QUIC stream)
+  \item February 25th: Initial testing: how does QoE vary with the number of QUIC streams created?
+  \item March 4th: Further tests/buffer for overrun deadlines
+  \item April 1st: Write paper
+\end{itemize}
 
 \newpage
 
