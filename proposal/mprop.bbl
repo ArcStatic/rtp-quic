@@ -1,4 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{IP-RFC}
+Rfc 791: Internet protocol: Darpa internet program protocol specification.
+\newblock Sep 1981.
+
+\bibitem{epiq}
+Workshop on the evolution, performance, and interoperability of quic (epiq).
+\newblock https://conferences2.sigcomm.org/co-next/2018/\#!/workshop-epiq, Jun
+  2018.
+\newblock Accessed 13/12/2018.
+
+\bibitem{HTTP2-RFC}
+M.~Belshe, R.~Peon, and M.~Thomson.
+\newblock Rfc 7540: Hypertext transfer protocol version 2 (http/2).
+\newblock 2015 May.
 
 \bibitem{Bhat2017}
 Divyashri Bhat, Amr Rizk, and Michael Zink.
@@ -36,10 +51,21 @@ Mirko Palmer, Thorben Kr{\"{u}}ger, Balakrishnan Chandrasekaran, and Anja
 \newblock {The QUIC Fix for Optimal Video Streaming}.
 \newblock (im):43--49, 2018.
 
-\bibitem{Perkins}
+\bibitem{Perkins2018}
 Colin Perkins and J{\"{o}}rg Ott.
 \newblock {Real-time Audio-Visual Media Transport over QUIC}.
 \newblock pages 36--42.
+
+\bibitem{UDP-RFC}
+J.~Postel.
+\newblock Rfc 768: User datagram protocol.
+\newblock Aug 1980.
+
+\bibitem{TCP-RFC}
+J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
+\newblock Rfc 793: Transmission control protocol: Darpa internet program
+  protocol specification.
+\newblock Sep 1981.
 
 \bibitem{RTP-retransmission-RFC}
 J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
@@ -52,5 +78,10 @@ Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 \newblock {\em Lecture Notes in Computer Science (including subseries Lecture
   Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 10771
   LNCS:255--268, 2018.
+
+\bibitem{RTP-RFC}
+H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
+\newblock Rfc 3550: Rtp: A transport protocol for real-time applications.
+\newblock Jul 2003.
 
 \end{thebibliography}

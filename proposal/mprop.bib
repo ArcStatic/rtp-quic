@@ -54,6 +54,47 @@ year={2006},
 month={Jul},
 }
 
+@article{IP-RFC,
+title={RFC 791: Internet Protocol: DARPA Internet Program Protocol Specification},
+year={1981},
+month={Sep},
+}
+
+@article{TCP-RFC,
+author={J. Rey and D. Leon and A. Miyazaki and V. Varsa and R. Hakenberg},
+title={RFC 793: Transmission Control Protocol: DARPA Internet Program Protocol Specification},
+year={1981},
+month={Sep},
+}
+
+@article{UDP-RFC,
+author={J. Postel},
+title={RFC 768: User Datagram Protocol},
+year={1980},
+month={Aug},
+}
+
+@article{UDP-RFC,
+author={J. Postel},
+title={RFC 768: User Datagram Protocol},
+year={1980},
+month={Aug},
+}
+
+@article{HTTP2-RFC,
+author={M. Belshe and R. Peon and M. Thomson},
+title={RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)},
+year={May},
+month={2015},
+}
+
+@article{RTP-TCP-RFC,
+author={J. Lazzaro},
+title={RFC 4571: Framing Real-time Transport Protocol (RTP) and RTP Control Protocol (RTCP) Packets over Connection-Oriented Transport},
+year={Jul},
+month={2006},
+}
+
 
 @article{Bhat2017,
 abstract = {Despite known QoE shortcomings, Dynamic Adaptive Stream-ing over HTTP (DASH) has been tied with TCP for many years now. The advent of HTTP/2 powered by transport protocols such as QUIC provides an excellent opportunity to revisit adaptive bitrate streaming with respect to QoE. QUIC promises improved congestion control, zero-RTT connection establishment and multiplexing logical streams. In this work, we adapt state-of-the-art DASH players with buffer-based and hybrid (rate/buffer-based) quality adaptation logic to use QUIC. Our main focus lies in contrasting the QoE perfor-mance of DASH algorithms running on top of QUIC versus TCP in various environments. Interestingly, we find through testbed and Internet measurements that QUIC does not provide a boost to current DASH algorithms but instead a degradation in the chosen quality bitrates.},
@@ -80,8 +121,26 @@ year = {2017}
     month = mar,
     year = {2018},
     howpublished = {https://datatracker.ietf.org/meeting/101/materials/slides-101-tcpm-updates-on-tcp-fast-open-deployments-01.pdf},
-    note = {Accessed 11/12/2018}
+    note = {Accessed 14/12/2018}
 }
+
+@misc{epiq,
+    title = {Workshop on the Evolution, Performance, and Interoperability of QUIC
+(EPIQ)},
+    month = {Jun},
+    year = {2018},
+    howpublished = {https://conferences2.sigcomm.org/co-next/2018/\#!/workshop-epiq},
+    note = {Accessed 13/12/2018}
+}
+
+@misc{conext,
+    title = {CoNEXT 2018 - International Conference on emerging Networking EXperiments and Technologies},
+    month = {Jun},
+    year = {2018},
+    howpublished = {https://conferences2.sigcomm.org/co-next/2018/#!/home},
+    note = {Accessed 13/12/2018}
+}
+
 
 @article{Palmer2018,
 abstract = {Within a few years of its introduction, QUIC has gained traction: a significant chunk of traffic is now delivered over QUIC. The networking community is actively engaged in debating the fairness, performance, and applicability of QUIC for various use cases, but these debates are centered around a narrow, common theme: how does the new reliable transport built on top of UDP fare in different scenarios? Support for unreliable delivery in QUIC remains largely unexplored. The option for delivering content unreliably, as in a best-effort model, deserves the QUIC designers' and community's attention. We propose extending QUIC to support unreliable streams and present a simple approach for implementation. We discuss a simple use case of video streaming---an application that dominates the overall Internet traffic---that can leverage the unreliable streams and potentially bring immense benefits to network operators and content providers. To this end, we present a prototype implementation that, by using both the reliable and unreliable streams in QUIC, outperforms both TCP and QUIC in our evaluations.},
@@ -100,7 +159,7 @@ url = {http://arxiv.org/abs/1809.10270{\%}0Ahttp://dx.doi.org/10.1145/3284850.32
 year = {2018}
 }
 
-@article{Perkins,
+@article{Perkins2018,
 author = {Perkins, Colin and Ott, J{\"{o}}rg},
 file = {:home/vivian/Documents/L5project/papers/p36-Perkins.pdf:pdf},
 isbn = {9781450360821},
