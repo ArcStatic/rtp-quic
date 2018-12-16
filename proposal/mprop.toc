@@ -5,7 +5,5 @@
 \contentsline {subsection}{\numberline {3.2}Semantic Differences}{6}
 \contentsline {section}{\numberline {4}Literature Survey}{8}
 \contentsline {subsection}{\numberline {4.1}Proposed Adjustments to QUIC}{8}
-\contentsline {subsection}{\numberline {4.2}Use of TCP for Streaming}{8}
-\contentsline {subsection}{\numberline {4.3}Userspace Transport Protocols}{9}
 \contentsline {section}{\numberline {5}Proposed Approach}{10}
 \contentsline {section}{\numberline {6}Work Plan}{12}

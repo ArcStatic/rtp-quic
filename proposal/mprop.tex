@@ -185,47 +185,33 @@ The disparities between RTP and QUIC in terms of semantics and reliability make 
 
 Although QUIC is still in the process of IETF standardisation, there is academic interest in extending the protocol. The EPIQ workshop \cite{epiq}, hosted as part of ACM CoNEXT 2018, featured two papers which are directly relevant to this project: a discussion of the challenges of supporting real-time media in QUIC and a proposed set of extensions, QUIC-R, by Perkins and Ott \cite{Perkins2018}; and ClipStream, a version of QUIC featuring partially reliable streams by Palmer \textit{et al} \cite{Palmer2018}.
 
-The paper by Perkins and Ott contains valuable background information about the evolution of video streaming technologies. RTP was historically used to stream media on less reliable networks from the mid-1990s, but applications using this protocol are complex due to the mechanisms required to mitigate the effects of packet loss and out-of-order arrival. DASH is less complex, providing media content in pre-encoded chunks through a series of HTTP \texttt{GET} requests; this approach has become more widely used as networks have increased in quality and demand has risen for unidirectional streaming (ie. the content being sent is not impacted by the actions of the receiver and therefore has more relaxed latency bounds). RTP remains the best option for interactive, real-time media where timeliness is a priority, and for streaming over less reliable networks.
+The paper by Perkins and Ott contains valuable background information about the evolution of video streaming technologies and their potential place in QUIC. RTP was historically used to stream media on less reliable networks from the mid-1990s, but applications using this protocol are complex due to the mechanisms required to mitigate the effects of packet loss and out-of-order arrival. DASH is less complex, providing media content in pre-encoded chunks through a series of HTTP \texttt{GET} requests; this approach has become more widely used as networks have increased in quality and demand has risen for unidirectional streaming (ie. the content being sent is not impacted by the actions of the receiver and therefore has more relaxed latency bounds). RTP remains the best option for interactive, real-time media where timeliness is a priority, and for streaming over less reliable networks.
 
 Adapting a mapping of RTP onto TCP specified in RFC 4751 \cite{RTP-TCP-RFC} for use with QUIC is discussed, but deemed unacceptable for applications with strict latency bounds. This is due to problems with head-of-line blocking which are inherent in all standard TCP stacks: any packets received by a TCP socket with a sequence number greater than the one held by a lost packet cannot be accessed by the application until this lost packet is received. Even if content flows can be multiplexed within the application, all flows are blocked by instances of packet loss even for streams unrelated to the content within the lost packet. An individual stream within QUIC does not suffer head-of-line blocking due to loss on other streams within the connection due to streams being multiplexed over a UDP socket, but it does still encounter high latency due to loss within its own stream. This is a problem for real-time multimedia applications where content delivered on parallel streams may be require synchronisation, such as lip-synchronisation on video calls.
 
 %Although real-time, interactive media applications can tolerate some loss, they cannot tolerate much delay; the guaranteed reliability behaviour of standard TCP and QUIC connections confers no benefit to applications with strict latency bounds.
 
+The idea of marking some streams as either reliable, partially reliable, or unreliable was proposed in an IETF draft by Tiesel \textit{et al} \cite{Tiesel2017}.  [Need to read this more in-depth]
 
+A separate draft by Lubashev \cite{Lubashev2018} further elaborates on selective retransmissions, using single octet gaps to notify the application of message boundaries and marking data written to the transport as transmittable or non-retransmittable using offset markers. This approach may work for real-time media through marking data sent before the most recently sent I-frame as being ineligible for retransmission, but this could still result in retransmission of frames which would arrive after their respective playback deadlines. I-frames could be sent at an increased frequency to minimise this issue, but this would impact performance due to applications having to process a large amount of image data more frequently as well as potentially having to retransmit larger frames more often.
 
+An approach which is less generalised, but does not require extensive configuration at the application level is explored in the second paper presented at EPIQ by Palmer textit{et al} \cite{Palmer2018}. Their extensions to QUIC, named ClipStream, only allows I-frames to be sent reliably, while P-frames (and B-frames, if available) are always sent unreliably. This is an improvement on marking contiguous sections of data as retransmittable or non-retransmittable, but it assumes that resending P-frames and B-frames is always unnecessary; retransmitting these frames if they will arrive before the playback deadline would improve media quality with no significant disadvantages.
+
+Previous attempts have been made to implement deadline awarness for partial reliability within reliable, stream-based transports. Work by McQuistin on TCP Hollywood \cite{McQuistin2016} [further explanation needed about deadline awareness, selective retransmissions, ]
+
+As outlined in section 1, it is easier to modify behaviours in QUIC than TCP due to the former not requiring the authoring or distribution of kernel-level modifications. QUIC also suffers less from traffic being rejected or otherwise modified by middleboxes due to packets being almost entirely encrypted: only a few header fields remain visible as plaintext to determine QUIC header type and which scheme should be used for decryption. Using a similar approach to TCP Hollywood in terms of deadline awareness and selective retransmissions would be beneficial to this project, however, it should not be blindly copied: in contrast to an assertion made in the QUIC-R paper by Perkins and Ott, a study by Bhat \textit{et al} \cite{Bhat2017} showing degraded performance of DASH over QUIC compared to DASH over TCP suggests that extending the capabilities of QUIC is not as simple as directly replicating existing techniques seen in TCP.
+
+[Provide analysis on proposed QUIC-R extensions]
+
+Other papers to discuss:
 \begin{itemize}
-	\item QUIC-R Extensions \cite{Perkins2018}: Outline for general idea of project, general discussion 
-	rather than specifics
-  
-  \item ClipStream \cite{Palmer2018}: QUIC Fix for Optimal Video Streaming - only seems to deal 
-  with DASH explicitly, not RTP. Streams are either completely reliable or completely unreliable, 
-  decided based on type of frame being transmitted - doesn't seem to take deadlines into account
-
-  \item Not so QUIC \cite{Bhat2017}: Focuses on adapting DASH for use with QUIC - finds a 
-  degradation in performance, emphasises that QUIC is not a direct replacement for TCP. Could 
-  potentially face similar issues in this project.
-\end{itemize}
-
-\subsection{Use of TCP for Streaming}
-
-\begin{itemize}
-  \item TCP Hollywood \cite{McQuistin2016}: Important for deadline awareness and evidence why 
-  QUIC version is more easily deployable
-
   \item Real-Time Mode for TCP \cite{Liang2002}: Modifying TCP in 2002, finds that loss recovery 
   behaviours improve quality of real-time playback
-
-  \item RFC 4571: RTP over TCP: issues with HoL blocking, doesn't have awareness of multiplexed 
-  QUIC streams or QUIC frames
 
   \item RFC 4588: RTP Retransmission Payload Format: Details of a 2006 scheme used for 
   restransmitting RTP packets. Doesn't take semantic differences into account and designed for 
   applications with relaxed latency bounds.
-\end{itemize}
 
-\subsection{Userspace Transport Protocols}
-
-\begin{itemize}
   \item Implementing Real-Time Transport Services over an Ossified Network 
   \cite {McQuistin2016Ossification}: Confirms the idea that UDP as a substrate for transport 
   protocols is viable and likely to gain further popularity. Provides statistics on how likely it 

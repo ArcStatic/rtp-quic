@@ -26,11 +26,23 @@ J.~Iyengar and M.~Thomson.
   draft-ietf-quic-transport-16.
 \newblock Oct 2018.
 
+\bibitem{RTP-TCP-RFC}
+J.~Lazzaro.
+\newblock Rfc 4571: Framing real-time transport protocol (rtp) and rtp control
+  protocol (rtcp) packets over connection-oriented transport.
+\newblock 2006 Jul.
+
 \bibitem{Liang2002}
 S.~Liang, S.~Liang, D.~Cheriton, and D.~Cheriton.
 \newblock {TCP-RTM: Using TCP for real time multimedia applications}.
 \newblock {\em International Conference on Network Protocols}, pages 1--20,
   2002.
+
+\bibitem{Lubashev2018}
+I.~Lubashev.
+\newblock Partially reliable message streams for quic:
+  draft-lubashev-quic-partial-reliability-03.
+\newblock 2018 May.
 
 \bibitem{McQuistin2016Ossification}
 Stephen McQuistin, Colin Perkins, and Marwan Fayed.
@@ -83,5 +95,11 @@ Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
 \newblock Rfc 3550: Rtp: A transport protocol for real-time applications.
 \newblock Jul 2003.
+
+\bibitem{Tiesel2017}
+P.~Tiesel, M.~Palmer, B.~Chandrasekaran, A.~Feldmann, and J.~Ott.
+\newblock Considerations for unreliable streams in quic:
+  draft-tiesel-quic-unreliable-streams-01.
+\newblock 2017 Oct.
 
 \end{thebibliography}
