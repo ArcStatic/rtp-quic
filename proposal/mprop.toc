@@ -4,6 +4,5 @@
 \contentsline {subsection}{\numberline {3.1}Differences in Reliability and Latency}{5}
 \contentsline {subsection}{\numberline {3.2}Semantic Differences}{6}
 \contentsline {section}{\numberline {4}Literature Survey}{8}
-\contentsline {subsection}{\numberline {4.1}Proposed Adjustments to QUIC}{8}
-\contentsline {section}{\numberline {5}Proposed Approach}{10}
-\contentsline {section}{\numberline {6}Work Plan}{12}
+\contentsline {section}{\numberline {5}Proposed Approach}{12}
+\contentsline {section}{\numberline {6}Work Plan}{14}
