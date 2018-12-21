@@ -3,10 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mprop.aux
 The style file: plain.bst
 Database file #1: mprop.bib
-Repeated entry---line 153 of file mprop.bib
- : @article{UDP-RFC
- :                 ,
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in IP-RFC
 Warning--to sort, need author or key in epiq
 Warning--empty author in IP-RFC
@@ -24,45 +20,45 @@ Warning--empty journal in TCP-RFC
 Warning--empty journal in RTP-retransmission-RFC
 Warning--empty journal in RTP-RFC
 Warning--empty journal in Tiesel2017
-You've used 18 entries,
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            593 strings with 6858 characters,
-and the built_in function-call counts, 5542 in all, are:
-= -- 525
-> -- 297
-< -- 5
-+ -- 118
-- -- 100
-* -- 382
-:= -- 943
-add.period$ -- 53
-call.type$ -- 18
-change.case$ -- 104
+            586 strings with 6693 characters,
+and the built_in function-call counts, 5123 in all, are:
+= -- 483
+> -- 274
+< -- 4
++ -- 109
+- -- 92
+* -- 353
+:= -- 875
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 97
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 213
-empty$ -- 383
-format.name$ -- 100
-if$ -- 1121
+cite$ -- 34
+duplicate$ -- 197
+empty$ -- 356
+format.name$ -- 92
+if$ -- 1032
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 17
-newline$ -- 92
-num.names$ -- 32
-pop$ -- 133
+int.to.str$ -- 17
+missing$ -- 16
+newline$ -- 87
+num.names$ -- 30
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 80
 quote$ -- 0
-skip$ -- 159
+skip$ -- 146
 stack$ -- 0
-substring$ -- 233
-swap$ -- 35
-text.length$ -- 5
+substring$ -- 209
+swap$ -- 29
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 68
 warning$ -- 17
-while$ -- 51
-width$ -- 20
-write$ -- 174
-(There was 1 error message)
+while$ -- 46
+width$ -- 19
+write$ -- 163
+(There were 17 warnings)

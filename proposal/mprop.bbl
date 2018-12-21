@@ -1,18 +1,18 @@
 \begin{thebibliography}{10}
 
 \bibitem{IP-RFC}
-Rfc 791: Internet protocol: Darpa internet program protocol specification.
+{RFC 791: Internet Protocol: DARPA Internet Program Protocol Specification}.
 \newblock Sep 1981.
 
 \bibitem{epiq}
-Workshop on the evolution, performance, and interoperability of quic (epiq).
+{Workshop on the Evolution, Performance, and Interoperability of QUIC (EPIQ)}.
 \newblock https://conferences2.sigcomm.org/co-next/2018/\#!/workshop-epiq, Jun
   2018.
 \newblock Accessed 13/12/2018.
 
 \bibitem{HTTP2-RFC}
 M.~Belshe, R.~Peon, and M.~Thomson.
-\newblock Rfc 7540: Hypertext transfer protocol version 2 (http/2).
+\newblock {RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)}.
 \newblock 2015 May.
 
 \bibitem{Bhat2017}
@@ -22,26 +22,20 @@ Divyashri Bhat, Amr Rizk, and Michael Zink.
 
 \bibitem{quic-transport-16}
 J.~Iyengar and M.~Thomson.
-\newblock Quic: A udp-based multiplexed and secure transport,
-  draft-ietf-quic-transport-16.
+\newblock {QUIC: A UDP-Based Multiplexed and Secure Transport,
+  draft-ietf-quic-transport-16}.
 \newblock Oct 2018.
 
 \bibitem{RTP-TCP-RFC}
 J.~Lazzaro.
-\newblock Rfc 4571: Framing real-time transport protocol (rtp) and rtp control
-  protocol (rtcp) packets over connection-oriented transport.
+\newblock {RFC 4571: Framing Real-time Transport Protocol (RTP) and RTP Control
+  Protocol (RTCP) Packets over Connection-Oriented Transport}.
 \newblock 2006 Jul.
-
-\bibitem{Liang2002}
-S.~Liang, S.~Liang, D.~Cheriton, and D.~Cheriton.
-\newblock {TCP-RTM: Using TCP for real time multimedia applications}.
-\newblock {\em International Conference on Network Protocols}, pages 1--20,
-  2002.
 
 \bibitem{Lubashev2018}
 I.~Lubashev.
-\newblock Partially reliable message streams for quic:
-  draft-lubashev-quic-partial-reliability-03.
+\newblock {Partially Reliable Message Streams for QUIC:
+  draft-lubashev-quic-partial-reliability-03}.
 \newblock 2018 May.
 
 \bibitem{McQuistin2016Ossification}
@@ -70,18 +64,18 @@ Colin Perkins and J{\"{o}}rg Ott.
 
 \bibitem{UDP-RFC}
 J.~Postel.
-\newblock Rfc 768: User datagram protocol.
+\newblock {RFC 768: User Datagram Protocol}.
 \newblock Aug 1980.
 
 \bibitem{TCP-RFC}
 J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
-\newblock Rfc 793: Transmission control protocol: Darpa internet program
-  protocol specification.
+\newblock {RFC 793: Transmission Control Protocol: DARPA Internet Program
+  Protocol Specification}.
 \newblock Sep 1981.
 
 \bibitem{RTP-retransmission-RFC}
 J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
-\newblock Rfc 4588: Rtp retransmission payload format.
+\newblock {RFC 4588: RTP Retransmission Payload Format}.
 \newblock Jul 2006.
 
 \bibitem{Ruth2018}
@@ -93,13 +87,13 @@ Jan R{\"{u}}th, Ingmar Poese, Christoph Dietzel, and Oliver Hohlfeld.
 
 \bibitem{RTP-RFC}
 H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
-\newblock Rfc 3550: Rtp: A transport protocol for real-time applications.
+\newblock {RFC 3550: RTP: A Transport Protocol for Real-Time Applications}.
 \newblock Jul 2003.
 
 \bibitem{Tiesel2017}
 P.~Tiesel, M.~Palmer, B.~Chandrasekaran, A.~Feldmann, and J.~Ott.
-\newblock Considerations for unreliable streams in quic:
-  draft-tiesel-quic-unreliable-streams-01.
+\newblock {Considerations for Unreliable Streams in QUIC:
+  draft-tiesel-quic-unreliable-streams-01}.
 \newblock 2017 Oct.
 
 \end{thebibliography}

@@ -1,5 +1,6 @@
 \documentclass{mprop}
 \usepackage{graphicx}
+\usepackage{longtable}
 
 % alternative font if you prefer
 %\usepackage{times}
@@ -203,24 +204,21 @@ McQuistin \textit{et al} note that they chose TCP as a substrate for their proto
 
 TCP Hollywood resists interference from middleboxes through being consistent with the wire-image of regular TCP, however, connections on cellular networks did not successfully deliver inconsistent retransmissions due to middleboxes interpreting the modified TCP packet payloads as data injection attacks \cite{McQuistin2016Ossification}. UDP, the substrate used for QUIC, is less likely to encounter issues with rejection and modification by middleboxes due to having less complex behaviour than TCP. QUIC traffic is particularly resistant to interference due to entire packets, with the exception of some header fields, being encrypted after completion of the cryptographic handshake; this allows QUIC to use inconsistent retransmissions on both cellular and fixed-line networks without interference from middleboxes.
 
-As outlined in section 3, it is easier to modify behaviours in QUIC than TCP due to the former not requiring the authoring or distribution of kernel-level modifications. QUIC also suffers less from traffic being rejected or otherwise modified by middleboxes due to packets being almost entirely encrypted: only a few header fields remain visible as plaintext to determine QUIC header type and which scheme should be used for decryption. Using a similar approach to TCP Hollywood in terms of deadline awareness and selective retransmissions would be beneficial to this project, however, it should not be blindly copied: in contrast to an assertion made in the QUIC-R paper by Perkins and Ott, a study by Bhat \textit{et al} \cite{Bhat2017} showing degraded performance of DASH over QUIC compared to DASH over TCP suggests that extending the capabilities of QUIC is not as simple as directly replicating existing techniques seen in TCP.
+As outlined in section 3, it is easier to modify behaviours in QUIC than TCP due to the former not requiring the authoring or distribution of kernel-level modifications. QUIC also suffers less from traffic being rejected or otherwise modified by middleboxes due to packets sent after completion of the cryptographic handshake being almost entirely encrypted: only a few header fields remain visible as plaintext to determine QUIC header type and which scheme should be used for decryption. Using a similar approach to TCP Hollywood in terms of deadline awareness and selective retransmissions would be beneficial to this project, however, it should not be blindly copied: in contrast to an assertion made by Perkins and Ott \cite{Perkins2018}, a study by Bhat \textit{et al} \cite{Bhat2017} showing degraded performance of DASH over QUIC compared to DASH over TCP suggests that extending the capabilities of QUIC is not as simple as directly replicating existing techniques seen in TCP.
 
 [Provide analysis on proposed QUIC-R extensions]
 
-Other papers/RFCs to discuss:
-\begin{itemize}
-  \item Real-Time Mode for TCP \cite{Liang2002}: Modifying TCP in 2002, finds that loss recovery 
-  behaviours improve quality of real-time playback
+Suggestions for implementing optimisations for real-time media in QUIC are given by Perkins and Ott in the form of a ``straw man proposal'' for a minimal set of extensions to the protocol, named QUIC-R. These extensions involve creating a new frame type, \texttt{RT\_STREAM}, to mark a stream as being used for real-time, interactive content with strict low-latency bounds. These RT-streams allow QUIC to use independently decodable application data units through sending records instead of holding data as a stream of bytes, the benefits of which are described in [SECTION]. \texttt{RT\_STREAM} frame headers can optionally contain offset and length fields with the same meaning as regular \texttt{STREAM} frames, and must contain a sequence number for records and a timestamp in order for deadline awareness features to work. A field containing the minimum record sequence number to be retransmitted is also included in the header to allow for partial reliability; like the retransmission markers described by Lubashev \cite{Lubashev2018}, this minimum number field marks a contiguous section of the retransmission buffers within QUIC as containing stale data which should be removed, but this approach is different in that records which have a sequence number which exceed this minimum are not guaranteed to be retransmitted if their predicted arrival is later found to exceed the associated playback deadline.
 
-  \item RFC 4588: RTP Retransmission Payload Format: Details of a 2006 scheme used for 
-  restransmitting RTP packets. Doesn't take semantic differences into account and designed for 
-  applications with relaxed latency bounds.
+A sender using QUIC-R writes a timestamp, a playback deadline, and any sequence numbers of previous records on which the current record depends; this will commonly be P-frames specifying which I-frame they reference. Timestamps are sent as part of the transmitted frame since they are required by receivers of applications using RTP, but playback deadlines and dependencies are held only at the sender to determine if a frame should be retransmitted; retransmissions will occur if a frame will be processed by the receiver before its playback deadline, or if other frames which are dependent on it will be processed by the receiver before their deadlines.
 
-  \item Implementing Real-Time Transport Services over an Ossified Network 
-  \cite {McQuistin2016Ossification}: Confirms the idea that UDP as a substrate for transport 
-  protocols is viable and likely to gain further popularity. Provides statistics on how likely it 
-  is that UDP traffic will be blocked by a given network.
-\end{itemize}
+The receiver acknowledges packets in a similar manner to reliable QUIC, with the addition of sending an \texttt{ACK-Timing} frame to allow the sender to track RTT information for deadline awareness. The role of the receiver is primarily to pass frames and associated metadata to the application; real-time applications use timestamps and sequence numbers to reconstruct the timing and order of frames respectively. Playout buffering, synchronisation between media streams, and advanced error correction and concealment features are also left to the application layer to minimise the degree of modification required to the QUIC specification.
+
+As explained in [SECTION], I-frames are large enough that they will need to be split across multiple QUIC packets and reassembled into a video frame before being delivered to the application. P-frames and B-frames are small enough that they will always be given to the application atomically, if at all, but question of how to handle a partially delivered I-frame is left to the application layer; RTP payload formats should specify which course of action to take in the event of receiving an incomplete frame. This project will follow a similar approach and defer the handling of incomplete frames to the application layer for the time being.
+
+The API required by real-time QUIC extensions similar to QUIC-R will likely be quite simple, unlike the APIs required for the approaches suggested by Tiesel and Lubashev; applications will make calls to send and receive messages containing a media frame from a QUIC socket in a similar manner to TCP Hollywood sockets. The partially reliable retransmission strategy based around deadline awareness will also be similar to TCP Hollywood, with frames being retransmitted if they will meet their playback deadline or if their retransmission is required to allow dependent frames to meet their playback deadlines.
+
+A field containing the minimum retransmittable message sequence number as suggested for QUIC-R will be used to ensure the retransmission buffers within QUIC are kept clear of frames which have not been acknowledged but will never be retransmitted, either due to their own playback deadlines expiring or the deadlines of all of their dependent frames. Unlike ClipStream, the extensions in this project will send all data over partially reliable streams, but sending QUIC frames required to close streams reliably within these streams is essential to avoid `zombie' streams, as described in the draft by Tiesel.
 
 \newpage
 
@@ -229,20 +227,32 @@ Other papers/RFCs to discuss:
 
 %state how you propose to solve the software development problem. Show that your proposed approach is feasible, but identify any risks.
 
-Same as above: will be converted from a list into a formal discussion instead.
+\subsection{Priority Assessment}
+
+The required, potential, and discounted additions to QUIC and shim layers for this project are as follows:
+
+\begin{longtable}{|p{3.5cm}|l|p{8.5cm}|} 
+\hline
+Section & Importance & Reasoning \\ \hline
+Message-oriented abstraction  & Must have & The concept of application data units is important to minimise the number of dependencies where possible: individual frames may require another frame to be useful in media playback, but the application should be able to decode them independently of each other. An application should be able to read individual, meaningful messages instead of attempting to parse (potentially incomplete or corrupt) frames from a raw byte-stream. \\ \hline
+Partial reliability & Must have & Required to eliminate latency caused by head-of-line blocking. Also allows the retransmission of useful and/or important frames and the dropping of frames without dependencies which will not arrive before their associated deadline. \\ \hline
+Deadline awareness & Must have & Required to decide which frames should be retransmitted based on whether their dependencies and playback deadlines. Will improve the quality of media playback by enabling the retransmission of video frames regardless of their type. \\ \hline
+API & Must have & Required to allow for testing. A simple API would be preferred to make the extensions easy to use. \\ \hline
+Testbed & Must have & A controlled environment for testing is essential to test the effectiveness of the new extensions. \\ \hline
+Dependency information & Should have & `Stale' I-frames which will not meet a playback deadline by themselves but have dependent frames which will meet their deadlines need to be retransmitted. \\ \hline
+Inconsistent retransmissions & Could have & Could increase the efficiency of sending new material, but could also cause problems with some QUIC implementations if they decide to treat inconsistent payloads as a protocol error. \\ \hline
+Frame re-ordering and timing & Could have & The QUIC-R extensions paper suggests leaving this to the application layer, but ClipStream uses a shim layer to reconstruct video files through co-ordinating reads from QUIC streams. It may be possible to implement this as a separate shim layer if time permits. \\ \hline
+Forward error correction & Won't have & Highly unlikely to be implemented within the given time constraints due to complexity. \\ \hline
+Multiple participants & Won't have & QUIC-based applications are currently limited to two participants due to the protocol being connection-oriented. Developing a multi-party, interactive application would require implementing peer-to-peer features within QUIC, which is not feasible within the time permitted.\\
+\caption{MoSCoW priority assessment for real-time extensions to the QUIC protocol.}
+\label{priority-assessment}
+\end{longtable}
+
+The first step in the development process is to write a simple application in C which creates RTP packets and sends them to a remote peer over UDP; these packets will be correctly formatted in terms of headers, but they will not send meaningful media content. This will initially be written as a unidirectional application, and will then be modified to send data and RTCP info from both participants simultaneously. This will require three threads: one for sending data and RTCP reports, one polling the UDP socket for new RTP data and RTCP feedback, and one processing received data and reports. After this, the application will be modified to send correctly encoded media data using the H.264 codec; the video used will be open-source, such as \textit{Elephant's Dream} or \textit{Big Buck Bunny}.
+
+
 
 \begin{enumerate}
-  \item Create a simple application in C which creates RTP packets (correctly formatted in terms 
-  of headers, but not sending meaningful media content) and sends them to a remote peer. First 
-  write this as a unidirectional application, then modify it to send data and RTCP info from both 
-  participants simultaneously (Probably three threads: one for sending data and RTCP reports, one 
-  polling the two sockets for new RTP data and RTCP feedback, and one processing received data 
-  and reports)
-
-  \item Modify the previous application to send correctly encoded media data (eg. Elephant's 
-  Dream) using an arbitrarily chosen codec (probably H.264, since this was mentioned in the TCP 
-  Hollywood paper)
-
   \item Change the underlying transport from UDP to QUIC using a single stream for all media 
   content and a separate stream for RTCP operations, all sent using generic DATA QUIC frames. The 
   performance will be terrible due to HoL blocking, but it will be a chance to become familiar 
