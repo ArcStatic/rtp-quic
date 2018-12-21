@@ -10,54 +10,83 @@
 \newlabel{intro}{{1}{2}}
 \citation{Ruth2018}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Statement of Problem}{4}}
-\citation{quic-transport-16}
+\citation{Palmer2018}
+\citation{McQuistin2016}
+\citation{McQuistin2016}
 \citation{Bhat2017}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background and Rationale}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Streaming using MPEG DASH}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Head-of-line blocking within TCP as illustrated by McQuistin \textit  {et al} \cite  {McQuistin2016}. The loss of the packet with sequence number 3 prevents any subsequent packets being delivered to the application until it is received.}}{5}}
 \citation{RTP-RFC}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Key Differences Between Underlying Transport Protocols for RTP}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Differences in Reliability and Latency}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Interactive Media using RTP}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Transport Protocols - Reliability vs Latency}{6}}
 \citation{RTP-retransmission-RFC}
 \citation{quic-transport-16}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Semantic Differences}{6}}
+\citation{quic-transport-16}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Real-time Transport over QUIC}{7}}
+\citation{frame-diagram}
+\citation{frame-diagram}
+\citation{Clark1990}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Relationship between I-frames and P-frames as illustrated by Perkins \cite  {frame-diagram}. P-frames only change a section of an image previously described by an I-frame, reducing the amount of data which has to be sent by multimedia applications.}}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Conclusions}{9}}
 \citation{epiq}
 \citation{Perkins2018}
 \citation{Palmer2018}
 \citation{RTP-TCP-RFC}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Literature Survey}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Use-Cases for DASH and RTP}{10}}
 \citation{Tiesel2017}
 \citation{Lubashev2018}
 \citation{Palmer2018}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Literature Survey}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Mapping RTP onto TCP}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Reliable and Unreliable QUIC Streams}{11}}
 \citation{McQuistin2016}
 \citation{quic-transport-16}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Deadline Awareness}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Application Data Units}{12}}
 \citation{McQuistin2016Ossification}
 \citation{McQuistin2016Ossification}
 \citation{Perkins2018}
 \citation{Bhat2017}
 \citation{Lubashev2018}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}UDP and TCP as Substrates}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Proposed Deadline-Aware Extensions to QUIC}{14}}
 \gdef \LT@i {\LT@entry 
     {1}{111.58464pt}\LT@entry 
     {1}{74.33965pt}\LT@entry 
     {1}{253.84842pt}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Proposed Approach}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Priority Assessment}{13}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{MoSCoW priority assessment for real-time extensions to the QUIC protocol.}}{14}}
-\newlabel{priority-assessment}{{1}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Work Plan}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Proposed Approach}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Priority Assessment}{16}}
+\citation{quic-implementations}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{MoSCoW priority assessment for real-time extensions to the QUIC protocol.}}{17}}
+\newlabel{priority-assessment}{{1}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Deliverables}{17}}
+\citation{mininet}
+\citation{ffmpeg}
+\citation{Palmer2018}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Work Plan}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Gantt chart of proposed development timeline}}{20}}
 \bibstyle{plain}
 \bibdata{mprop}
-\bibcite{IP-RFC}{1}
-\bibcite{epiq}{2}
-\bibcite{HTTP2-RFC}{3}
-\bibcite{Bhat2017}{4}
-\bibcite{quic-transport-16}{5}
-\bibcite{RTP-TCP-RFC}{6}
-\bibcite{Lubashev2018}{7}
-\bibcite{McQuistin2016Ossification}{8}
-\bibcite{McQuistin2016}{9}
-\bibcite{Palmer2018}{10}
-\bibcite{Perkins2018}{11}
-\bibcite{UDP-RFC}{12}
-\bibcite{TCP-RFC}{13}
-\bibcite{RTP-retransmission-RFC}{14}
-\bibcite{Ruth2018}{15}
-\bibcite{RTP-RFC}{16}
-\bibcite{Tiesel2017}{17}
+\bibcite{ffmpeg}{1}
+\bibcite{mininet}{2}
+\bibcite{IP-RFC}{3}
+\bibcite{quic-implementations}{4}
+\bibcite{epiq}{5}
+\bibcite{HTTP2-RFC}{6}
+\bibcite{Bhat2017}{7}
+\bibcite{Clark1990}{8}
+\bibcite{quic-transport-16}{9}
+\bibcite{RTP-TCP-RFC}{10}
+\bibcite{Lubashev2018}{11}
+\bibcite{McQuistin2016Ossification}{12}
+\bibcite{McQuistin2016}{13}
+\bibcite{Palmer2018}{14}
+\bibcite{frame-diagram}{15}
+\bibcite{Perkins2018}{16}
+\bibcite{UDP-RFC}{17}
+\bibcite{TCP-RFC}{18}
+\bibcite{RTP-retransmission-RFC}{19}
+\bibcite{Ruth2018}{20}
+\bibcite{RTP-RFC}{21}
+\bibcite{Tiesel2017}{22}

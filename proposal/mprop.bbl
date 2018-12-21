@@ -1,8 +1,25 @@
 \begin{thebibliography}{10}
 
+\bibitem{ffmpeg}
+{FFmpeg: A complete, cross-platform solution to record, convert and stream
+  audio and video.}
+\newblock https://www.ffmpeg.org/.
+\newblock Accessed 20/12/2018.
+
+\bibitem{mininet}
+{Mininet: An Instant Virtual Network on your Laptop (or other PC)}.
+\newblock http://mininet.org/.
+\newblock Accessed 20/12/2018.
+
 \bibitem{IP-RFC}
 {RFC 791: Internet Protocol: DARPA Internet Program Protocol Specification}.
 \newblock Sep 1981.
+
+\bibitem{quic-implementations}
+quicwg {Implementations}.
+\newblock https://github.com/quicwg/base-drafts/wiki/Implementations, December
+  2018.
+\newblock Accessed 18/12/2018.
 
 \bibitem{epiq}
 {Workshop on the Evolution, Performance, and Interoperability of QUIC (EPIQ)}.
@@ -19,6 +36,12 @@ M.~Belshe, R.~Peon, and M.~Thomson.
 Divyashri Bhat, Amr Rizk, and Michael Zink.
 \newblock {Not so QUIC: A Performance Study of DASH over QUIC}.
 \newblock {\em MMSys 17}, pages 1--6, 2017.
+
+\bibitem{Clark1990}
+D.~D. Clark and D.~L. Tennenhouse.
+\newblock {Architectural considerations for a new generation of protocols}.
+\newblock {\em Proceedings of the ACM symposium on Communications architectures
+  {\&} protocols - SIGCOMM '90}, pages 200--208, 1990.
 
 \bibitem{quic-transport-16}
 J.~Iyengar and M.~Thomson.
@@ -56,6 +79,15 @@ Mirko Palmer, Thorben Kr{\"{u}}ger, Balakrishnan Chandrasekaran, and Anja
   Feldmann.
 \newblock {The QUIC Fix for Optimal Video Streaming}.
 \newblock (im):43--49, 2018.
+
+\bibitem{frame-diagram}
+Colin Perkins.
+\newblock {UDP and Network Address Translation - Networked Systems (H), Lecture
+  8}.
+\newblock
+  https://csperkins.org/teaching/2017-2018/networked-systems/lecture08.pdf,
+  2018.
+\newblock Accessed 21/12/2018.
 
 \bibitem{Perkins2018}
 Colin Perkins and J{\"{o}}rg Ott.

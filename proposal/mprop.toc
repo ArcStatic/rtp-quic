@@ -1,9 +1,20 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Statement of Problem}{4}
-\contentsline {section}{\numberline {3}Key Differences Between Underlying Transport Protocols for RTP}{5}
-\contentsline {subsection}{\numberline {3.1}Differences in Reliability and Latency}{5}
-\contentsline {subsection}{\numberline {3.2}Semantic Differences}{6}
-\contentsline {section}{\numberline {4}Literature Survey}{8}
-\contentsline {section}{\numberline {5}Proposed Approach}{13}
-\contentsline {subsection}{\numberline {5.1}Priority Assessment}{13}
-\contentsline {section}{\numberline {6}Work Plan}{16}
+\contentsline {section}{\numberline {3}Background and Rationale}{5}
+\contentsline {subsection}{\numberline {3.1}Streaming using MPEG DASH}{5}
+\contentsline {subsection}{\numberline {3.2}Interactive Media using RTP}{6}
+\contentsline {subsection}{\numberline {3.3}Transport Protocols - Reliability vs Latency}{6}
+\contentsline {subsection}{\numberline {3.4}Real-time Transport over QUIC}{7}
+\contentsline {subsection}{\numberline {3.5}Conclusions}{9}
+\contentsline {section}{\numberline {4}Literature Survey}{10}
+\contentsline {subsection}{\numberline {4.1}Use-Cases for DASH and RTP}{10}
+\contentsline {subsection}{\numberline {4.2}Mapping RTP onto TCP}{11}
+\contentsline {subsection}{\numberline {4.3}Reliable and Unreliable QUIC Streams}{11}
+\contentsline {subsection}{\numberline {4.4}Deadline Awareness}{12}
+\contentsline {subsection}{\numberline {4.5}Application Data Units}{12}
+\contentsline {subsection}{\numberline {4.6}UDP and TCP as Substrates}{13}
+\contentsline {subsection}{\numberline {4.7}Proposed Deadline-Aware Extensions to QUIC}{14}
+\contentsline {section}{\numberline {5}Proposed Approach}{16}
+\contentsline {subsection}{\numberline {5.1}Priority Assessment}{16}
+\contentsline {subsection}{\numberline {5.2}Deliverables}{17}
+\contentsline {section}{\numberline {6}Work Plan}{20}
