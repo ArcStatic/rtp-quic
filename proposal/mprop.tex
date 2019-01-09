@@ -1,6 +1,7 @@
 \documentclass{mprop}
 \usepackage{graphicx}
 \usepackage{longtable}
+\usepackage{booktabs}
 
 % alternative font if you prefer
 %\usepackage{times}
@@ -266,22 +267,45 @@ A field containing the minimum retransmittable message sequence number as sugges
 
 The required, potential, and discounted additions to QUIC and shim layers for this project are as follows:
 
-\begin{longtable}{|p{3.5cm}|l|p{8.5cm}|} 
-\hline
-Section & Importance & Reasoning \\ \hline
-Message-oriented abstraction  & Must have & The concept of application data units is important to minimise the number of dependencies where possible: individual frames may require another frame to be useful in media playback, but the application should be able to decode them independently of each other. An application should be able to read individual, meaningful messages instead of attempting to parse (potentially incomplete or corrupt) frames from a raw byte-stream. This requirement also involves attempting to reassemble I-frames which must be split across several QUIC packets into a single message. \\ \hline
-Partial reliability & Must have & Required to eliminate latency caused by head-of-line blocking. Also allows the retransmission of useful and/or important frames and the dropping of frames without dependencies which will not arrive before their associated deadline. \\ \hline
-Deadline awareness & Must have & Required to decide which frames should be retransmitted based on whether their dependencies and playback deadlines. Will improve the quality of media playback by enabling the retransmission of video frames regardless of their type. \\ \hline
-API & Must have & Required to allow for testing. A simple API would be preferred to make the extensions easy to use. \\ \hline
-Testbed & Must have & A controlled environment for testing is essential to evaluate the effectiveness of the new extensions. \\ \hline
-Dependency information & Should have & `Stale' I-frames which will not meet a playback deadline by themselves but have dependent frames which will meet their deadlines need to be retransmitted. \\ \hline
-Inconsistent retransmissions & Could have & Could increase the efficiency of sending new material, but could also cause problems with some QUIC implementations if they decide to treat inconsistent payloads as a protocol error. \\ \hline
-Frame re-ordering and timing & Could have & The QUIC-R extensions paper suggests leaving this to the application layer, but ClipStream uses a shim layer to reconstruct video files through co-ordinating reads from QUIC streams. It may be possible to implement this as a separate shim layer if time permits. \\ \hline
-Forward error correction & Won't have & Highly unlikely to be implemented within the given time constraints due to complexity. \\ \hline
+\begin{longtable}{|p{3.5cm}|l|p{8.5cm}|}
+\toprule 
+Section & Importance & Reasoning \\
+
+\midrule
+
+Message-oriented abstraction  & Must have & The concept of application data units is important to minimise the number of dependencies where possible: individual frames may require another frame to be useful in media playback, but the application should be able to decode them independently of each other. An application should be able to read individual, meaningful messages instead of attempting to parse (potentially incomplete or corrupt) frames from a raw byte-stream. This requirement also involves attempting to reassemble I-frames which must be split across several QUIC packets into a single message. 
+
+\\ 
+Partial reliability & Must have & Required to eliminate latency caused by head-of-line blocking. Also allows the retransmission of useful and/or important frames and the dropping of frames without dependencies which will not arrive before their associated deadline. 
+
+\\ 
+Deadline awareness & Must have & Required to decide which frames should be retransmitted based on whether their dependencies and playback deadlines. Will improve the quality of media playback by enabling the retransmission of video frames regardless of their type. 
+
+\\ 
+API & Must have & Required to allow for testing. A simple API would be preferred to make the extensions easy to use. 
+
+\\ 
+Testbed & Must have & A controlled environment for testing is essential to evaluate the effectiveness of the new extensions. 
+
+\\
+Dependency information & Should have & `Stale' I-frames which will not meet a playback deadline by themselves but have dependent frames which will meet their deadlines need to be retransmitted. 
+
+\\  
+Inconsistent retransmissions & Could have & Could increase the efficiency of sending new material, but could also cause problems with some QUIC implementations if they decide to treat inconsistent payloads as a protocol error. 
+
+\\ 
+Frame re-ordering and timing & Could have & The QUIC-R extensions paper suggests leaving this to the application layer, but ClipStream uses a shim layer to reconstruct video files through co-ordinating reads from QUIC streams. It may be possible to implement this as a separate shim layer if time permits. 
+
+\\ 
+Forward error correction & Won't have & Highly unlikely to be implemented within the given time constraints due to complexity. 
+
+\\ 
 Multiple participants & Won't have & QUIC-based applications are currently limited to two participants due to the protocol being connection-oriented. Developing a multi-party, interactive application would require implementing peer-to-peer features within QUIC, which is not feasible within the time permitted.\\
+\bottomrule
 \caption{MoSCoW priority assessment for real-time extensions to the QUIC protocol.}
 \label{priority-assessment}
 \end{longtable}
+
 
 \subsection{Deliverables}
 
