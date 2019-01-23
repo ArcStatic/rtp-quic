@@ -234,8 +234,8 @@ main(int argc, const char *argv[])
 
 		/* Filter out local packets if requested */
 		rtp_set_option(session, RTP_OPT_FILTER_MY_PACKETS, filter_me);
-		//This was required to get example to register RX_RTP events
-		rtp_set_option(session, RTP_OPT_WEAK_VALIDATION, 0);
+		//Setting RTP_OPT_WEAK_VALIDATION is required to get example to register RX_RTP events
+		rtp_set_option(session, RTP_OPT_WEAK_VALIDATION, 1);
 
 		/* Run main loop */
 		rxtx_loop(session, send_enable);
