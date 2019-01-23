@@ -1,2 +1,4 @@
 proposal/*.pdf
 proposal/*.log
+*.o
+rat-4.2.22/common/examples/rtp/rtpdemo
