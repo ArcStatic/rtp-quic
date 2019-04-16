@@ -1,0 +1,3901 @@
+Stack rx ts: 0,1555415725273391877
+Received item: 0,1555415725273437567
+Current pb_deadline: 21000, recovered_ts: 33000
+Stack rx ts: 1,1555415725273464816
+Received item: 1,1555415725273466452
+Current pb_deadline: 21000, recovered_ts: 33000
+Stack rx ts: 2,1555415725273473716
+Received item: 2,1555415725273474697
+Current pb_deadline: 21000, recovered_ts: 33000
+Stack rx ts: 3,1555415725273482183
+Received item: 3,1555415725273482948
+Current pb_deadline: 21000, recovered_ts: 33000
+Stack rx ts: 4,1555415725289783827
+Received item: 4,1555415725289791653
+Current pb_deadline: 24000, recovered_ts: 36000
+Stack rx ts: 5,1555415725306981374
+Received item: 5,1555415725306990640
+Current pb_deadline: 27000, recovered_ts: 39000
+Stack rx ts: 6,1555415725324051861
+Received item: 6,1555415725324062350
+Current pb_deadline: 30000, recovered_ts: 42000
+Stack rx ts: 7,1555415725339672039
+Received item: 7,1555415725339680810
+Current pb_deadline: 33000, recovered_ts: 45000
+Stack rx ts: 8,1555415725356324226
+Received item: 8,1555415725356334465
+Current pb_deadline: 36000, recovered_ts: 48000
+Stack rx ts: 9,1555415725373015808
+Received item: 9,1555415725373026603
+Current pb_deadline: 39000, recovered_ts: 51000
+Stack rx ts: 10,1555415725390014408
+Received item: 10,1555415725390026839
+Current pb_deadline: 42000, recovered_ts: 54000
+Stack rx ts: 11,1555415725406582292
+Received item: 11,1555415725406603898
+Current pb_deadline: 45000, recovered_ts: 57000
+Stack rx ts: 12,1555415725423560940
+Received item: 12,1555415725423568841
+Current pb_deadline: 48000, recovered_ts: 60000
+Stack rx ts: 13,1555415725439544492
+Received item: 13,1555415725439552354
+Current pb_deadline: 51000, recovered_ts: 63000
+Stack rx ts: 14,1555415725439761032
+Received item: 14,1555415725439765265
+Current pb_deadline: 51000, recovered_ts: 63000
+Stack rx ts: 15,1555415725439774976
+Received item: 15,1555415725439775986
+Current pb_deadline: 51000, recovered_ts: 63000
+Stack rx ts: 16,1555415725439952509
+Received item: 16,1555415725439955913
+Current pb_deadline: 51000, recovered_ts: 63000
+Stack rx ts: 17,1555415725457101266
+Received item: 17,1555415725457110492
+Current pb_deadline: 54000, recovered_ts: 66000
+Stack rx ts: 18,1555415725472671735
+Received item: 18,1555415725472685166
+Current pb_deadline: 57000, recovered_ts: 69000
+Stack rx ts: 19,1555415725489580773
+Received item: 19,1555415725489604451
+Current pb_deadline: 60000, recovered_ts: 72000
+Stack rx ts: 20,1555415725506590540
+Received item: 20,1555415725506596926
+Current pb_deadline: 63000, recovered_ts: 75000
+Stack rx ts: 21,1555415725523215843
+Received item: 21,1555415725523219981
+Current pb_deadline: 66000, recovered_ts: 78000
+Stack rx ts: 22,1555415725540471749
+Received item: 22,1555415725540478387
+Current pb_deadline: 69000, recovered_ts: 81000
+Stack rx ts: 23,1555415725556579650
+Received item: 23,1555415725556587340
+Current pb_deadline: 72000, recovered_ts: 84000
+Stack rx ts: 24,1555415725573292912
+Received item: 24,1555415725573300201
+Current pb_deadline: 75000, recovered_ts: 87000
+Stack rx ts: 25,1555415725590080759
+Received item: 25,1555415725590090225
+Current pb_deadline: 78000, recovered_ts: 90000
+Stack rx ts: 26,1555415725605827069
+Received item: 26,1555415725605838205
+Current pb_deadline: 81000, recovered_ts: 93000
+Stack rx ts: 27,1555415725605857439
+Received item: 27,1555415725605859158
+Current pb_deadline: 81000, recovered_ts: 93000
+Stack rx ts: 28,1555415725605868780
+Received item: 28,1555415725605870224
+Current pb_deadline: 81000, recovered_ts: 93000
+Stack rx ts: 29,1555415725605879691
+Received item: 29,1555415725605880994
+Current pb_deadline: 81000, recovered_ts: 93000
+Stack rx ts: 30,1555415725622906126
+Received item: 30,1555415725622928508
+Current pb_deadline: 84000, recovered_ts: 96000
+Stack rx ts: 31,1555415725639748336
+Received item: 31,1555415725639766788
+Current pb_deadline: 87000, recovered_ts: 99000
+Stack rx ts: 32,1555415725656533447
+Received item: 32,1555415725656539113
+Current pb_deadline: 90000, recovered_ts: 102000
+Stack rx ts: 33,1555415725673743830
+Received item: 33,1555415725673752049
+Current pb_deadline: 93000, recovered_ts: 105000
+Stack rx ts: 34,1555415725690225879
+Received item: 34,1555415725690234539
+Current pb_deadline: 96000, recovered_ts: 108000
+Stack rx ts: 35,1555415725706497036
+Received item: 35,1555415725706505415
+Current pb_deadline: 99000, recovered_ts: 111000
+Stack rx ts: 36,1555415725723210248
+Received item: 36,1555415725723218597
+Current pb_deadline: 102000, recovered_ts: 114000
+Stack rx ts: 37,1555415725739556012
+Received item: 37,1555415725739576256
+Current pb_deadline: 105000, recovered_ts: 117000
+Stack rx ts: 38,1555415725756335432
+Received item: 38,1555415725756356758
+Current pb_deadline: 108000, recovered_ts: 120000
+Stack rx ts: 39,1555415725772872978
+Received item: 39,1555415725772876936
+Current pb_deadline: 111000, recovered_ts: 123000
+Stack rx ts: 40,1555415725772884397
+Received item: 40,1555415725772885008
+Current pb_deadline: 111000, recovered_ts: 123000
+Stack rx ts: 41,1555415725772977327
+Received item: 41,1555415725772978949
+Current pb_deadline: 111000, recovered_ts: 123000
+Stack rx ts: 42,1555415725772984873
+Received item: 42,1555415725772985370
+Current pb_deadline: 111000, recovered_ts: 123000
+Stack rx ts: 43,1555415725790139003
+Received item: 43,1555415725790146044
+Current pb_deadline: 114000, recovered_ts: 126000
+Stack rx ts: 44,1555415725806907534
+Received item: 44,1555415725806916319
+Current pb_deadline: 117000, recovered_ts: 129000
+Stack rx ts: 45,1555415725822578760
+Received item: 45,1555415725822589711
+Current pb_deadline: 120000, recovered_ts: 132000
+Stack rx ts: 46,1555415725839433480
+Received item: 46,1555415725839444175
+Current pb_deadline: 123000, recovered_ts: 135000
+Stack rx ts: 47,1555415725856735201
+Received item: 47,1555415725856744001
+Current pb_deadline: 126000, recovered_ts: 138000
+Stack rx ts: 48,1555415725873526032
+Received item: 48,1555415725873535364
+Current pb_deadline: 129000, recovered_ts: 141000
+Stack rx ts: 49,1555415725890087155
+Received item: 49,1555415725890095715
+Current pb_deadline: 132000, recovered_ts: 144000
+Stack rx ts: 50,1555415725906767987
+Received item: 50,1555415725906778491
+Current pb_deadline: 135000, recovered_ts: 147000
+Stack rx ts: 51,1555415725923243866
+Received item: 51,1555415725923252511
+Current pb_deadline: 138000, recovered_ts: 150000
+Stack rx ts: 52,1555415725939975065
+Received item: 52,1555415725939985980
+Current pb_deadline: 141000, recovered_ts: 153000
+Stack rx ts: 53,1555415725940017523
+Received item: 53,1555415725940020860
+Current pb_deadline: 141000, recovered_ts: 153000
+Stack rx ts: 54,1555415725940042596
+Received item: 54,1555415725940045131
+Current pb_deadline: 141000, recovered_ts: 153000
+Stack rx ts: 55,1555415725940059013
+Received item: 55,1555415725940060186
+Current pb_deadline: 141000, recovered_ts: 153000
+Stack rx ts: 56,1555415725956799917
+Received item: 56,1555415725956805025
+Current pb_deadline: 144000, recovered_ts: 156000
+Stack rx ts: 57,1555415725973183667
+Received item: 57,1555415725973190617
+Current pb_deadline: 147000, recovered_ts: 159000
+Stack rx ts: 58,1555415725989882952
+Received item: 58,1555415725989892043
+Current pb_deadline: 150000, recovered_ts: 162000
+Stack rx ts: 59,1555415726006334491
+Received item: 59,1555415726006343582
+Current pb_deadline: 153000, recovered_ts: 165000
+Stack rx ts: 60,1555415726023034442
+Received item: 60,1555415726023043137
+Current pb_deadline: 156000, recovered_ts: 168000
+Stack rx ts: 61,1555415726039659793
+Received item: 61,1555415726039669245
+Current pb_deadline: 159000, recovered_ts: 171000
+Stack rx ts: 62,1555415726056331810
+Received item: 62,1555415726056340400
+Current pb_deadline: 162000, recovered_ts: 174000
+Stack rx ts: 63,1555415726073082148
+Received item: 63,1555415726073090562
+Current pb_deadline: 165000, recovered_ts: 177000
+Stack rx ts: 64,1555415726089301580
+Received item: 64,1555415726089310511
+Current pb_deadline: 168000, recovered_ts: 180000
+Stack rx ts: 65,1555415726106409409
+Received item: 65,1555415726106418169
+Current pb_deadline: 171000, recovered_ts: 183000
+Stack rx ts: 66,1555415726106434827
+Received item: 66,1555415726106436241
+Current pb_deadline: 171000, recovered_ts: 183000
+Stack rx ts: 67,1555415726106514361
+Received item: 67,1555415726106515975
+Current pb_deadline: 171000, recovered_ts: 183000
+Stack rx ts: 68,1555415726106526273
+Received item: 68,1555415726106527436
+Current pb_deadline: 171000, recovered_ts: 183000
+Stack rx ts: 69,1555415726122897732
+Received item: 69,1555415726122906102
+Current pb_deadline: 174000, recovered_ts: 186000
+Stack rx ts: 70,1555415726139376793
+Received item: 70,1555415726139385614
+Current pb_deadline: 177000, recovered_ts: 189000
+Stack rx ts: 71,1555415726156054696
+Received item: 71,1555415726156065471
+Current pb_deadline: 180000, recovered_ts: 192000
+Stack rx ts: 72,1555415726173080174
+Received item: 72,1555415726173084412
+Current pb_deadline: 183000, recovered_ts: 195000
+Stack rx ts: 73,1555415726189452869
+Received item: 73,1555415726189475051
+Current pb_deadline: 186000, recovered_ts: 198000
+Stack rx ts: 74,1555415726206727980
+Received item: 74,1555415726206734665
+Current pb_deadline: 189000, recovered_ts: 201000
+Stack rx ts: 75,1555415726223344870
+Received item: 75,1555415726223353344
+Current pb_deadline: 192000, recovered_ts: 204000
+Stack rx ts: 76,1555415726240407854
+Received item: 76,1555415726240417126
+Current pb_deadline: 195000, recovered_ts: 207000
+Stack rx ts: 77,1555415726256897050
+Received item: 77,1555415726256905780
+Current pb_deadline: 198000, recovered_ts: 210000
+Stack rx ts: 78,1555415726273292420
+Received item: 78,1555415726273301365
+Current pb_deadline: 201000, recovered_ts: 213000
+Stack rx ts: 79,1555415726273570542
+Received item: 79,1555415726273574852
+Current pb_deadline: 201000, recovered_ts: 213000
+Stack rx ts: 80,1555415726273585487
+Received item: 80,1555415726273586729
+Current pb_deadline: 201000, recovered_ts: 213000
+Stack rx ts: 81,1555415726273597007
+Received item: 81,1555415726273598060
+Current pb_deadline: 201000, recovered_ts: 213000
+Stack rx ts: 82,1555415726289385855
+Received item: 82,1555415726289397292
+Current pb_deadline: 204000, recovered_ts: 216000
+Stack rx ts: 83,1555415726306876418
+Received item: 83,1555415726306885273
+Current pb_deadline: 207000, recovered_ts: 219000
+Stack rx ts: 84,1555415726323549888
+Received item: 84,1555415726323558698
+Current pb_deadline: 210000, recovered_ts: 222000
+Stack rx ts: 85,1555415726340017093
+Received item: 85,1555415726340025968
+Current pb_deadline: 213000, recovered_ts: 225000
+Stack rx ts: 86,1555415726356918760
+Received item: 86,1555415726356927480
+Current pb_deadline: 216000, recovered_ts: 228000
+Stack rx ts: 87,1555415726373640688
+Received item: 87,1555415726373649583
+Current pb_deadline: 219000, recovered_ts: 231000
+Stack rx ts: 88,1555415726389601574
+Received item: 88,1555415726389612560
+Current pb_deadline: 222000, recovered_ts: 234000
+Stack rx ts: 89,1555415726406962947
+Received item: 89,1555415726406971893
+Current pb_deadline: 225000, recovered_ts: 237000
+Stack rx ts: 90,1555415726423439383
+Received item: 90,1555415726423448093
+Current pb_deadline: 228000, recovered_ts: 240000
+Stack rx ts: 91,1555415726440266533
+Received item: 91,1555415726440275188
+Current pb_deadline: 231000, recovered_ts: 243000
+Stack rx ts: 92,1555415726440291436
+Received item: 92,1555415726440292779
+Current pb_deadline: 231000, recovered_ts: 243000
+Stack rx ts: 93,1555415726440302171
+Received item: 93,1555415726440303243
+Current pb_deadline: 231000, recovered_ts: 243000
+Stack rx ts: 94,1555415726440313817
+Received item: 94,1555415726440314910
+Current pb_deadline: 231000, recovered_ts: 243000
+Stack rx ts: 95,1555415726456599328
+Received item: 95,1555415726456608719
+Current pb_deadline: 234000, recovered_ts: 246000
+Stack rx ts: 96,1555415726473355855
+Received item: 96,1555415726473365156
+Current pb_deadline: 237000, recovered_ts: 249000
+Stack rx ts: 97,1555415726490383529
+Received item: 97,1555415726490392224
+Current pb_deadline: 240000, recovered_ts: 252000
+Stack rx ts: 98,1555415726506155127
+Received item: 98,1555415726506174830
+Current pb_deadline: 243000, recovered_ts: 255000
+Stack rx ts: 99,1555415726523405154
+Received item: 99,1555415726523413377
+Current pb_deadline: 246000, recovered_ts: 258000
+Stack rx ts: 100,1555415726539858752
+Received item: 100,1555415726539867097
+Current pb_deadline: 249000, recovered_ts: 261000
+Stack rx ts: 101,1555415726556856857
+Received item: 101,1555415726556865146
+Current pb_deadline: 252000, recovered_ts: 264000
+Stack rx ts: 102,1555415726572652682
+Received item: 102,1555415726572664098
+Current pb_deadline: 255000, recovered_ts: 267000
+Stack rx ts: 103,1555415726589850813
+Received item: 103,1555415726589859403
+Current pb_deadline: 258000, recovered_ts: 270000
+Stack rx ts: 104,1555415726606813703
+Received item: 104,1555415726606822608
+Current pb_deadline: 261000, recovered_ts: 273000
+Stack rx ts: 105,1555415726607072329
+Received item: 105,1555415726607076804
+Current pb_deadline: 261000, recovered_ts: 273000
+Stack rx ts: 106,1555415726607088070
+Received item: 106,1555415726607089263
+Current pb_deadline: 261000, recovered_ts: 273000
+Stack rx ts: 107,1555415726607098785
+Received item: 107,1555415726607099873
+Current pb_deadline: 261000, recovered_ts: 273000
+Stack rx ts: 108,1555415726623420285
+Received item: 108,1555415726623429681
+Current pb_deadline: 264000, recovered_ts: 276000
+Stack rx ts: 109,1555415726639658986
+Received item: 109,1555415726639663165
+Current pb_deadline: 267000, recovered_ts: 279000
+Stack rx ts: 110,1555415726656530497
+Received item: 110,1555415726656547839
+Current pb_deadline: 270000, recovered_ts: 282000
+Stack rx ts: 111,1555415726673239946
+Received item: 111,1555415726673244054
+Current pb_deadline: 273000, recovered_ts: 285000
+Stack rx ts: 112,1555415726689582023
+Received item: 112,1555415726689588312
+Current pb_deadline: 276000, recovered_ts: 288000
+Stack rx ts: 113,1555415726706474410
+Received item: 113,1555415726706482818
+Current pb_deadline: 279000, recovered_ts: 291000
+Stack rx ts: 114,1555415726723019590
+Received item: 114,1555415726723026282
+Current pb_deadline: 282000, recovered_ts: 294000
+Stack rx ts: 115,1555415726739540634
+Received item: 115,1555415726739547760
+Current pb_deadline: 285000, recovered_ts: 297000
+Stack rx ts: 116,1555415726757053592
+Received item: 116,1555415726757065083
+Current pb_deadline: 288000, recovered_ts: 300000
+Stack rx ts: 117,1555415726772686290
+Received item: 117,1555415726772695010
+Current pb_deadline: 291000, recovered_ts: 303000
+Stack rx ts: 118,1555415726772712229
+Received item: 118,1555415726772713698
+Current pb_deadline: 291000, recovered_ts: 303000
+Stack rx ts: 119,1555415726772723711
+Received item: 119,1555415726772724794
+Current pb_deadline: 291000, recovered_ts: 303000
+Stack rx ts: 120,1555415726772735213
+Received item: 120,1555415726772736325
+Current pb_deadline: 291000, recovered_ts: 303000
+Stack rx ts: 121,1555415726793296334
+Received item: 121,1555415726793304708
+Current pb_deadline: 294000, recovered_ts: 306000
+Stack rx ts: 122,1555415726805800404
+Received item: 122,1555415726805808298
+Current pb_deadline: 297000, recovered_ts: 309000
+Stack rx ts: 123,1555415726822954324
+Received item: 123,1555415726822964833
+Current pb_deadline: 300000, recovered_ts: 312000
+Stack rx ts: 124,1555415726843354877
+Received item: 124,1555415726843361457
+Current pb_deadline: 303000, recovered_ts: 315000
+Stack rx ts: 125,1555415726861577256
+Received item: 125,1555415726861582224
+Current pb_deadline: 306000, recovered_ts: 318000
+Stack rx ts: 126,1555415726873399257
+Received item: 126,1555415726873403930
+Current pb_deadline: 309000, recovered_ts: 321000
+Stack rx ts: 127,1555415726889303264
+Received item: 127,1555415726889311750
+Current pb_deadline: 312000, recovered_ts: 324000
+Stack rx ts: 128,1555415726912501375
+Received item: 128,1555415726912512957
+Current pb_deadline: 315000, recovered_ts: 327000
+Stack rx ts: 129,1555415726923775991
+Received item: 129,1555415726923785373
+Current pb_deadline: 318000, recovered_ts: 330000
+Stack rx ts: 130,1555415726940139962
+Received item: 130,1555415726940149719
+Current pb_deadline: 321000, recovered_ts: 333000
+Stack rx ts: 131,1555415726940166398
+Received item: 131,1555415726940167896
+Current pb_deadline: 321000, recovered_ts: 333000
+Stack rx ts: 132,1555415726940178686
+Received item: 132,1555415726940179769
+Current pb_deadline: 321000, recovered_ts: 333000
+Stack rx ts: 133,1555415726940292313
+Received item: 133,1555415726940295315
+Current pb_deadline: 321000, recovered_ts: 333000
+Stack rx ts: 134,1555415726956558679
+Received item: 134,1555415726956566433
+Current pb_deadline: 324000, recovered_ts: 336000
+Stack rx ts: 135,1555415726973913759
+Received item: 135,1555415726973922928
+Current pb_deadline: 327000, recovered_ts: 339000
+Stack rx ts: 136,1555415726990042321
+Received item: 136,1555415726990050911
+Current pb_deadline: 330000, recovered_ts: 342000
+Stack rx ts: 137,1555415727006631661
+Received item: 137,1555415727006639576
+Current pb_deadline: 333000, recovered_ts: 345000
+Stack rx ts: 138,1555415727022956164
+Received item: 138,1555415727022965029
+Current pb_deadline: 336000, recovered_ts: 348000
+Stack rx ts: 139,1555415727040153684
+Received item: 139,1555415727040162705
+Current pb_deadline: 339000, recovered_ts: 351000
+Stack rx ts: 140,1555415727056292900
+Received item: 140,1555415727056324143
+Current pb_deadline: 342000, recovered_ts: 354000
+Stack rx ts: 141,1555415727073005983
+Received item: 141,1555415727073016477
+Current pb_deadline: 345000, recovered_ts: 357000
+Stack rx ts: 142,1555415727089291319
+Received item: 142,1555415727089301708
+Current pb_deadline: 348000, recovered_ts: 360000
+Stack rx ts: 143,1555415727106454039
+Received item: 143,1555415727106464909
+Current pb_deadline: 351000, recovered_ts: 363000
+Stack rx ts: 144,1555415727106481673
+Received item: 144,1555415727106483231
+Current pb_deadline: 351000, recovered_ts: 363000
+Stack rx ts: 145,1555415727106492628
+Received item: 145,1555415727106493716
+Current pb_deadline: 351000, recovered_ts: 363000
+Stack rx ts: 146,1555415727106503383
+Received item: 146,1555415727106504445
+Current pb_deadline: 351000, recovered_ts: 363000
+Stack rx ts: 147,1555415727122874648
+Received item: 147,1555415727122881259
+Current pb_deadline: 354000, recovered_ts: 366000
+Stack rx ts: 148,1555415727139903590
+Received item: 148,1555415727139909658
+Current pb_deadline: 357000, recovered_ts: 369000
+Stack rx ts: 149,1555415727156994090
+Received item: 149,1555415727157010540
+Current pb_deadline: 360000, recovered_ts: 372000
+Stack rx ts: 150,1555415727174198525
+Received item: 150,1555415727174228326
+Current pb_deadline: 363000, recovered_ts: 375000
+Stack rx ts: 151,1555415727190354109
+Received item: 151,1555415727190383188
+Current pb_deadline: 366000, recovered_ts: 378000
+Stack rx ts: 152,1555415727206869343
+Received item: 152,1555415727206889823
+Current pb_deadline: 369000, recovered_ts: 381000
+Stack rx ts: 153,1555415727224929912
+Received item: 153,1555415727224952588
+Current pb_deadline: 372000, recovered_ts: 384000
+Stack rx ts: 154,1555415727239995622
+Received item: 154,1555415727240027740
+Current pb_deadline: 375000, recovered_ts: 387000
+Stack rx ts: 155,1555415727257163042
+Received item: 155,1555415727257186860
+Current pb_deadline: 378000, recovered_ts: 390000
+Stack rx ts: 156,1555415727274394082
+Received item: 156,1555415727274422270
+Current pb_deadline: 381000, recovered_ts: 393000
+Stack rx ts: 157,1555415727274487327
+Received item: 157,1555415727274491874
+Current pb_deadline: 381000, recovered_ts: 393000
+Stack rx ts: 158,1555415727274532392
+Received item: 158,1555415727274537700
+Current pb_deadline: 381000, recovered_ts: 393000
+Stack rx ts: 159,1555415727274575985
+Received item: 159,1555415727274581715
+Current pb_deadline: 381000, recovered_ts: 393000
+Stack rx ts: 160,1555415727289670386
+Received item: 160,1555415727289691913
+Current pb_deadline: 384000, recovered_ts: 396000
+Stack rx ts: 161,1555415727306465344
+Received item: 161,1555415727306488941
+Current pb_deadline: 387000, recovered_ts: 399000
+Stack rx ts: 162,1555415727323339538
+Received item: 162,1555415727323366455
+Current pb_deadline: 390000, recovered_ts: 402000
+Stack rx ts: 163,1555415727339938934
+Received item: 163,1555415727339956788
+Current pb_deadline: 393000, recovered_ts: 405000
+Stack rx ts: 164,1555415727357374172
+Received item: 164,1555415727357392394
+Current pb_deadline: 396000, recovered_ts: 408000
+Stack rx ts: 165,1555415727374022370
+Received item: 165,1555415727374029682
+Current pb_deadline: 399000, recovered_ts: 411000
+Stack rx ts: 166,1555415727390474202
+Received item: 166,1555415727390501942
+Current pb_deadline: 402000, recovered_ts: 414000
+Stack rx ts: 167,1555415727406767363
+Received item: 167,1555415727406801413
+Current pb_deadline: 405000, recovered_ts: 417000
+Stack rx ts: 168,1555415727423785357
+Received item: 168,1555415727423816205
+Current pb_deadline: 408000, recovered_ts: 420000
+Stack rx ts: 169,1555415727440378456
+Received item: 169,1555415727440401184
+Current pb_deadline: 411000, recovered_ts: 423000
+Stack rx ts: 170,1555415727441096962
+Received item: 170,1555415727441110874
+Current pb_deadline: 411000, recovered_ts: 423000
+Stack rx ts: 171,1555415727441144248
+Received item: 171,1555415727441146513
+Current pb_deadline: 411000, recovered_ts: 423000
+Stack rx ts: 172,1555415727441166928
+Received item: 172,1555415727441169253
+Current pb_deadline: 411000, recovered_ts: 423000
+Stack rx ts: 173,1555415727457784699
+Received item: 173,1555415727457805036
+Current pb_deadline: 414000, recovered_ts: 426000
+Stack rx ts: 174,1555415727474000800
+Received item: 174,1555415727474021508
+Current pb_deadline: 417000, recovered_ts: 429000
+Stack rx ts: 175,1555415727489925295
+Received item: 175,1555415727489954332
+Current pb_deadline: 420000, recovered_ts: 432000
+Stack rx ts: 176,1555415727508337293
+Received item: 176,1555415727508347484
+Current pb_deadline: 423000, recovered_ts: 435000
+Stack rx ts: 177,1555415727523657052
+Received item: 177,1555415727523663040
+Current pb_deadline: 426000, recovered_ts: 438000
+Stack rx ts: 178,1555415727540796784
+Received item: 178,1555415727540801150
+Current pb_deadline: 429000, recovered_ts: 441000
+Stack rx ts: 179,1555415727558390209
+Received item: 179,1555415727558395974
+Current pb_deadline: 432000, recovered_ts: 444000
+Stack rx ts: 180,1555415727572918148
+Received item: 180,1555415727572924496
+Current pb_deadline: 435000, recovered_ts: 447000
+Stack rx ts: 181,1555415727589908930
+Received item: 181,1555415727589917570
+Current pb_deadline: 438000, recovered_ts: 450000
+Stack rx ts: 182,1555415727606831575
+Received item: 182,1555415727606840912
+Current pb_deadline: 441000, recovered_ts: 453000
+Stack rx ts: 183,1555415727606858177
+Received item: 183,1555415727606859480
+Current pb_deadline: 441000, recovered_ts: 453000
+Stack rx ts: 184,1555415727606868932
+Received item: 184,1555415727606869994
+Current pb_deadline: 441000, recovered_ts: 453000
+Stack rx ts: 185,1555415727606879676
+Received item: 185,1555415727606880734
+Current pb_deadline: 441000, recovered_ts: 453000
+Stack rx ts: 186,1555415727623078758
+Received item: 186,1555415727623087528
+Current pb_deadline: 444000, recovered_ts: 456000
+Stack rx ts: 187,1555415727640306467
+Received item: 187,1555415727640315368
+Current pb_deadline: 447000, recovered_ts: 459000
+Stack rx ts: 188,1555415727655759115
+Received item: 188,1555415727655764818
+Current pb_deadline: 450000, recovered_ts: 462000
+Stack rx ts: 189,1555415727672449786
+Received item: 189,1555415727672455934
+Current pb_deadline: 453000, recovered_ts: 465000
+Stack rx ts: 190,1555415727690475242
+Received item: 190,1555415727690484554
+Current pb_deadline: 456000, recovered_ts: 468000
+Stack rx ts: 191,1555415727706134357
+Received item: 191,1555415727706145082
+Current pb_deadline: 459000, recovered_ts: 471000
+Stack rx ts: 192,1555415727722769454
+Received item: 192,1555415727722778109
+Current pb_deadline: 462000, recovered_ts: 474000
+Stack rx ts: 193,1555415727740060821
+Received item: 193,1555415727740069260
+Current pb_deadline: 465000, recovered_ts: 477000
+Stack rx ts: 194,1555415727756917058
+Received item: 194,1555415727756925467
+Current pb_deadline: 468000, recovered_ts: 480000
+Stack rx ts: 195,1555415727772975970
+Received item: 195,1555415727772986399
+Current pb_deadline: 471000, recovered_ts: 483000
+Stack rx ts: 196,1555415727773003990
+Received item: 196,1555415727773005588
+Current pb_deadline: 471000, recovered_ts: 483000
+Stack rx ts: 197,1555415727773015251
+Received item: 197,1555415727773016423
+Current pb_deadline: 471000, recovered_ts: 483000
+Stack rx ts: 198,1555415727773101765
+Received item: 198,1555415727773103299
+Current pb_deadline: 471000, recovered_ts: 483000
+Stack rx ts: 199,1555415727790336753
+Received item: 199,1555415727790347413
+Current pb_deadline: 474000, recovered_ts: 486000
+Stack rx ts: 200,1555415727806934113
+Received item: 200,1555415727806942858
+Current pb_deadline: 477000, recovered_ts: 489000
+Stack rx ts: 201,1555415727823649055
+Received item: 201,1555415727823657579
+Current pb_deadline: 480000, recovered_ts: 492000
+Stack rx ts: 202,1555415727839352024
+Received item: 202,1555415727839363025
+Current pb_deadline: 483000, recovered_ts: 495000
+Stack rx ts: 203,1555415727856832794
+Received item: 203,1555415727856846120
+Current pb_deadline: 486000, recovered_ts: 498000
+Stack rx ts: 204,1555415727873639888
+Received item: 204,1555415727873648588
+Current pb_deadline: 489000, recovered_ts: 501000
+Stack rx ts: 205,1555415727890359761
+Received item: 205,1555415727890368181
+Current pb_deadline: 492000, recovered_ts: 504000
+Stack rx ts: 206,1555415727906093477
+Received item: 206,1555415727906104372
+Current pb_deadline: 495000, recovered_ts: 507000
+Stack rx ts: 207,1555415727923703566
+Received item: 207,1555415727923712206
+Current pb_deadline: 498000, recovered_ts: 510000
+Stack rx ts: 208,1555415727940462514
+Received item: 208,1555415727940474501
+Current pb_deadline: 501000, recovered_ts: 513000
+Stack rx ts: 209,1555415727940505623
+Received item: 209,1555415727940508756
+Current pb_deadline: 501000, recovered_ts: 513000
+Stack rx ts: 210,1555415727940522061
+Received item: 210,1555415727940523199
+Current pb_deadline: 501000, recovered_ts: 513000
+Stack rx ts: 211,1555415727940533377
+Received item: 211,1555415727940534425
+Current pb_deadline: 501000, recovered_ts: 513000
+Stack rx ts: 212,1555415727956658463
+Received item: 212,1555415727956668412
+Current pb_deadline: 504000, recovered_ts: 516000
+Stack rx ts: 213,1555415727973340191
+Received item: 213,1555415727973344650
+Current pb_deadline: 507000, recovered_ts: 519000
+Stack rx ts: 214,1555415727990046024
+Received item: 214,1555415727990052472
+Current pb_deadline: 510000, recovered_ts: 522000
+Stack rx ts: 215,1555415728006711719
+Received item: 215,1555415728006720259
+Current pb_deadline: 513000, recovered_ts: 525000
+Stack rx ts: 216,1555415728023451043
+Received item: 216,1555415728023460049
+Current pb_deadline: 516000, recovered_ts: 528000
+Stack rx ts: 217,1555415728040051079
+Received item: 217,1555415728040060095
+Current pb_deadline: 519000, recovered_ts: 531000
+Stack rx ts: 218,1555415728056675331
+Received item: 218,1555415728056686742
+Current pb_deadline: 522000, recovered_ts: 534000
+Stack rx ts: 219,1555415728073087407
+Received item: 219,1555415728073096188
+Current pb_deadline: 525000, recovered_ts: 537000
+Stack rx ts: 220,1555415728089962584
+Received item: 220,1555415728089970974
+Current pb_deadline: 528000, recovered_ts: 540000
+Stack rx ts: 221,1555415728106668821
+Received item: 221,1555415728106677366
+Current pb_deadline: 531000, recovered_ts: 543000
+Stack rx ts: 222,1555415728106694931
+Received item: 222,1555415728106696420
+Current pb_deadline: 531000, recovered_ts: 543000
+Stack rx ts: 223,1555415728106706072
+Received item: 223,1555415728106707160
+Current pb_deadline: 531000, recovered_ts: 543000
+Stack rx ts: 224,1555415728106716862
+Received item: 224,1555415728106717935
+Current pb_deadline: 531000, recovered_ts: 543000
+Stack rx ts: 225,1555415728123388779
+Received item: 225,1555415728123397328
+Current pb_deadline: 534000, recovered_ts: 546000
+Stack rx ts: 226,1555415728140100618
+Received item: 226,1555415728140109659
+Current pb_deadline: 537000, recovered_ts: 549000
+Stack rx ts: 227,1555415728156808047
+Received item: 227,1555415728156817228
+Current pb_deadline: 540000, recovered_ts: 552000
+Stack rx ts: 228,1555415728173341239
+Received item: 228,1555415728173350215
+Current pb_deadline: 543000, recovered_ts: 555000
+Stack rx ts: 229,1555415728189748180
+Received item: 229,1555415728189754158
+Current pb_deadline: 546000, recovered_ts: 558000
+Stack rx ts: 230,1555415728206612220
+Received item: 230,1555415728206621116
+Current pb_deadline: 549000, recovered_ts: 561000
+Stack rx ts: 231,1555415728222724891
+Received item: 231,1555415728222736077
+Current pb_deadline: 552000, recovered_ts: 564000
+Stack rx ts: 232,1555415728239864704
+Received item: 232,1555415728239873179
+Current pb_deadline: 555000, recovered_ts: 567000
+Stack rx ts: 233,1555415728256674758
+Received item: 233,1555415728256685382
+Current pb_deadline: 558000, recovered_ts: 570000
+Stack rx ts: 234,1555415728273176399
+Received item: 234,1555415728273184954
+Current pb_deadline: 561000, recovered_ts: 573000
+Stack rx ts: 235,1555415728273201968
+Received item: 235,1555415728273203352
+Current pb_deadline: 561000, recovered_ts: 573000
+Stack rx ts: 236,1555415728273423499
+Received item: 236,1555415728273427087
+Current pb_deadline: 561000, recovered_ts: 573000
+Stack rx ts: 237,1555415728273438694
+Received item: 237,1555415728273439827
+Current pb_deadline: 561000, recovered_ts: 573000
+Stack rx ts: 238,1555415728289930452
+Received item: 238,1555415728289939107
+Current pb_deadline: 564000, recovered_ts: 576000
+Stack rx ts: 239,1555415728306285697
+Received item: 239,1555415728306294367
+Current pb_deadline: 567000, recovered_ts: 579000
+Stack rx ts: 240,1555415728323099601
+Received item: 240,1555415728323108151
+Current pb_deadline: 570000, recovered_ts: 582000
+Stack rx ts: 241,1555415728340134791
+Received item: 241,1555415728340183924
+Current pb_deadline: 573000, recovered_ts: 585000
+Stack rx ts: 242,1555415728356057366
+Received item: 242,1555415728356066732
+Current pb_deadline: 576000, recovered_ts: 588000
+Stack rx ts: 243,1555415728373148259
+Received item: 243,1555415728373156633
+Current pb_deadline: 579000, recovered_ts: 591000
+Stack rx ts: 244,1555415728389613971
+Received item: 244,1555415728389622241
+Current pb_deadline: 582000, recovered_ts: 594000
+Stack rx ts: 245,1555415728406568304
+Received item: 245,1555415728406577836
+Current pb_deadline: 585000, recovered_ts: 597000
+Stack rx ts: 246,1555415728422553711
+Received item: 246,1555415728422562602
+Current pb_deadline: 588000, recovered_ts: 600000
+Stack rx ts: 247,1555415728439635470
+Received item: 247,1555415728439644015
+Current pb_deadline: 591000, recovered_ts: 603000
+Stack rx ts: 248,1555415728439928317
+Received item: 248,1555415728439933003
+Current pb_deadline: 591000, recovered_ts: 603000
+Stack rx ts: 249,1555415728439944339
+Received item: 249,1555415728439945486
+Current pb_deadline: 591000, recovered_ts: 603000
+Stack rx ts: 250,1555415728439955174
+Received item: 250,1555415728439956412
+Current pb_deadline: 591000, recovered_ts: 603000
+Stack rx ts: 251,1555415728455953130
+Received item: 251,1555415728455961880
+Current pb_deadline: 594000, recovered_ts: 606000
+Stack rx ts: 252,1555415728472806430
+Received item: 252,1555415728472815346
+Current pb_deadline: 597000, recovered_ts: 609000
+Stack rx ts: 253,1555415728489958532
+Received item: 253,1555415728489966786
+Current pb_deadline: 600000, recovered_ts: 612000
+Stack rx ts: 254,1555415728505946609
+Received item: 254,1555415728505955169
+Current pb_deadline: 603000, recovered_ts: 615000
+Stack rx ts: 255,1555415728522969531
+Received item: 255,1555415728522981304
+Current pb_deadline: 606000, recovered_ts: 618000
+Stack rx ts: 256,1555415728540238326
+Received item: 256,1555415728540249497
+Current pb_deadline: 609000, recovered_ts: 621000
+Stack rx ts: 257,1555415728556065633
+Received item: 257,1555415728556076228
+Current pb_deadline: 612000, recovered_ts: 624000
+Stack rx ts: 258,1555415728573433161
+Received item: 258,1555415728573442137
+Current pb_deadline: 615000, recovered_ts: 627000
+Stack rx ts: 259,1555415728589561450
+Received item: 259,1555415728589570365
+Current pb_deadline: 618000, recovered_ts: 630000
+Stack rx ts: 260,1555415728606853914
+Received item: 260,1555415728606862269
+Current pb_deadline: 621000, recovered_ts: 633000
+Stack rx ts: 261,1555415728606878802
+Received item: 261,1555415728606880536
+Current pb_deadline: 621000, recovered_ts: 633000
+Stack rx ts: 262,1555415728606891451
+Received item: 262,1555415728606892734
+Current pb_deadline: 621000, recovered_ts: 633000
+Stack rx ts: 263,1555415728606971646
+Received item: 263,1555415728606973170
+Current pb_deadline: 621000, recovered_ts: 633000
+Stack rx ts: 264,1555415728623638552
+Received item: 264,1555415728623646826
+Current pb_deadline: 624000, recovered_ts: 636000
+Stack rx ts: 265,1555415728639979319
+Received item: 265,1555415728639988059
+Current pb_deadline: 627000, recovered_ts: 639000
+Stack rx ts: 266,1555415728657100774
+Received item: 266,1555415728657112997
+Current pb_deadline: 630000, recovered_ts: 642000
+Stack rx ts: 267,1555415728673688311
+Received item: 267,1555415728673697312
+Current pb_deadline: 633000, recovered_ts: 645000
+Stack rx ts: 268,1555415728690124134
+Received item: 268,1555415728690132864
+Current pb_deadline: 636000, recovered_ts: 648000
+Stack rx ts: 269,1555415728705964085
+Received item: 269,1555415728705974669
+Current pb_deadline: 639000, recovered_ts: 651000
+Stack rx ts: 270,1555415728723808451
+Received item: 270,1555415728723823600
+Current pb_deadline: 642000, recovered_ts: 654000
+Stack rx ts: 271,1555415728740092731
+Received item: 271,1555415728740098938
+Current pb_deadline: 645000, recovered_ts: 657000
+Stack rx ts: 272,1555415728756433981
+Received item: 272,1555415728756442966
+Current pb_deadline: 648000, recovered_ts: 660000
+Stack rx ts: 273,1555415728772608985
+Received item: 273,1555415728772617678
+Current pb_deadline: 651000, recovered_ts: 663000
+Stack rx ts: 274,1555415728772630886
+Received item: 274,1555415728772632143
+Current pb_deadline: 651000, recovered_ts: 663000
+Stack rx ts: 275,1555415728772639047
+Received item: 275,1555415728772639947
+Current pb_deadline: 651000, recovered_ts: 663000
+Stack rx ts: 276,1555415728772807738
+Received item: 276,1555415728772810778
+Current pb_deadline: 651000, recovered_ts: 663000
+Stack rx ts: 277,1555415728790316633
+Received item: 277,1555415728790325088
+Current pb_deadline: 654000, recovered_ts: 666000
+Stack rx ts: 278,1555415728806710975
+Received item: 278,1555415728806719469
+Current pb_deadline: 657000, recovered_ts: 669000
+Stack rx ts: 279,1555415728823207146
+Received item: 279,1555415728823217515
+Current pb_deadline: 660000, recovered_ts: 672000
+Stack rx ts: 280,1555415728840509253
+Received item: 280,1555415728840520048
+Current pb_deadline: 663000, recovered_ts: 675000
+Stack rx ts: 281,1555415728856930562
+Received item: 281,1555415728856941227
+Current pb_deadline: 666000, recovered_ts: 678000
+Stack rx ts: 282,1555415728873227312
+Received item: 282,1555415728873235802
+Current pb_deadline: 669000, recovered_ts: 681000
+Stack rx ts: 283,1555415728889309934
+Received item: 283,1555415728889321631
+Current pb_deadline: 672000, recovered_ts: 684000
+Stack rx ts: 284,1555415728905835293
+Received item: 284,1555415728905843978
+Current pb_deadline: 675000, recovered_ts: 687000
+Stack rx ts: 285,1555415728923637194
+Received item: 285,1555415728923645964
+Current pb_deadline: 678000, recovered_ts: 690000
+Stack rx ts: 286,1555415728939886912
+Received item: 286,1555415728939897316
+Current pb_deadline: 681000, recovered_ts: 693000
+Stack rx ts: 287,1555415728939929475
+Received item: 287,1555415728939932312
+Current pb_deadline: 681000, recovered_ts: 693000
+Stack rx ts: 288,1555415728939954763
+Received item: 288,1555415728939957084
+Current pb_deadline: 681000, recovered_ts: 693000
+Stack rx ts: 289,1555415728940282294
+Received item: 289,1555415728940288418
+Current pb_deadline: 681000, recovered_ts: 693000
+Stack rx ts: 290,1555415728955809003
+Received item: 290,1555415728955815544
+Current pb_deadline: 684000, recovered_ts: 696000
+Stack rx ts: 291,1555415728973743034
+Received item: 291,1555415728973748968
+Current pb_deadline: 687000, recovered_ts: 699000
+Stack rx ts: 292,1555415728989901030
+Received item: 292,1555415728989907656
+Current pb_deadline: 690000, recovered_ts: 702000
+Stack rx ts: 293,1555415729006695870
+Received item: 293,1555415729006704485
+Current pb_deadline: 693000, recovered_ts: 705000
+Stack rx ts: 294,1555415729023044692
+Received item: 294,1555415729023053236
+Current pb_deadline: 696000, recovered_ts: 708000
+Stack rx ts: 295,1555415729040045493
+Received item: 295,1555415729040054970
+Current pb_deadline: 699000, recovered_ts: 711000
+Stack rx ts: 296,1555415729056816544
+Received item: 296,1555415729056825119
+Current pb_deadline: 702000, recovered_ts: 714000
+Stack rx ts: 297,1555415729073140127
+Received item: 297,1555415729073149218
+Current pb_deadline: 705000, recovered_ts: 717000
+Stack rx ts: 298,1555415729090283342
+Received item: 298,1555415729090292403
+Current pb_deadline: 708000, recovered_ts: 720000
+Stack rx ts: 299,1555415729106708053
+Received item: 299,1555415729106716302
+Current pb_deadline: 711000, recovered_ts: 723000
+Stack rx ts: 300,1555415729106734123
+Received item: 300,1555415729106735557
+Current pb_deadline: 711000, recovered_ts: 723000
+Stack rx ts: 301,1555415729106745124
+Received item: 301,1555415729106746216
+Current pb_deadline: 711000, recovered_ts: 723000
+Stack rx ts: 302,1555415729106756199
+Received item: 302,1555415729106757267
+Current pb_deadline: 711000, recovered_ts: 723000
+Stack rx ts: 303,1555415729123213170
+Received item: 303,1555415729123222256
+Current pb_deadline: 714000, recovered_ts: 726000
+Stack rx ts: 304,1555415729139570817
+Received item: 304,1555415729139580880
+Current pb_deadline: 717000, recovered_ts: 729000
+Stack rx ts: 305,1555415729156865096
+Received item: 305,1555415729156873987
+Current pb_deadline: 720000, recovered_ts: 732000
+Stack rx ts: 306,1555415729175261766
+Received item: 306,1555415729175266865
+Current pb_deadline: 723000, recovered_ts: 735000
+Stack rx ts: 307,1555415729189689620
+Received item: 307,1555415729189695824
+Current pb_deadline: 726000, recovered_ts: 738000
+Stack rx ts: 308,1555415729207055867
+Received item: 308,1555415729207066426
+Current pb_deadline: 729000, recovered_ts: 741000
+Stack rx ts: 309,1555415729226791468
+Received item: 309,1555415729226799787
+Current pb_deadline: 732000, recovered_ts: 744000
+Stack rx ts: 310,1555415729239735924
+Received item: 310,1555415729239739907
+Current pb_deadline: 735000, recovered_ts: 747000
+Stack rx ts: 311,1555415729256463855
+Received item: 311,1555415729256470927
+Current pb_deadline: 738000, recovered_ts: 750000
+Stack rx ts: 312,1555415729273383850
+Received item: 312,1555415729273391463
+Current pb_deadline: 741000, recovered_ts: 753000
+Stack rx ts: 313,1555415729273406859
+Received item: 313,1555415729273408218
+Current pb_deadline: 741000, recovered_ts: 753000
+Stack rx ts: 314,1555415729273598233
+Received item: 314,1555415729273601721
+Current pb_deadline: 741000, recovered_ts: 753000
+Stack rx ts: 315,1555415729273611972
+Received item: 315,1555415729273612967
+Current pb_deadline: 741000, recovered_ts: 753000
+Stack rx ts: 316,1555415729289274929
+Received item: 316,1555415729289285333
+Current pb_deadline: 744000, recovered_ts: 756000
+Stack rx ts: 317,1555415729307005290
+Received item: 317,1555415729307014346
+Current pb_deadline: 747000, recovered_ts: 759000
+Stack rx ts: 318,1555415729323036698
+Received item: 318,1555415729323045619
+Current pb_deadline: 750000, recovered_ts: 762000
+Stack rx ts: 319,1555415729339809262
+Received item: 319,1555415729339817957
+Current pb_deadline: 753000, recovered_ts: 765000
+Stack rx ts: 320,1555415729357136012
+Received item: 320,1555415729357147227
+Current pb_deadline: 756000, recovered_ts: 768000
+Stack rx ts: 321,1555415729372541305
+Received item: 321,1555415729372552556
+Current pb_deadline: 759000, recovered_ts: 771000
+Stack rx ts: 322,1555415729389857726
+Received item: 322,1555415729389866546
+Current pb_deadline: 762000, recovered_ts: 774000
+Stack rx ts: 323,1555415729406233037
+Received item: 323,1555415729406241812
+Current pb_deadline: 765000, recovered_ts: 777000
+Stack rx ts: 324,1555415729423423401
+Received item: 324,1555415729423432262
+Current pb_deadline: 768000, recovered_ts: 780000
+Stack rx ts: 325,1555415729439316300
+Received item: 325,1555415729439327651
+Current pb_deadline: 771000, recovered_ts: 783000
+Stack rx ts: 326,1555415729439347016
+Received item: 326,1555415729439348439
+Current pb_deadline: 771000, recovered_ts: 783000
+Stack rx ts: 327,1555415729439358131
+Received item: 327,1555415729439359214
+Current pb_deadline: 771000, recovered_ts: 783000
+Stack rx ts: 328,1555415729439439800
+Received item: 328,1555415729439441333
+Current pb_deadline: 771000, recovered_ts: 783000
+Stack rx ts: 329,1555415729456564914
+Received item: 329,1555415729456574130
+Current pb_deadline: 774000, recovered_ts: 786000
+Stack rx ts: 330,1555415729473083000
+Received item: 330,1555415729473091756
+Current pb_deadline: 777000, recovered_ts: 789000
+Stack rx ts: 331,1555415729490060939
+Received item: 331,1555415729490069984
+Current pb_deadline: 780000, recovered_ts: 792000
+Stack rx ts: 332,1555415729506743902
+Received item: 332,1555415729506752522
+Current pb_deadline: 783000, recovered_ts: 795000
+Stack rx ts: 333,1555415729522850845
+Received item: 333,1555415729522859354
+Current pb_deadline: 786000, recovered_ts: 798000
+Stack rx ts: 334,1555415729539998043
+Received item: 334,1555415729540016906
+Current pb_deadline: 789000, recovered_ts: 801000
+Stack rx ts: 335,1555415729556699086
+Received item: 335,1555415729556705540
+Current pb_deadline: 792000, recovered_ts: 804000
+Stack rx ts: 336,1555415729573018621
+Received item: 336,1555415729573024906
+Current pb_deadline: 795000, recovered_ts: 807000
+Stack rx ts: 337,1555415729589686696
+Received item: 337,1555415729589697626
+Current pb_deadline: 798000, recovered_ts: 810000
+Stack rx ts: 338,1555415729606634815
+Received item: 338,1555415729606643526
+Current pb_deadline: 801000, recovered_ts: 813000
+Stack rx ts: 339,1555415729606662359
+Received item: 339,1555415729606663898
+Current pb_deadline: 801000, recovered_ts: 813000
+Stack rx ts: 340,1555415729606673796
+Received item: 340,1555415729606674988
+Current pb_deadline: 801000, recovered_ts: 813000
+Stack rx ts: 341,1555415729606684019
+Received item: 341,1555415729606685192
+Current pb_deadline: 801000, recovered_ts: 813000
+Stack rx ts: 342,1555415729623292178
+Received item: 342,1555415729623300929
+Current pb_deadline: 804000, recovered_ts: 816000
+Stack rx ts: 343,1555415729640226297
+Received item: 343,1555415729640237302
+Current pb_deadline: 807000, recovered_ts: 819000
+Stack rx ts: 344,1555415729656575553
+Received item: 344,1555415729656584368
+Current pb_deadline: 810000, recovered_ts: 822000
+Stack rx ts: 345,1555415729673554780
+Received item: 345,1555415729673565475
+Current pb_deadline: 813000, recovered_ts: 825000
+Stack rx ts: 346,1555415729689599444
+Received item: 346,1555415729689610184
+Current pb_deadline: 816000, recovered_ts: 828000
+Stack rx ts: 347,1555415729706486874
+Received item: 347,1555415729706495945
+Current pb_deadline: 819000, recovered_ts: 831000
+Stack rx ts: 348,1555415729722931211
+Received item: 348,1555415729722940011
+Current pb_deadline: 822000, recovered_ts: 834000
+Stack rx ts: 349,1555415729740101193
+Received item: 349,1555415729740110655
+Current pb_deadline: 825000, recovered_ts: 837000
+Stack rx ts: 350,1555415729755827387
+Received item: 350,1555415729755836272
+Current pb_deadline: 828000, recovered_ts: 840000
+Stack rx ts: 351,1555415729772980550
+Received item: 351,1555415729772989891
+Current pb_deadline: 831000, recovered_ts: 843000
+Stack rx ts: 352,1555415729773009106
+Received item: 352,1555415729773010639
+Current pb_deadline: 831000, recovered_ts: 843000
+Stack rx ts: 353,1555415729773020297
+Received item: 353,1555415729773021369
+Current pb_deadline: 831000, recovered_ts: 843000
+Stack rx ts: 354,1555415729773030776
+Received item: 354,1555415729773031858
+Current pb_deadline: 831000, recovered_ts: 843000
+Stack rx ts: 355,1555415729790154456
+Received item: 355,1555415729790163547
+Current pb_deadline: 834000, recovered_ts: 846000
+Stack rx ts: 356,1555415729805903312
+Received item: 356,1555415729805914127
+Current pb_deadline: 837000, recovered_ts: 849000
+Stack rx ts: 357,1555415729823279169
+Received item: 357,1555415729823287548
+Current pb_deadline: 840000, recovered_ts: 852000
+Stack rx ts: 358,1555415729839714535
+Received item: 358,1555415729839725581
+Current pb_deadline: 843000, recovered_ts: 855000
+Stack rx ts: 359,1555415729856713482
+Received item: 359,1555415729856721801
+Current pb_deadline: 846000, recovered_ts: 858000
+Stack rx ts: 360,1555415729873479984
+Received item: 360,1555415729873488418
+Current pb_deadline: 849000, recovered_ts: 861000
+Stack rx ts: 361,1555415729889600918
+Received item: 361,1555415729889609548
+Current pb_deadline: 852000, recovered_ts: 864000
+Stack rx ts: 362,1555415729906989881
+Received item: 362,1555415729907000500
+Current pb_deadline: 855000, recovered_ts: 867000
+Stack rx ts: 363,1555415729923618854
+Received item: 363,1555415729923627499
+Current pb_deadline: 858000, recovered_ts: 870000
+Stack rx ts: 364,1555415729940252147
+Received item: 364,1555415729940268791
+Current pb_deadline: 861000, recovered_ts: 873000
+Stack rx ts: 365,1555415729940298930
+Received item: 365,1555415729940300394
+Current pb_deadline: 861000, recovered_ts: 873000
+Stack rx ts: 366,1555415729940315930
+Received item: 366,1555415729940317097
+Current pb_deadline: 861000, recovered_ts: 873000
+Stack rx ts: 367,1555415729940378033
+Received item: 367,1555415729940379792
+Current pb_deadline: 861000, recovered_ts: 873000
+Stack rx ts: 368,1555415729955973009
+Received item: 368,1555415729955978689
+Current pb_deadline: 864000, recovered_ts: 876000
+Stack rx ts: 369,1555415729973236535
+Received item: 369,1555415729973240745
+Current pb_deadline: 867000, recovered_ts: 879000
+Stack rx ts: 370,1555415729990192264
+Received item: 370,1555415729990198777
+Current pb_deadline: 870000, recovered_ts: 882000
+Stack rx ts: 371,1555415730006357351
+Received item: 371,1555415730006366146
+Current pb_deadline: 873000, recovered_ts: 885000
+Stack rx ts: 372,1555415730023603869
+Received item: 372,1555415730023612619
+Current pb_deadline: 876000, recovered_ts: 888000
+Stack rx ts: 373,1555415730040251360
+Received item: 373,1555415730040259905
+Current pb_deadline: 879000, recovered_ts: 891000
+Stack rx ts: 374,1555415730056724773
+Received item: 374,1555415730056733048
+Current pb_deadline: 882000, recovered_ts: 894000
+Stack rx ts: 375,1555415730073691276
+Received item: 375,1555415730073704181
+Current pb_deadline: 885000, recovered_ts: 897000
+Stack rx ts: 376,1555415730090030681
+Received item: 376,1555415730090039331
+Current pb_deadline: 888000, recovered_ts: 900000
+Stack rx ts: 377,1555415730106861439
+Received item: 377,1555415730106870656
+Current pb_deadline: 891000, recovered_ts: 903000
+Stack rx ts: 378,1555415730106888647
+Received item: 378,1555415730106890191
+Current pb_deadline: 891000, recovered_ts: 903000
+Stack rx ts: 379,1555415730106900149
+Received item: 379,1555415730106901256
+Current pb_deadline: 891000, recovered_ts: 903000
+Stack rx ts: 380,1555415730106910017
+Received item: 380,1555415730106911109
+Current pb_deadline: 891000, recovered_ts: 903000
+Stack rx ts: 381,1555415730122936980
+Received item: 381,1555415730122947432
+Current pb_deadline: 894000, recovered_ts: 906000
+Stack rx ts: 382,1555415730140075585
+Received item: 382,1555415730140079769
+Current pb_deadline: 897000, recovered_ts: 909000
+Stack rx ts: 383,1555415730155802069
+Received item: 383,1555415730155809787
+Current pb_deadline: 900000, recovered_ts: 912000
+Stack rx ts: 384,1555415730173029193
+Received item: 384,1555415730173038024
+Current pb_deadline: 903000, recovered_ts: 915000
+Stack rx ts: 385,1555415730189261345
+Received item: 385,1555415730189272310
+Current pb_deadline: 906000, recovered_ts: 918000
+Stack rx ts: 386,1555415730206416317
+Received item: 386,1555415730206424942
+Current pb_deadline: 909000, recovered_ts: 921000
+Stack rx ts: 387,1555415730223487281
+Received item: 387,1555415730223495701
+Current pb_deadline: 912000, recovered_ts: 924000
+Stack rx ts: 388,1555415730239737945
+Received item: 388,1555415730239746956
+Current pb_deadline: 915000, recovered_ts: 927000
+Stack rx ts: 389,1555415730256831742
+Received item: 389,1555415730256840196
+Current pb_deadline: 918000, recovered_ts: 930000
+Stack rx ts: 390,1555415730273560760
+Received item: 390,1555415730273569476
+Current pb_deadline: 921000, recovered_ts: 933000
+Stack rx ts: 391,1555415730273588274
+Received item: 391,1555415730273589692
+Current pb_deadline: 921000, recovered_ts: 933000
+Stack rx ts: 392,1555415730273599460
+Received item: 392,1555415730273600522
+Current pb_deadline: 921000, recovered_ts: 933000
+Stack rx ts: 393,1555415730273678552
+Received item: 393,1555415730273680106
+Current pb_deadline: 921000, recovered_ts: 933000
+Stack rx ts: 394,1555415730290067777
+Received item: 394,1555415730290075886
+Current pb_deadline: 924000, recovered_ts: 936000
+Stack rx ts: 395,1555415730306976430
+Received item: 395,1555415730306984900
+Current pb_deadline: 927000, recovered_ts: 939000
+Stack rx ts: 396,1555415730323231689
+Received item: 396,1555415730323239579
+Current pb_deadline: 930000, recovered_ts: 942000
+Stack rx ts: 397,1555415730340221297
+Received item: 397,1555415730340230944
+Current pb_deadline: 933000, recovered_ts: 945000
+Stack rx ts: 398,1555415730356702593
+Received item: 398,1555415730356711374
+Current pb_deadline: 936000, recovered_ts: 948000
+Stack rx ts: 399,1555415730373466133
+Received item: 399,1555415730373476802
+Current pb_deadline: 939000, recovered_ts: 951000
+Stack rx ts: 400,1555415730389812804
+Received item: 400,1555415730389821690
+Current pb_deadline: 942000, recovered_ts: 954000
+Stack rx ts: 401,1555415730406813355
+Received item: 401,1555415730406821619
+Current pb_deadline: 945000, recovered_ts: 957000
+Stack rx ts: 402,1555415730422600048
+Received item: 402,1555415730422611289
+Current pb_deadline: 948000, recovered_ts: 960000
+Stack rx ts: 403,1555415730440103741
+Received item: 403,1555415730440112291
+Current pb_deadline: 951000, recovered_ts: 963000
+Stack rx ts: 404,1555415730440129827
+Received item: 404,1555415730440131270
+Current pb_deadline: 951000, recovered_ts: 963000
+Stack rx ts: 405,1555415730440141263
+Received item: 405,1555415730440142401
+Current pb_deadline: 951000, recovered_ts: 963000
+Stack rx ts: 406,1555415730440152098
+Received item: 406,1555415730440153196
+Current pb_deadline: 951000, recovered_ts: 963000
+Stack rx ts: 407,1555415730456704749
+Received item: 407,1555415730456713374
+Current pb_deadline: 954000, recovered_ts: 966000
+Stack rx ts: 408,1555415730473114390
+Received item: 408,1555415730473122975
+Current pb_deadline: 957000, recovered_ts: 969000
+Stack rx ts: 409,1555415730490193905
+Received item: 409,1555415730490202710
+Current pb_deadline: 960000, recovered_ts: 972000
+Stack rx ts: 410,1555415730506703587
+Received item: 410,1555415730506712237
+Current pb_deadline: 963000, recovered_ts: 975000
+Stack rx ts: 411,1555415730523212637
+Received item: 411,1555415730523221222
+Current pb_deadline: 966000, recovered_ts: 978000
+Stack rx ts: 412,1555415730540236071
+Received item: 412,1555415730540244761
+Current pb_deadline: 969000, recovered_ts: 981000
+Stack rx ts: 413,1555415730556709715
+Received item: 413,1555415730556720350
+Current pb_deadline: 972000, recovered_ts: 984000
+Stack rx ts: 414,1555415730573116205
+Received item: 414,1555415730573125296
+Current pb_deadline: 975000, recovered_ts: 987000
+Stack rx ts: 415,1555415730589675988
+Received item: 415,1555415730589684532
+Current pb_deadline: 978000, recovered_ts: 990000
+Stack rx ts: 416,1555415730606840939
+Received item: 416,1555415730606849809
+Current pb_deadline: 981000, recovered_ts: 993000
+Stack rx ts: 417,1555415730606865806
+Received item: 417,1555415730606867129
+Current pb_deadline: 981000, recovered_ts: 993000
+Stack rx ts: 418,1555415730606878631
+Received item: 418,1555415730606879718
+Current pb_deadline: 981000, recovered_ts: 993000
+Stack rx ts: 419,1555415730606888494
+Received item: 419,1555415730606889556
+Current pb_deadline: 981000, recovered_ts: 993000
+Stack rx ts: 420,1555415730623401188
+Received item: 420,1555415730623410144
+Current pb_deadline: 984000, recovered_ts: 996000
+Stack rx ts: 421,1555415730639762793
+Received item: 421,1555415730639771453
+Current pb_deadline: 987000, recovered_ts: 999000
+Stack rx ts: 422,1555415730656863713
+Received item: 422,1555415730656876091
+Current pb_deadline: 990000, recovered_ts: 1002000
+Stack rx ts: 423,1555415730673448419
+Received item: 423,1555415730673454856
+Current pb_deadline: 993000, recovered_ts: 1005000
+Stack rx ts: 424,1555415730690103040
+Received item: 424,1555415730690111444
+Current pb_deadline: 996000, recovered_ts: 1008000
+Stack rx ts: 425,1555415730706345570
+Received item: 425,1555415730706355388
+Current pb_deadline: 999000, recovered_ts: 1011000
+Stack rx ts: 426,1555415730723251944
+Received item: 426,1555415730723260563
+Current pb_deadline: 1002000, recovered_ts: 1014000
+Stack rx ts: 427,1555415730740254490
+Received item: 427,1555415730740273228
+Current pb_deadline: 1005000, recovered_ts: 1017000
+Stack rx ts: 428,1555415730756699943
+Received item: 428,1555415730756707052
+Current pb_deadline: 1008000, recovered_ts: 1020000
+Stack rx ts: 429,1555415730773290683
+Received item: 429,1555415730773299303
+Current pb_deadline: 1011000, recovered_ts: 1023000
+Stack rx ts: 430,1555415730773317159
+Received item: 430,1555415730773318878
+Current pb_deadline: 1011000, recovered_ts: 1023000
+Stack rx ts: 431,1555415730773328897
+Received item: 431,1555415730773329964
+Current pb_deadline: 1011000, recovered_ts: 1023000
+Stack rx ts: 432,1555415730773338960
+Received item: 432,1555415730773340183
+Current pb_deadline: 1011000, recovered_ts: 1023000
+Stack rx ts: 433,1555415730790062967
+Received item: 433,1555415730790072123
+Current pb_deadline: 1014000, recovered_ts: 1026000
+Stack rx ts: 434,1555415730806837392
+Received item: 434,1555415730806845756
+Current pb_deadline: 1017000, recovered_ts: 1029000
+Stack rx ts: 435,1555415730823007104
+Received item: 435,1555415730823015684
+Current pb_deadline: 1020000, recovered_ts: 1032000
+Stack rx ts: 436,1555415730839772045
+Received item: 436,1555415730839780846
+Current pb_deadline: 1023000, recovered_ts: 1035000
+Stack rx ts: 437,1555415730856849078
+Received item: 437,1555415730856857809
+Current pb_deadline: 1026000, recovered_ts: 1038000
+Stack rx ts: 438,1555415730873299905
+Received item: 438,1555415730873308064
+Current pb_deadline: 1029000, recovered_ts: 1041000
+Stack rx ts: 439,1555415730889412024
+Received item: 439,1555415730889420674
+Current pb_deadline: 1032000, recovered_ts: 1044000
+Stack rx ts: 440,1555415730906698311
+Received item: 440,1555415730906707041
+Current pb_deadline: 1035000, recovered_ts: 1047000
+Stack rx ts: 441,1555415730923397495
+Received item: 441,1555415730923406035
+Current pb_deadline: 1038000, recovered_ts: 1050000
+Stack rx ts: 442,1555415730939721946
+Received item: 442,1555415730939730431
+Current pb_deadline: 1041000, recovered_ts: 1053000
+Stack rx ts: 443,1555415730939749034
+Received item: 443,1555415730939750432
+Current pb_deadline: 1041000, recovered_ts: 1053000
+Stack rx ts: 444,1555415730939760490
+Received item: 444,1555415730939761598
+Current pb_deadline: 1041000, recovered_ts: 1053000
+Stack rx ts: 445,1555415730939770909
+Received item: 445,1555415730939772072
+Current pb_deadline: 1041000, recovered_ts: 1053000
+Stack rx ts: 446,1555415730956000014
+Received item: 446,1555415730956006744
+Current pb_deadline: 1044000, recovered_ts: 1056000
+Stack rx ts: 447,1555415730973132652
+Received item: 447,1555415730973136982
+Current pb_deadline: 1047000, recovered_ts: 1059000
+Stack rx ts: 448,1555415730989755382
+Received item: 448,1555415730989759906
+Current pb_deadline: 1050000, recovered_ts: 1062000
+Stack rx ts: 449,1555415731006560365
+Received item: 449,1555415731006564923
+Current pb_deadline: 1053000, recovered_ts: 1065000
+Stack rx ts: 450,1555415731022863771
+Received item: 450,1555415731022868735
+Current pb_deadline: 1056000, recovered_ts: 1068000
+Stack rx ts: 451,1555415731039583852
+Received item: 451,1555415731039590189
+Current pb_deadline: 1059000, recovered_ts: 1071000
+Stack rx ts: 452,1555415731056907074
+Received item: 452,1555415731056914310
+Current pb_deadline: 1062000, recovered_ts: 1074000
+Stack rx ts: 453,1555415731073045618
+Received item: 453,1555415731073054283
+Current pb_deadline: 1065000, recovered_ts: 1077000
+Stack rx ts: 454,1555415731089946054
+Received item: 454,1555415731089955175
+Current pb_deadline: 1068000, recovered_ts: 1080000
+Stack rx ts: 455,1555415731107100674
+Received item: 455,1555415731107111584
+Current pb_deadline: 1071000, recovered_ts: 1083000
+Stack rx ts: 456,1555415731107129436
+Received item: 456,1555415731107130999
+Current pb_deadline: 1071000, recovered_ts: 1083000
+Stack rx ts: 457,1555415731107253783
+Received item: 457,1555415731107255752
+Current pb_deadline: 1071000, recovered_ts: 1083000
+Stack rx ts: 458,1555415731107265410
+Received item: 458,1555415731107266477
+Current pb_deadline: 1071000, recovered_ts: 1083000
+Stack rx ts: 459,1555415731122788219
+Received item: 459,1555415731122799952
+Current pb_deadline: 1074000, recovered_ts: 1086000
+Stack rx ts: 460,1555415731139448910
+Received item: 460,1555415731139471768
+Current pb_deadline: 1077000, recovered_ts: 1089000
+Stack rx ts: 461,1555415731156031467
+Received item: 461,1555415731156041382
+Current pb_deadline: 1080000, recovered_ts: 1092000
+Stack rx ts: 462,1555415731173324662
+Received item: 462,1555415731173332351
+Current pb_deadline: 1083000, recovered_ts: 1095000
+Stack rx ts: 463,1555415731190246963
+Received item: 463,1555415731190257993
+Current pb_deadline: 1086000, recovered_ts: 1098000
+Stack rx ts: 464,1555415731206505917
+Received item: 464,1555415731206515054
+Current pb_deadline: 1089000, recovered_ts: 1101000
+Stack rx ts: 465,1555415731223543559
+Received item: 465,1555415731223554609
+Current pb_deadline: 1092000, recovered_ts: 1104000
+Stack rx ts: 466,1555415731239202372
+Received item: 466,1555415731239213176
+Current pb_deadline: 1095000, recovered_ts: 1107000
+Stack rx ts: 467,1555415731256038828
+Received item: 467,1555415731256052069
+Current pb_deadline: 1098000, recovered_ts: 1110000
+Stack rx ts: 468,1555415731272753354
+Received item: 468,1555415731272761723
+Current pb_deadline: 1101000, recovered_ts: 1113000
+Stack rx ts: 469,1555415731272779650
+Received item: 469,1555415731272781279
+Current pb_deadline: 1101000, recovered_ts: 1113000
+Stack rx ts: 470,1555415731272791126
+Received item: 470,1555415731272792229
+Current pb_deadline: 1101000, recovered_ts: 1113000
+Stack rx ts: 471,1555415731272801570
+Received item: 471,1555415731272802668
+Current pb_deadline: 1101000, recovered_ts: 1113000
+Stack rx ts: 472,1555415731289842119
+Received item: 472,1555415731289851636
+Current pb_deadline: 1104000, recovered_ts: 1116000
+Stack rx ts: 473,1555415731306830787
+Received item: 473,1555415731306839087
+Current pb_deadline: 1107000, recovered_ts: 1119000
+Stack rx ts: 474,1555415731323021408
+Received item: 474,1555415731323031888
+Current pb_deadline: 1110000, recovered_ts: 1122000
+Stack rx ts: 475,1555415731339089351
+Received item: 475,1555415731339100206
+Current pb_deadline: 1113000, recovered_ts: 1125000
+Stack rx ts: 476,1555415731356963894
+Received item: 476,1555415731356972509
+Current pb_deadline: 1116000, recovered_ts: 1128000
+Stack rx ts: 477,1555415731373499849
+Received item: 477,1555415731373508644
+Current pb_deadline: 1119000, recovered_ts: 1131000
+Stack rx ts: 478,1555415731390363548
+Received item: 478,1555415731390373957
+Current pb_deadline: 1122000, recovered_ts: 1134000
+Stack rx ts: 479,1555415731406495864
+Received item: 479,1555415731406504669
+Current pb_deadline: 1125000, recovered_ts: 1137000
+Stack rx ts: 480,1555415731423585446
+Received item: 480,1555415731423596381
+Current pb_deadline: 1128000, recovered_ts: 1140000
+Stack rx ts: 481,1555415731439411560
+Received item: 481,1555415731439422856
+Current pb_deadline: 1131000, recovered_ts: 1143000
+Stack rx ts: 482,1555415731439441379
+Received item: 482,1555415731439443123
+Current pb_deadline: 1131000, recovered_ts: 1143000
+Stack rx ts: 483,1555415731439453642
+Received item: 483,1555415731439454705
+Current pb_deadline: 1131000, recovered_ts: 1143000
+Stack rx ts: 484,1555415731439463360
+Received item: 484,1555415731439464422
+Current pb_deadline: 1131000, recovered_ts: 1143000
+Stack rx ts: 485,1555415731456679764
+Received item: 485,1555415731456688263
+Current pb_deadline: 1134000, recovered_ts: 1146000
+Stack rx ts: 486,1555415731472733549
+Received item: 486,1555415731472742033
+Current pb_deadline: 1137000, recovered_ts: 1149000
+Stack rx ts: 487,1555415731490171621
+Received item: 487,1555415731490179880
+Current pb_deadline: 1140000, recovered_ts: 1152000
+Stack rx ts: 488,1555415731506948269
+Received item: 488,1555415731506956884
+Current pb_deadline: 1143000, recovered_ts: 1155000
+Stack rx ts: 489,1555415731523197245
+Received item: 489,1555415731523206887
+Current pb_deadline: 1146000, recovered_ts: 1158000
+Stack rx ts: 490,1555415731540297531
+Received item: 490,1555415731540308286
+Current pb_deadline: 1149000, recovered_ts: 1161000
+Stack rx ts: 491,1555415731557006023
+Received item: 491,1555415731557014568
+Current pb_deadline: 1152000, recovered_ts: 1164000
+Stack rx ts: 492,1555415731573458633
+Received item: 492,1555415731573466932
+Current pb_deadline: 1155000, recovered_ts: 1167000
+Stack rx ts: 493,1555415731589310767
+Received item: 493,1555415731589321242
+Current pb_deadline: 1158000, recovered_ts: 1170000
+Stack rx ts: 494,1555415731606983826
+Received item: 494,1555415731606992566
+Current pb_deadline: 1161000, recovered_ts: 1173000
+Stack rx ts: 495,1555415731607011495
+Received item: 495,1555415731607013048
+Current pb_deadline: 1161000, recovered_ts: 1173000
+Stack rx ts: 496,1555415731607022646
+Received item: 496,1555415731607023758
+Current pb_deadline: 1161000, recovered_ts: 1173000
+Stack rx ts: 497,1555415731607033400
+Received item: 497,1555415731607034488
+Current pb_deadline: 1161000, recovered_ts: 1173000
+Stack rx ts: 498,1555415731623640609
+Received item: 498,1555415731623649484
+Current pb_deadline: 1164000, recovered_ts: 1176000
+Stack rx ts: 499,1555415731640032915
+Received item: 499,1555415731640041195
+Current pb_deadline: 1167000, recovered_ts: 1179000
+Stack rx ts: 500,1555415731656972706
+Received item: 500,1555415731656981566
+Current pb_deadline: 1170000, recovered_ts: 1182000
+Stack rx ts: 501,1555415731673687356
+Received item: 501,1555415731673695605
+Current pb_deadline: 1173000, recovered_ts: 1185000
+Stack rx ts: 502,1555415731690311810
+Received item: 502,1555415731690323106
+Current pb_deadline: 1176000, recovered_ts: 1188000
+Stack rx ts: 503,1555415731706832808
+Received item: 503,1555415731706841473
+Current pb_deadline: 1179000, recovered_ts: 1191000
+Stack rx ts: 504,1555415731723403642
+Received item: 504,1555415731723412252
+Current pb_deadline: 1182000, recovered_ts: 1194000
+Stack rx ts: 505,1555415731739111537
+Received item: 505,1555415731739122212
+Current pb_deadline: 1185000, recovered_ts: 1197000
+Stack rx ts: 506,1555415731756653018
+Received item: 506,1555415731756663537
+Current pb_deadline: 1188000, recovered_ts: 1200000
+Stack rx ts: 507,1555415731773363088
+Received item: 507,1555415731773371633
+Current pb_deadline: 1191000, recovered_ts: 1203000
+Stack rx ts: 508,1555415731773655087
+Received item: 508,1555415731773659472
+Current pb_deadline: 1191000, recovered_ts: 1203000
+Stack rx ts: 509,1555415731773671330
+Received item: 509,1555415731773672522
+Current pb_deadline: 1191000, recovered_ts: 1203000
+Stack rx ts: 510,1555415731773681774
+Received item: 510,1555415731773682871
+Current pb_deadline: 1191000, recovered_ts: 1203000
+Stack rx ts: 511,1555415731790196463
+Received item: 511,1555415731790204933
+Current pb_deadline: 1194000, recovered_ts: 1206000
+Stack rx ts: 512,1555415731806172008
+Received item: 512,1555415731806180582
+Current pb_deadline: 1197000, recovered_ts: 1209000
+Stack rx ts: 513,1555415731823451131
+Received item: 513,1555415731823459566
+Current pb_deadline: 1200000, recovered_ts: 1212000
+Stack rx ts: 514,1555415731840246959
+Received item: 514,1555415731840255865
+Current pb_deadline: 1203000, recovered_ts: 1215000
+Stack rx ts: 515,1555415731856607633
+Received item: 515,1555415731856615992
+Current pb_deadline: 1206000, recovered_ts: 1218000
+Stack rx ts: 516,1555415731873366312
+Received item: 516,1555415731873375538
+Current pb_deadline: 1209000, recovered_ts: 1221000
+Stack rx ts: 517,1555415731889911927
+Received item: 517,1555415731889921013
+Current pb_deadline: 1212000, recovered_ts: 1224000
+Stack rx ts: 518,1555415731906729229
+Received item: 518,1555415731906737764
+Current pb_deadline: 1215000, recovered_ts: 1227000
+Stack rx ts: 519,1555415731922994012
+Received item: 519,1555415731923005668
+Current pb_deadline: 1218000, recovered_ts: 1230000
+Stack rx ts: 520,1555415731939902259
+Received item: 520,1555415731939911836
+Current pb_deadline: 1221000, recovered_ts: 1233000
+Stack rx ts: 521,1555415731940020256
+Received item: 521,1555415731940023293
+Current pb_deadline: 1221000, recovered_ts: 1233000
+Stack rx ts: 522,1555415731940332317
+Received item: 522,1555415731940337153
+Current pb_deadline: 1221000, recovered_ts: 1233000
+Stack rx ts: 523,1555415731940349477
+Received item: 523,1555415731940350780
+Current pb_deadline: 1221000, recovered_ts: 1233000
+Stack rx ts: 524,1555415731956667896
+Received item: 524,1555415731956676485
+Current pb_deadline: 1224000, recovered_ts: 1236000
+Stack rx ts: 525,1555415731973147824
+Received item: 525,1555415731973155422
+Current pb_deadline: 1227000, recovered_ts: 1239000
+Stack rx ts: 526,1555415731989275452
+Received item: 526,1555415731989286668
+Current pb_deadline: 1230000, recovered_ts: 1242000
+Stack rx ts: 527,1555415732006257837
+Received item: 527,1555415732006266738
+Current pb_deadline: 1233000, recovered_ts: 1245000
+Stack rx ts: 528,1555415732023217408
+Received item: 528,1555415732023225692
+Current pb_deadline: 1236000, recovered_ts: 1248000
+Stack rx ts: 529,1555415732039729937
+Received item: 529,1555415732039736938
+Current pb_deadline: 1239000, recovered_ts: 1251000
+Stack rx ts: 530,1555415732056661093
+Received item: 530,1555415732056669598
+Current pb_deadline: 1242000, recovered_ts: 1254000
+Stack rx ts: 531,1555415732072953815
+Received item: 531,1555415732072962595
+Current pb_deadline: 1245000, recovered_ts: 1257000
+Stack rx ts: 532,1555415732089528973
+Received item: 532,1555415732089537633
+Current pb_deadline: 1248000, recovered_ts: 1260000
+Stack rx ts: 533,1555415732106873629
+Received item: 533,1555415732106884108
+Current pb_deadline: 1251000, recovered_ts: 1263000
+Stack rx ts: 534,1555415732106901589
+Received item: 534,1555415732106903202
+Current pb_deadline: 1251000, recovered_ts: 1263000
+Stack rx ts: 535,1555415732106912930
+Received item: 535,1555415732106913997
+Current pb_deadline: 1251000, recovered_ts: 1263000
+Stack rx ts: 536,1555415732106924030
+Received item: 536,1555415732106925123
+Current pb_deadline: 1251000, recovered_ts: 1263000
+Stack rx ts: 537,1555415732123262693
+Received item: 537,1555415732123271509
+Current pb_deadline: 1254000, recovered_ts: 1266000
+Stack rx ts: 538,1555415732139536581
+Received item: 538,1555415732139545837
+Current pb_deadline: 1257000, recovered_ts: 1269000
+Stack rx ts: 539,1555415732155949364
+Received item: 539,1555415732155960374
+Current pb_deadline: 1260000, recovered_ts: 1272000
+Stack rx ts: 540,1555415732173351181
+Received item: 540,1555415732173360002
+Current pb_deadline: 1263000, recovered_ts: 1275000
+Stack rx ts: 541,1555415732189538716
+Received item: 541,1555415732189547351
+Current pb_deadline: 1266000, recovered_ts: 1278000
+Stack rx ts: 542,1555415732206885727
+Received item: 542,1555415732206894602
+Current pb_deadline: 1269000, recovered_ts: 1281000
+Stack rx ts: 543,1555415732223069933
+Received item: 543,1555415732223074057
+Current pb_deadline: 1272000, recovered_ts: 1284000
+Stack rx ts: 544,1555415732243389256
+Received item: 544,1555415732243394698
+Current pb_deadline: 1275000, recovered_ts: 1287000
+Stack rx ts: 545,1555415732256824576
+Received item: 545,1555415732256829066
+Current pb_deadline: 1278000, recovered_ts: 1290000
+Stack rx ts: 546,1555415732273194859
+Received item: 546,1555415732273202092
+Current pb_deadline: 1281000, recovered_ts: 1293000
+Stack rx ts: 547,1555415732273215454
+Received item: 547,1555415732273216637
+Current pb_deadline: 1281000, recovered_ts: 1293000
+Stack rx ts: 548,1555415732273224443
+Received item: 548,1555415732273225430
+Current pb_deadline: 1281000, recovered_ts: 1293000
+Stack rx ts: 549,1555415732273233628
+Received item: 549,1555415732273234575
+Current pb_deadline: 1281000, recovered_ts: 1293000
+Stack rx ts: 550,1555415732291322068
+Received item: 550,1555415732291332753
+Current pb_deadline: 1284000, recovered_ts: 1296000
+Stack rx ts: 551,1555415732306039583
+Received item: 551,1555415732306050594
+Current pb_deadline: 1287000, recovered_ts: 1299000
+Stack rx ts: 552,1555415732323216271
+Received item: 552,1555415732323224871
+Current pb_deadline: 1290000, recovered_ts: 1302000
+Stack rx ts: 553,1555415732339572635
+Received item: 553,1555415732339591142
+Current pb_deadline: 1293000, recovered_ts: 1305000
+Stack rx ts: 554,1555415732356795980
+Received item: 554,1555415732356800946
+Current pb_deadline: 1296000, recovered_ts: 1308000
+Stack rx ts: 555,1555415732373248203
+Received item: 555,1555415732373255648
+Current pb_deadline: 1299000, recovered_ts: 1311000
+Stack rx ts: 556,1555415732389547911
+Received item: 556,1555415732389555063
+Current pb_deadline: 1302000, recovered_ts: 1314000
+Stack rx ts: 557,1555415732406870022
+Received item: 557,1555415732406878687
+Current pb_deadline: 1305000, recovered_ts: 1317000
+Stack rx ts: 558,1555415732423289445
+Received item: 558,1555415732423298050
+Current pb_deadline: 1308000, recovered_ts: 1320000
+Stack rx ts: 559,1555415732439800370
+Received item: 559,1555415732439808534
+Current pb_deadline: 1311000, recovered_ts: 1323000
+Stack rx ts: 560,1555415732439825258
+Received item: 560,1555415732439826536
+Current pb_deadline: 1311000, recovered_ts: 1323000
+Stack rx ts: 561,1555415732439836749
+Received item: 561,1555415732439837817
+Current pb_deadline: 1311000, recovered_ts: 1323000
+Stack rx ts: 562,1555415732439847669
+Received item: 562,1555415732439848737
+Current pb_deadline: 1311000, recovered_ts: 1323000
+Stack rx ts: 563,1555415732457003473
+Received item: 563,1555415732457012083
+Current pb_deadline: 1314000, recovered_ts: 1326000
+Stack rx ts: 564,1555415732473423690
+Received item: 564,1555415732473432275
+Current pb_deadline: 1317000, recovered_ts: 1329000
+Stack rx ts: 565,1555415732489934559
+Received item: 565,1555415732489943260
+Current pb_deadline: 1320000, recovered_ts: 1332000
+Stack rx ts: 566,1555415732505906993
+Received item: 566,1555415732505915863
+Current pb_deadline: 1323000, recovered_ts: 1335000
+Stack rx ts: 567,1555415732523625922
+Received item: 567,1555415732523635189
+Current pb_deadline: 1326000, recovered_ts: 1338000
+Stack rx ts: 568,1555415732539990896
+Received item: 568,1555415732539999531
+Current pb_deadline: 1329000, recovered_ts: 1341000
+Stack rx ts: 569,1555415732555986001
+Received item: 569,1555415732555996815
+Current pb_deadline: 1332000, recovered_ts: 1344000
+Stack rx ts: 570,1555415732572536687
+Received item: 570,1555415732572547793
+Current pb_deadline: 1335000, recovered_ts: 1347000
+Stack rx ts: 571,1555415732590169308
+Received item: 571,1555415732590180083
+Current pb_deadline: 1338000, recovered_ts: 1350000
+Stack rx ts: 572,1555415732606538721
+Received item: 572,1555415732606547321
+Current pb_deadline: 1341000, recovered_ts: 1353000
+Stack rx ts: 573,1555415732606564932
+Received item: 573,1555415732606566571
+Current pb_deadline: 1341000, recovered_ts: 1353000
+Stack rx ts: 574,1555415732606577290
+Received item: 574,1555415732606578383
+Current pb_deadline: 1341000, recovered_ts: 1353000
+Stack rx ts: 575,1555415732606587188
+Received item: 575,1555415732606588356
+Current pb_deadline: 1341000, recovered_ts: 1353000
+Stack rx ts: 576,1555415732623653681
+Received item: 576,1555415732623662296
+Current pb_deadline: 1344000, recovered_ts: 1356000
+Stack rx ts: 577,1555415732639581716
+Received item: 577,1555415732639590045
+Current pb_deadline: 1347000, recovered_ts: 1359000
+Stack rx ts: 578,1555415732656842678
+Received item: 578,1555415732656850942
+Current pb_deadline: 1350000, recovered_ts: 1362000
+Stack rx ts: 579,1555415732673926352
+Received item: 579,1555415732673937588
+Current pb_deadline: 1353000, recovered_ts: 1365000
+Stack rx ts: 580,1555415732689847445
+Received item: 580,1555415732689858716
+Current pb_deadline: 1356000, recovered_ts: 1368000
+Stack rx ts: 581,1555415732706980587
+Received item: 581,1555415732706989528
+Current pb_deadline: 1359000, recovered_ts: 1371000
+Stack rx ts: 582,1555415732723370227
+Received item: 582,1555415732723378672
+Current pb_deadline: 1362000, recovered_ts: 1374000
+Stack rx ts: 583,1555415732740403715
+Received item: 583,1555415732740414810
+Current pb_deadline: 1365000, recovered_ts: 1377000
+Stack rx ts: 584,1555415732755973698
+Received item: 584,1555415732755982097
+Current pb_deadline: 1368000, recovered_ts: 1380000
+Stack rx ts: 585,1555415732773528353
+Received item: 585,1555415732773539398
+Current pb_deadline: 1371000, recovered_ts: 1383000
+Stack rx ts: 586,1555415732773557229
+Received item: 586,1555415732773558588
+Current pb_deadline: 1371000, recovered_ts: 1383000
+Stack rx ts: 587,1555415732773568175
+Received item: 587,1555415732773569257
+Current pb_deadline: 1371000, recovered_ts: 1383000
+Stack rx ts: 588,1555415732773578634
+Received item: 588,1555415732773579726
+Current pb_deadline: 1371000, recovered_ts: 1383000
+Stack rx ts: 589,1555415732789705463
+Received item: 589,1555415732789716293
+Current pb_deadline: 1374000, recovered_ts: 1386000
+Stack rx ts: 590,1555415732806106830
+Received item: 590,1555415732806118167
+Current pb_deadline: 1377000, recovered_ts: 1389000
+Stack rx ts: 591,1555415732822498334
+Received item: 591,1555415732822509806
+Current pb_deadline: 1380000, recovered_ts: 1392000
+Stack rx ts: 592,1555415732840233582
+Received item: 592,1555415732840242602
+Current pb_deadline: 1383000, recovered_ts: 1395000
+Stack rx ts: 593,1555415732856615815
+Received item: 593,1555415732856624405
+Current pb_deadline: 1386000, recovered_ts: 1398000
+Stack rx ts: 594,1555415732873473140
+Received item: 594,1555415732873482111
+Current pb_deadline: 1389000, recovered_ts: 1401000
+Stack rx ts: 595,1555415732890006833
+Received item: 595,1555415732890015273
+Current pb_deadline: 1392000, recovered_ts: 1404000
+Stack rx ts: 596,1555415732906092769
+Received item: 596,1555415732906103579
+Current pb_deadline: 1395000, recovered_ts: 1407000
+Stack rx ts: 597,1555415732923274196
+Received item: 597,1555415732923282675
+Current pb_deadline: 1398000, recovered_ts: 1410000
+Stack rx ts: 598,1555415732940010633
+Received item: 598,1555415732940019739
+Current pb_deadline: 1401000, recovered_ts: 1413000
+Stack rx ts: 599,1555415732940037465
+Received item: 599,1555415732940039094
+Current pb_deadline: 1401000, recovered_ts: 1413000
+Stack rx ts: 600,1555415732940255369
+Received item: 600,1555415732940259127
+Current pb_deadline: 1401000, recovered_ts: 1413000
+Stack rx ts: 601,1555415732940270889
+Received item: 601,1555415732940272042
+Current pb_deadline: 1401000, recovered_ts: 1413000
+Stack rx ts: 602,1555415732956471906
+Received item: 602,1555415732956479175
+Current pb_deadline: 1404000, recovered_ts: 1416000
+Stack rx ts: 603,1555415732973457048
+Received item: 603,1555415732973463358
+Current pb_deadline: 1407000, recovered_ts: 1419000
+Stack rx ts: 604,1555415732989834992
+Received item: 604,1555415732989843757
+Current pb_deadline: 1410000, recovered_ts: 1422000
+Stack rx ts: 605,1555415733006333248
+Received item: 605,1555415733006341963
+Current pb_deadline: 1413000, recovered_ts: 1425000
+Stack rx ts: 606,1555415733023682940
+Received item: 606,1555415733023692226
+Current pb_deadline: 1416000, recovered_ts: 1428000
+Stack rx ts: 607,1555415733039746713
+Received item: 607,1555415733039755618
+Current pb_deadline: 1419000, recovered_ts: 1431000
+Stack rx ts: 608,1555415733056468246
+Received item: 608,1555415733056476640
+Current pb_deadline: 1422000, recovered_ts: 1434000
+Stack rx ts: 609,1555415733073047574
+Received item: 609,1555415733073056339
+Current pb_deadline: 1425000, recovered_ts: 1437000
+Stack rx ts: 610,1555415733090077828
+Received item: 610,1555415733090086678
+Current pb_deadline: 1428000, recovered_ts: 1440000
+Stack rx ts: 611,1555415733106280954
+Received item: 611,1555415733106289478
+Current pb_deadline: 1431000, recovered_ts: 1443000
+Stack rx ts: 612,1555415733106551313
+Received item: 612,1555415733106555678
+Current pb_deadline: 1431000, recovered_ts: 1443000
+Stack rx ts: 613,1555415733106566989
+Received item: 613,1555415733106568392
+Current pb_deadline: 1431000, recovered_ts: 1443000
+Stack rx ts: 614,1555415733106578766
+Received item: 614,1555415733106580155
+Current pb_deadline: 1431000, recovered_ts: 1443000
+Stack rx ts: 615,1555415733122925502
+Received item: 615,1555415733122934433
+Current pb_deadline: 1434000, recovered_ts: 1446000
+Stack rx ts: 616,1555415733140411604
+Received item: 616,1555415733140428568
+Current pb_deadline: 1437000, recovered_ts: 1449000
+Stack rx ts: 617,1555415733156295197
+Received item: 617,1555415733156305806
+Current pb_deadline: 1440000, recovered_ts: 1452000
+Stack rx ts: 618,1555415733172910884
+Received item: 618,1555415733172919473
+Current pb_deadline: 1443000, recovered_ts: 1455000
+Stack rx ts: 619,1555415733189598557
+Received item: 619,1555415733189607262
+Current pb_deadline: 1446000, recovered_ts: 1458000
+Stack rx ts: 620,1555415733206778833
+Received item: 620,1555415733206787443
+Current pb_deadline: 1449000, recovered_ts: 1461000
+Stack rx ts: 621,1555415733222667833
+Received item: 621,1555415733222676262
+Current pb_deadline: 1452000, recovered_ts: 1464000
+Stack rx ts: 622,1555415733239231775
+Received item: 622,1555415733239240590
+Current pb_deadline: 1455000, recovered_ts: 1467000
+Stack rx ts: 623,1555415733256584584
+Received item: 623,1555415733256593254
+Current pb_deadline: 1458000, recovered_ts: 1470000
+Stack rx ts: 624,1555415733272786386
+Received item: 624,1555415733272797491
+Current pb_deadline: 1461000, recovered_ts: 1473000
+Stack rx ts: 625,1555415733272813955
+Received item: 625,1555415733272815623
+Current pb_deadline: 1461000, recovered_ts: 1473000
+Stack rx ts: 626,1555415733272824915
+Received item: 626,1555415733272826093
+Current pb_deadline: 1461000, recovered_ts: 1473000
+Stack rx ts: 627,1555415733272835825
+Received item: 627,1555415733272836918
+Current pb_deadline: 1461000, recovered_ts: 1473000
+Stack rx ts: 628,1555415733289264611
+Received item: 628,1555415733289276554
+Current pb_deadline: 1464000, recovered_ts: 1476000
+Stack rx ts: 629,1555415733306018438
+Received item: 629,1555415733306029579
+Current pb_deadline: 1467000, recovered_ts: 1479000
+Stack rx ts: 630,1555415733323297421
+Received item: 630,1555415733323306588
+Current pb_deadline: 1470000, recovered_ts: 1482000
+Stack rx ts: 631,1555415733340026921
+Received item: 631,1555415733340035486
+Current pb_deadline: 1473000, recovered_ts: 1485000
+Stack rx ts: 632,1555415733356674753
+Received item: 632,1555415733356685443
+Current pb_deadline: 1476000, recovered_ts: 1488000
+Stack rx ts: 633,1555415733373330211
+Received item: 633,1555415733373338631
+Current pb_deadline: 1479000, recovered_ts: 1491000
+Stack rx ts: 634,1555415733389989104
+Received item: 634,1555415733390000305
+Current pb_deadline: 1482000, recovered_ts: 1494000
+Stack rx ts: 635,1555415733406811454
+Received item: 635,1555415733406820515
+Current pb_deadline: 1485000, recovered_ts: 1497000
+Stack rx ts: 636,1555415733423433185
+Received item: 636,1555415733423441875
+Current pb_deadline: 1488000, recovered_ts: 1500000
+Stack rx ts: 637,1555415733439879481
+Received item: 637,1555415733439888271
+Current pb_deadline: 1491000, recovered_ts: 1503000
+Stack rx ts: 638,1555415733439906248
+Received item: 638,1555415733439907792
+Current pb_deadline: 1491000, recovered_ts: 1503000
+Stack rx ts: 639,1555415733439917649
+Received item: 639,1555415733439918757
+Current pb_deadline: 1491000, recovered_ts: 1503000
+Stack rx ts: 640,1555415733439927392
+Received item: 640,1555415733439928474
+Current pb_deadline: 1491000, recovered_ts: 1503000
+Stack rx ts: 641,1555415733456700728
+Received item: 641,1555415733456709327
+Current pb_deadline: 1494000, recovered_ts: 1506000
+Stack rx ts: 642,1555415733473500767
+Received item: 642,1555415733473509282
+Current pb_deadline: 1497000, recovered_ts: 1509000
+Stack rx ts: 643,1555415733490021935
+Received item: 643,1555415733490030585
+Current pb_deadline: 1500000, recovered_ts: 1512000
+Stack rx ts: 644,1555415733506980439
+Received item: 644,1555415733506991334
+Current pb_deadline: 1503000, recovered_ts: 1515000
+Stack rx ts: 645,1555415733523667867
+Received item: 645,1555415733523678086
+Current pb_deadline: 1506000, recovered_ts: 1518000
+Stack rx ts: 646,1555415733540058055
+Received item: 646,1555415733540065869
+Current pb_deadline: 1509000, recovered_ts: 1521000
+Stack rx ts: 647,1555415733555957063
+Received item: 647,1555415733555967002
+Current pb_deadline: 1512000, recovered_ts: 1524000
+Stack rx ts: 648,1555415733573284713
+Received item: 648,1555415733573293999
+Current pb_deadline: 1515000, recovered_ts: 1527000
+Stack rx ts: 649,1555415733590058470
+Received item: 649,1555415733590067320
+Current pb_deadline: 1518000, recovered_ts: 1530000
+Stack rx ts: 650,1555415733606609272
+Received item: 650,1555415733606618569
+Current pb_deadline: 1521000, recovered_ts: 1533000
+Stack rx ts: 651,1555415733606635563
+Received item: 651,1555415733606637047
+Current pb_deadline: 1521000, recovered_ts: 1533000
+Stack rx ts: 652,1555415733606648353
+Received item: 652,1555415733606649500
+Current pb_deadline: 1521000, recovered_ts: 1533000
+Stack rx ts: 653,1555415733606658195
+Received item: 653,1555415733606659388
+Current pb_deadline: 1521000, recovered_ts: 1533000
+Stack rx ts: 654,1555415733622601916
+Received item: 654,1555415733622613378
+Current pb_deadline: 1524000, recovered_ts: 1536000
+Stack rx ts: 655,1555415733640055729
+Received item: 655,1555415733640064434
+Current pb_deadline: 1527000, recovered_ts: 1539000
+Stack rx ts: 656,1555415733656530872
+Received item: 656,1555415733656539507
+Current pb_deadline: 1530000, recovered_ts: 1542000
+Stack rx ts: 657,1555415733673120032
+Received item: 657,1555415733673128883
+Current pb_deadline: 1533000, recovered_ts: 1545000
+Stack rx ts: 658,1555415733690012740
+Received item: 658,1555415733690021365
+Current pb_deadline: 1536000, recovered_ts: 1548000
+Stack rx ts: 659,1555415733706442834
+Received item: 659,1555415733706451384
+Current pb_deadline: 1539000, recovered_ts: 1551000
+Stack rx ts: 660,1555415733722680699
+Received item: 660,1555415733722689078
+Current pb_deadline: 1542000, recovered_ts: 1554000
+Stack rx ts: 661,1555415733740414097
+Received item: 661,1555415733740423123
+Current pb_deadline: 1545000, recovered_ts: 1557000
+Stack rx ts: 662,1555415733756710962
+Received item: 662,1555415733756722439
+Current pb_deadline: 1548000, recovered_ts: 1560000
+Stack rx ts: 663,1555415733772873834
+Received item: 663,1555415733772882419
+Current pb_deadline: 1551000, recovered_ts: 1563000
+Stack rx ts: 664,1555415733772900225
+Received item: 664,1555415733772901769
+Current pb_deadline: 1551000, recovered_ts: 1563000
+Stack rx ts: 665,1555415733772911421
+Received item: 665,1555415733772912534
+Current pb_deadline: 1551000, recovered_ts: 1563000
+Stack rx ts: 666,1555415733772921359
+Received item: 666,1555415733772922447
+Current pb_deadline: 1551000, recovered_ts: 1563000
+Stack rx ts: 667,1555415733789255326
+Received item: 667,1555415733789263811
+Current pb_deadline: 1554000, recovered_ts: 1566000
+Stack rx ts: 668,1555415733806914037
+Received item: 668,1555415733806925238
+Current pb_deadline: 1557000, recovered_ts: 1569000
+Stack rx ts: 669,1555415733823499615
+Received item: 669,1555415733823508100
+Current pb_deadline: 1560000, recovered_ts: 1572000
+Stack rx ts: 670,1555415733839254896
+Received item: 670,1555415733839266147
+Current pb_deadline: 1563000, recovered_ts: 1575000
+Stack rx ts: 671,1555415733855823844
+Received item: 671,1555415733855834770
+Current pb_deadline: 1566000, recovered_ts: 1578000
+Stack rx ts: 672,1555415733873318772
+Received item: 672,1555415733873327592
+Current pb_deadline: 1569000, recovered_ts: 1581000
+Stack rx ts: 673,1555415733890194531
+Received item: 673,1555415733890202870
+Current pb_deadline: 1572000, recovered_ts: 1584000
+Stack rx ts: 674,1555415733906656107
+Received item: 674,1555415733906664586
+Current pb_deadline: 1575000, recovered_ts: 1587000
+Stack rx ts: 675,1555415733922884039
+Received item: 675,1555415733922892734
+Current pb_deadline: 1578000, recovered_ts: 1590000
+Stack rx ts: 676,1555415733940076834
+Received item: 676,1555415733940087819
+Current pb_deadline: 1581000, recovered_ts: 1593000
+Stack rx ts: 677,1555415733940120103
+Received item: 677,1555415733940122965
+Current pb_deadline: 1581000, recovered_ts: 1593000
+Stack rx ts: 678,1555415733940485462
+Received item: 678,1555415733940492478
+Current pb_deadline: 1581000, recovered_ts: 1593000
+Stack rx ts: 679,1555415733940517566
+Received item: 679,1555415733940519922
+Current pb_deadline: 1581000, recovered_ts: 1593000
+Stack rx ts: 680,1555415733956657327
+Received item: 680,1555415733956664324
+Current pb_deadline: 1584000, recovered_ts: 1596000
+Stack rx ts: 681,1555415733972909418
+Received item: 681,1555415733972913961
+Current pb_deadline: 1587000, recovered_ts: 1599000
+Stack rx ts: 682,1555415733989955630
+Received item: 682,1555415733989961988
+Current pb_deadline: 1590000, recovered_ts: 1602000
+Stack rx ts: 683,1555415734006758323
+Received item: 683,1555415734006765066
+Current pb_deadline: 1593000, recovered_ts: 1605000
+Stack rx ts: 684,1555415734022911532
+Received item: 684,1555415734022919841
+Current pb_deadline: 1596000, recovered_ts: 1608000
+Stack rx ts: 685,1555415734040154814
+Received item: 685,1555415734040163154
+Current pb_deadline: 1599000, recovered_ts: 1611000
+Stack rx ts: 686,1555415734056402095
+Received item: 686,1555415734056410645
+Current pb_deadline: 1602000, recovered_ts: 1614000
+Stack rx ts: 687,1555415734073291114
+Received item: 687,1555415734073299539
+Current pb_deadline: 1605000, recovered_ts: 1617000
+Stack rx ts: 688,1555415734090294907
+Received item: 688,1555415734090303848
+Current pb_deadline: 1608000, recovered_ts: 1620000
+Stack rx ts: 689,1555415734106550139
+Received item: 689,1555415734106558277
+Current pb_deadline: 1611000, recovered_ts: 1623000
+Stack rx ts: 690,1555415734106575913
+Received item: 690,1555415734106577477
+Current pb_deadline: 1611000, recovered_ts: 1623000
+Stack rx ts: 691,1555415734106587765
+Received item: 691,1555415734106588828
+Current pb_deadline: 1611000, recovered_ts: 1623000
+Stack rx ts: 692,1555415734106598059
+Received item: 692,1555415734106599117
+Current pb_deadline: 1611000, recovered_ts: 1623000
+Stack rx ts: 693,1555415734123435453
+Received item: 693,1555415734123444208
+Current pb_deadline: 1614000, recovered_ts: 1626000
+Stack rx ts: 694,1555415734139876827
+Received item: 694,1555415734139885582
+Current pb_deadline: 1617000, recovered_ts: 1629000
+Stack rx ts: 695,1555415734156880209
+Received item: 695,1555415734156888558
+Current pb_deadline: 1620000, recovered_ts: 1632000
+Stack rx ts: 696,1555415734173095240
+Received item: 696,1555415734173104505
+Current pb_deadline: 1623000, recovered_ts: 1635000
+Stack rx ts: 697,1555415734189917304
+Received item: 697,1555415734189925423
+Current pb_deadline: 1626000, recovered_ts: 1638000
+Stack rx ts: 698,1555415734206829579
+Received item: 698,1555415734206838344
+Current pb_deadline: 1629000, recovered_ts: 1641000
+Stack rx ts: 699,1555415734223527776
+Received item: 699,1555415734223536797
+Current pb_deadline: 1632000, recovered_ts: 1644000
+Stack rx ts: 700,1555415734239774489
+Received item: 700,1555415734239781218
+Current pb_deadline: 1635000, recovered_ts: 1647000
+Stack rx ts: 701,1555415734256445817
+Received item: 701,1555415734256454493
+Current pb_deadline: 1638000, recovered_ts: 1650000
+Stack rx ts: 702,1555415734273418529
+Received item: 702,1555415734273427174
+Current pb_deadline: 1641000, recovered_ts: 1653000
+Stack rx ts: 703,1555415734273709651
+Received item: 703,1555415734273714046
+Current pb_deadline: 1641000, recovered_ts: 1653000
+Stack rx ts: 704,1555415734273725588
+Received item: 704,1555415734273726766
+Current pb_deadline: 1641000, recovered_ts: 1653000
+Stack rx ts: 705,1555415734273736859
+Received item: 705,1555415734273737972
+Current pb_deadline: 1641000, recovered_ts: 1653000
+Stack rx ts: 706,1555415734289395071
+Received item: 706,1555415734289405655
+Current pb_deadline: 1644000, recovered_ts: 1656000
+Stack rx ts: 707,1555415734306587254
+Received item: 707,1555415734306596670
+Current pb_deadline: 1647000, recovered_ts: 1659000
+Stack rx ts: 708,1555415734323508597
+Received item: 708,1555415734323518966
+Current pb_deadline: 1650000, recovered_ts: 1662000
+Stack rx ts: 709,1555415734340211340
+Received item: 709,1555415734340231441
+Current pb_deadline: 1653000, recovered_ts: 1665000
+Stack rx ts: 710,1555415734355747477
+Received item: 710,1555415734355753986
+Current pb_deadline: 1656000, recovered_ts: 1668000
+Stack rx ts: 711,1555415734373439774
+Received item: 711,1555415734373448609
+Current pb_deadline: 1659000, recovered_ts: 1671000
+Stack rx ts: 712,1555415734390096956
+Received item: 712,1555415734390106002
+Current pb_deadline: 1662000, recovered_ts: 1674000
+Stack rx ts: 713,1555415734405784787
+Received item: 713,1555415734405795768
+Current pb_deadline: 1665000, recovered_ts: 1677000
+Stack rx ts: 714,1555415734423017023
+Received item: 714,1555415734423026329
+Current pb_deadline: 1668000, recovered_ts: 1680000
+Stack rx ts: 715,1555415734439997642
+Received item: 715,1555415734440006362
+Current pb_deadline: 1671000, recovered_ts: 1683000
+Stack rx ts: 716,1555415734440024404
+Received item: 716,1555415734440026018
+Current pb_deadline: 1671000, recovered_ts: 1683000
+Stack rx ts: 717,1555415734440036993
+Received item: 717,1555415734440038066
+Current pb_deadline: 1671000, recovered_ts: 1683000
+Stack rx ts: 718,1555415734440047237
+Received item: 718,1555415734440048304
+Current pb_deadline: 1671000, recovered_ts: 1683000
+Stack rx ts: 719,1555415734456799004
+Received item: 719,1555415734456807754
+Current pb_deadline: 1674000, recovered_ts: 1686000
+Stack rx ts: 720,1555415734473089555
+Received item: 720,1555415734473098405
+Current pb_deadline: 1677000, recovered_ts: 1689000
+Stack rx ts: 721,1555415734490266763
+Received item: 721,1555415734490277232
+Current pb_deadline: 1680000, recovered_ts: 1692000
+Stack rx ts: 722,1555415734506940350
+Received item: 722,1555415734506948869
+Current pb_deadline: 1683000, recovered_ts: 1695000
+Stack rx ts: 723,1555415734523355865
+Received item: 723,1555415734523364405
+Current pb_deadline: 1686000, recovered_ts: 1698000
+Stack rx ts: 724,1555415734539576571
+Received item: 724,1555415734539585406
+Current pb_deadline: 1689000, recovered_ts: 1701000
+Stack rx ts: 725,1555415734556744252
+Received item: 725,1555415734556752932
+Current pb_deadline: 1692000, recovered_ts: 1704000
+Stack rx ts: 726,1555415734573506223
+Received item: 726,1555415734573514998
+Current pb_deadline: 1695000, recovered_ts: 1707000
+Stack rx ts: 727,1555415734589843994
+Received item: 727,1555415734589852633
+Current pb_deadline: 1698000, recovered_ts: 1710000
+Stack rx ts: 728,1555415734606962511
+Received item: 728,1555415734606972961
+Current pb_deadline: 1701000, recovered_ts: 1713000
+Stack rx ts: 729,1555415734606990266
+Received item: 729,1555415734606991839
+Current pb_deadline: 1701000, recovered_ts: 1713000
+Stack rx ts: 730,1555415734607001882
+Received item: 730,1555415734607002950
+Current pb_deadline: 1701000, recovered_ts: 1713000
+Stack rx ts: 731,1555415734607012301
+Received item: 731,1555415734607013469
+Current pb_deadline: 1701000, recovered_ts: 1713000
+Stack rx ts: 732,1555415734623561420
+Received item: 732,1555415734623570737
+Current pb_deadline: 1704000, recovered_ts: 1716000
+Stack rx ts: 733,1555415734640028805
+Received item: 733,1555415734640037961
+Current pb_deadline: 1707000, recovered_ts: 1719000
+Stack rx ts: 734,1555415734656074742
+Received item: 734,1555415734656085281
+Current pb_deadline: 1710000, recovered_ts: 1722000
+Stack rx ts: 735,1555415734673371226
+Received item: 735,1555415734673379730
+Current pb_deadline: 1713000, recovered_ts: 1725000
+Stack rx ts: 736,1555415734690102817
+Received item: 736,1555415734690111066
+Current pb_deadline: 1716000, recovered_ts: 1728000
+Stack rx ts: 737,1555415734706515159
+Received item: 737,1555415734706524320
+Current pb_deadline: 1719000, recovered_ts: 1731000
+Stack rx ts: 738,1555415734723558669
+Received item: 738,1555415734723568281
+Current pb_deadline: 1722000, recovered_ts: 1734000
+Stack rx ts: 739,1555415734740246909
+Received item: 739,1555415734740265016
+Current pb_deadline: 1725000, recovered_ts: 1737000
+Stack rx ts: 740,1555415734756647839
+Received item: 740,1555415734756655015
+Current pb_deadline: 1728000, recovered_ts: 1740000
+Stack rx ts: 741,1555415734772714000
+Received item: 741,1555415734772724649
+Current pb_deadline: 1731000, recovered_ts: 1743000
+Stack rx ts: 742,1555415734772743733
+Received item: 742,1555415734772745252
+Current pb_deadline: 1731000, recovered_ts: 1743000
+Stack rx ts: 743,1555415734772755726
+Received item: 743,1555415734772756924
+Current pb_deadline: 1731000, recovered_ts: 1743000
+Stack rx ts: 744,1555415734772766025
+Received item: 744,1555415734772767328
+Current pb_deadline: 1731000, recovered_ts: 1743000
+Stack rx ts: 745,1555415734790198523
+Received item: 745,1555415734790207383
+Current pb_deadline: 1734000, recovered_ts: 1746000
+Stack rx ts: 746,1555415734806800333
+Received item: 746,1555415734806808833
+Current pb_deadline: 1737000, recovered_ts: 1749000
+Stack rx ts: 747,1555415734823327000
+Received item: 747,1555415734823335604
+Current pb_deadline: 1740000, recovered_ts: 1752000
+Stack rx ts: 748,1555415734840247631
+Received item: 748,1555415734840256216
+Current pb_deadline: 1743000, recovered_ts: 1755000
+Stack rx ts: 749,1555415734856824644
+Received item: 749,1555415734856833534
+Current pb_deadline: 1746000, recovered_ts: 1758000
+Stack rx ts: 750,1555415734873138540
+Received item: 750,1555415734873147515
+Current pb_deadline: 1749000, recovered_ts: 1761000
+Stack rx ts: 751,1555415734889976099
+Received item: 751,1555415734889985265
+Current pb_deadline: 1752000, recovered_ts: 1764000
+Stack rx ts: 752,1555415734906833866
+Received item: 752,1555415734906842531
+Current pb_deadline: 1755000, recovered_ts: 1767000
+Stack rx ts: 753,1555415734923325171
+Received item: 753,1555415734923333981
+Current pb_deadline: 1758000, recovered_ts: 1770000
+Stack rx ts: 754,1555415734939891368
+Received item: 754,1555415734939900119
+Current pb_deadline: 1761000, recovered_ts: 1773000
+Stack rx ts: 755,1555415734939917825
+Received item: 755,1555415734939919268
+Current pb_deadline: 1761000, recovered_ts: 1773000
+Stack rx ts: 756,1555415734939929271
+Received item: 756,1555415734939930409
+Current pb_deadline: 1761000, recovered_ts: 1773000
+Stack rx ts: 757,1555415734939940241
+Received item: 757,1555415734939941444
+Current pb_deadline: 1761000, recovered_ts: 1773000
+Stack rx ts: 758,1555415734956585330
+Received item: 758,1555415734956590412
+Current pb_deadline: 1764000, recovered_ts: 1776000
+Stack rx ts: 759,1555415734973266604
+Received item: 759,1555415734973272956
+Current pb_deadline: 1767000, recovered_ts: 1779000
+Stack rx ts: 760,1555415734989385991
+Received item: 760,1555415734989392774
+Current pb_deadline: 1770000, recovered_ts: 1782000
+Stack rx ts: 761,1555415735006544017
+Received item: 761,1555415735006553183
+Current pb_deadline: 1773000, recovered_ts: 1785000
+Stack rx ts: 762,1555415735022862783
+Received item: 762,1555415735022872059
+Current pb_deadline: 1776000, recovered_ts: 1788000
+Stack rx ts: 763,1555415735039672313
+Received item: 763,1555415735039680813
+Current pb_deadline: 1779000, recovered_ts: 1791000
+Stack rx ts: 764,1555415735055848556
+Received item: 764,1555415735055859687
+Current pb_deadline: 1782000, recovered_ts: 1794000
+Stack rx ts: 765,1555415735072916353
+Received item: 765,1555415735072924938
+Current pb_deadline: 1785000, recovered_ts: 1797000
+Stack rx ts: 766,1555415735090068028
+Received item: 766,1555415735090076672
+Current pb_deadline: 1788000, recovered_ts: 1800000
+Stack rx ts: 767,1555415735106851216
+Received item: 767,1555415735106859996
+Current pb_deadline: 1791000, recovered_ts: 1803000
+Stack rx ts: 768,1555415735106876058
+Received item: 768,1555415735106877457
+Current pb_deadline: 1791000, recovered_ts: 1803000
+Stack rx ts: 769,1555415735106886954
+Received item: 769,1555415735106888041
+Current pb_deadline: 1791000, recovered_ts: 1803000
+Stack rx ts: 770,1555415735106898545
+Received item: 770,1555415735106899613
+Current pb_deadline: 1791000, recovered_ts: 1803000
+Stack rx ts: 771,1555415735123117157
+Received item: 771,1555415735123125937
+Current pb_deadline: 1794000, recovered_ts: 1806000
+Stack rx ts: 772,1555415735140324806
+Received item: 772,1555415735140335586
+Current pb_deadline: 1797000, recovered_ts: 1809000
+Stack rx ts: 773,1555415735156585643
+Received item: 773,1555415735156594664
+Current pb_deadline: 1800000, recovered_ts: 1812000
+Stack rx ts: 774,1555415735173157119
+Received item: 774,1555415735173165648
+Current pb_deadline: 1803000, recovered_ts: 1815000
+Stack rx ts: 775,1555415735189515292
+Received item: 775,1555415735189523751
+Current pb_deadline: 1806000, recovered_ts: 1818000
+Stack rx ts: 776,1555415735206864618
+Received item: 776,1555415735206875488
+Current pb_deadline: 1809000, recovered_ts: 1821000
+Stack rx ts: 777,1555415735223302836
+Received item: 777,1555415735223311536
+Current pb_deadline: 1812000, recovered_ts: 1824000
+Stack rx ts: 778,1555415735239695517
+Received item: 778,1555415735239704503
+Current pb_deadline: 1815000, recovered_ts: 1827000
+Stack rx ts: 779,1555415735255821148
+Received item: 779,1555415735255829583
+Current pb_deadline: 1818000, recovered_ts: 1830000
+Stack rx ts: 780,1555415735273518919
+Received item: 780,1555415735273527594
+Current pb_deadline: 1821000, recovered_ts: 1833000
+Stack rx ts: 781,1555415735273544182
+Received item: 781,1555415735273545761
+Current pb_deadline: 1821000, recovered_ts: 1833000
+Stack rx ts: 782,1555415735273555589
+Received item: 782,1555415735273556796
+Current pb_deadline: 1821000, recovered_ts: 1833000
+Stack rx ts: 783,1555415735273565562
+Received item: 783,1555415735273566764
+Current pb_deadline: 1821000, recovered_ts: 1833000
+Stack rx ts: 784,1555415735289879317
+Received item: 784,1555415735289887947
+Current pb_deadline: 1824000, recovered_ts: 1836000
+Stack rx ts: 785,1555415735306084809
+Received item: 785,1555415735306093549
+Current pb_deadline: 1827000, recovered_ts: 1839000
+Stack rx ts: 786,1555415735323625831
+Received item: 786,1555415735323634401
+Current pb_deadline: 1830000, recovered_ts: 1842000
+Stack rx ts: 787,1555415735340026623
+Received item: 787,1555415735340035363
+Current pb_deadline: 1833000, recovered_ts: 1845000
+Stack rx ts: 788,1555415735356357562
+Received item: 788,1555415735356366292
+Current pb_deadline: 1836000, recovered_ts: 1848000
+Stack rx ts: 789,1555415735373708402
+Received item: 789,1555415735373719057
+Current pb_deadline: 1839000, recovered_ts: 1851000
+Stack rx ts: 790,1555415735390118109
+Received item: 790,1555415735390126814
+Current pb_deadline: 1842000, recovered_ts: 1854000
+Stack rx ts: 791,1555415735406479078
+Received item: 791,1555415735406488394
+Current pb_deadline: 1845000, recovered_ts: 1857000
+Stack rx ts: 792,1555415735422811647
+Received item: 792,1555415735422820252
+Current pb_deadline: 1848000, recovered_ts: 1860000
+Stack rx ts: 793,1555415735440334513
+Received item: 793,1555415735440345474
+Current pb_deadline: 1851000, recovered_ts: 1863000
+Stack rx ts: 794,1555415735440363390
+Received item: 794,1555415735440365069
+Current pb_deadline: 1851000, recovered_ts: 1863000
+Stack rx ts: 795,1555415735440374776
+Received item: 795,1555415735440375839
+Current pb_deadline: 1851000, recovered_ts: 1863000
+Stack rx ts: 796,1555415735440385391
+Received item: 796,1555415735440386453
+Current pb_deadline: 1851000, recovered_ts: 1863000
+Stack rx ts: 797,1555415735456723718
+Received item: 797,1555415735456732654
+Current pb_deadline: 1854000, recovered_ts: 1866000
+Stack rx ts: 798,1555415735472919662
+Received item: 798,1555415735472928577
+Current pb_deadline: 1857000, recovered_ts: 1869000
+Stack rx ts: 799,1555415735489230717
+Received item: 799,1555415735489239482
+Current pb_deadline: 1860000, recovered_ts: 1872000
+Stack rx ts: 800,1555415735506828260
+Received item: 800,1555415735506836860
+Current pb_deadline: 1863000, recovered_ts: 1875000
+Stack rx ts: 801,1555415735523251804
+Received item: 801,1555415735523260639
+Current pb_deadline: 1866000, recovered_ts: 1878000
+Stack rx ts: 802,1555415735539408016
+Received item: 802,1555415735539426914
+Current pb_deadline: 1869000, recovered_ts: 1881000
+Stack rx ts: 803,1555415735556875174
+Received item: 803,1555415735556883020
+Current pb_deadline: 1872000, recovered_ts: 1884000
+Stack rx ts: 804,1555415735573317106
+Received item: 804,1555415735573325044
+Current pb_deadline: 1875000, recovered_ts: 1887000
+Stack rx ts: 805,1555415735589569137
+Received item: 805,1555415735589576891
+Current pb_deadline: 1878000, recovered_ts: 1890000
+Stack rx ts: 806,1555415735606912891
+Received item: 806,1555415735606921706
+Current pb_deadline: 1881000, recovered_ts: 1893000
+Stack rx ts: 807,1555415735607236949
+Received item: 807,1555415735607241756
+Current pb_deadline: 1881000, recovered_ts: 1893000
+Stack rx ts: 808,1555415735607254229
+Received item: 808,1555415735607255357
+Current pb_deadline: 1881000, recovered_ts: 1893000
+Stack rx ts: 809,1555415735607333087
+Received item: 809,1555415735607334851
+Current pb_deadline: 1881000, recovered_ts: 1893000
+Stack rx ts: 810,1555415735623088241
+Received item: 810,1555415735623096741
+Current pb_deadline: 1884000, recovered_ts: 1896000
+Stack rx ts: 811,1555415735639715536
+Received item: 811,1555415735639724372
+Current pb_deadline: 1887000, recovered_ts: 1899000
+Stack rx ts: 812,1555415735656969201
+Received item: 812,1555415735656978056
+Current pb_deadline: 1890000, recovered_ts: 1902000
+Stack rx ts: 813,1555415735672493003
+Received item: 813,1555415735672506162
+Current pb_deadline: 1893000, recovered_ts: 1905000
+Stack rx ts: 814,1555415735689732930
+Received item: 814,1555415735689741660
+Current pb_deadline: 1896000, recovered_ts: 1908000
+Stack rx ts: 815,1555415735706153497
+Received item: 815,1555415735706162267
+Current pb_deadline: 1899000, recovered_ts: 1911000
+Stack rx ts: 816,1555415735723631100
+Received item: 816,1555415735723639720
+Current pb_deadline: 1902000, recovered_ts: 1914000
+Stack rx ts: 817,1555415735739724582
+Received item: 817,1555415735739733337
+Current pb_deadline: 1905000, recovered_ts: 1917000
+Stack rx ts: 818,1555415735756249700
+Received item: 818,1555415735756258505
+Current pb_deadline: 1908000, recovered_ts: 1920000
+Stack rx ts: 819,1555415735773705573
+Received item: 819,1555415735773714734
+Current pb_deadline: 1911000, recovered_ts: 1923000
+Stack rx ts: 820,1555415735773731252
+Received item: 820,1555415735773732806
+Current pb_deadline: 1911000, recovered_ts: 1923000
+Stack rx ts: 821,1555415735773988581
+Received item: 821,1555415735773992560
+Current pb_deadline: 1911000, recovered_ts: 1923000
+Stack rx ts: 822,1555415735774004378
+Received item: 822,1555415735774005520
+Current pb_deadline: 1911000, recovered_ts: 1923000
+Stack rx ts: 823,1555415735789284441
+Received item: 823,1555415735789295687
+Current pb_deadline: 1914000, recovered_ts: 1926000
+Stack rx ts: 824,1555415735806208745
+Received item: 824,1555415735806217606
+Current pb_deadline: 1917000, recovered_ts: 1929000
+Stack rx ts: 825,1555415735823875429
+Received item: 825,1555415735823886174
+Current pb_deadline: 1920000, recovered_ts: 1932000
+Stack rx ts: 826,1555415735840207984
+Received item: 826,1555415735840216629
+Current pb_deadline: 1923000, recovered_ts: 1935000
+Stack rx ts: 827,1555415735856593184
+Received item: 827,1555415735856602425
+Current pb_deadline: 1926000, recovered_ts: 1938000
+Stack rx ts: 828,1555415735872739978
+Received item: 828,1555415735872748829
+Current pb_deadline: 1929000, recovered_ts: 1941000
+Stack rx ts: 829,1555415735890399416
+Received item: 829,1555415735890410546
+Current pb_deadline: 1932000, recovered_ts: 1944000
+Stack rx ts: 830,1555415735906734134
+Received item: 830,1555415735906743040
+Current pb_deadline: 1935000, recovered_ts: 1947000
+Stack rx ts: 831,1555415735923011314
+Received item: 831,1555415735923019759
+Current pb_deadline: 1938000, recovered_ts: 1950000
+Stack rx ts: 832,1555415735939463582
+Received item: 832,1555415735939483254
+Current pb_deadline: 1941000, recovered_ts: 1953000
+Stack rx ts: 833,1555415735939508438
+Received item: 833,1555415735939509541
+Current pb_deadline: 1941000, recovered_ts: 1953000
+Stack rx ts: 834,1555415735939521509
+Received item: 834,1555415735939523062
+Current pb_deadline: 1941000, recovered_ts: 1953000
+Stack rx ts: 835,1555415735939533674
+Received item: 835,1555415735939534388
+Current pb_deadline: 1941000, recovered_ts: 1953000
+Stack rx ts: 836,1555415735956666964
+Received item: 836,1555415735956673256
+Current pb_deadline: 1944000, recovered_ts: 1956000
+Stack rx ts: 837,1555415735973063771
+Received item: 837,1555415735973071493
+Current pb_deadline: 1947000, recovered_ts: 1959000
+Stack rx ts: 838,1555415735990131477
+Received item: 838,1555415735990140227
+Current pb_deadline: 1950000, recovered_ts: 1962000
+Stack rx ts: 839,1555415736006694728
+Received item: 839,1555415736006703463
+Current pb_deadline: 1953000, recovered_ts: 1965000
+Stack rx ts: 840,1555415736023009532
+Received item: 840,1555415736023018563
+Current pb_deadline: 1956000, recovered_ts: 1968000
+Stack rx ts: 841,1555415736039618463
+Received item: 841,1555415736039627193
+Current pb_deadline: 1959000, recovered_ts: 1971000
+Stack rx ts: 842,1555415736056839518
+Received item: 842,1555415736056848143
+Current pb_deadline: 1962000, recovered_ts: 1974000
+Stack rx ts: 843,1555415736073094306
+Received item: 843,1555415736073102886
+Current pb_deadline: 1965000, recovered_ts: 1977000
+Stack rx ts: 844,1555415736089319473
+Received item: 844,1555415736089328088
+Current pb_deadline: 1968000, recovered_ts: 1980000
+Stack rx ts: 845,1555415736106953257
+Received item: 845,1555415736106964443
+Current pb_deadline: 1971000, recovered_ts: 1983000
+Stack rx ts: 846,1555415736106982650
+Received item: 846,1555415736106984063
+Current pb_deadline: 1971000, recovered_ts: 1983000
+Stack rx ts: 847,1555415736106993961
+Received item: 847,1555415736106995028
+Current pb_deadline: 1971000, recovered_ts: 1983000
+Stack rx ts: 848,1555415736107004205
+Received item: 848,1555415736107005277
+Current pb_deadline: 1971000, recovered_ts: 1983000
+Stack rx ts: 849,1555415736123539501
+Received item: 849,1555415736123548201
+Current pb_deadline: 1974000, recovered_ts: 1986000
+Stack rx ts: 850,1555415736139584565
+Received item: 850,1555415736139595299
+Current pb_deadline: 1977000, recovered_ts: 1989000
+Stack rx ts: 851,1555415736156006100
+Received item: 851,1555415736156020538
+Current pb_deadline: 1980000, recovered_ts: 1992000
+Stack rx ts: 852,1555415736173679097
+Received item: 852,1555415736173687727
+Current pb_deadline: 1983000, recovered_ts: 1995000
+Stack rx ts: 853,1555415736189997002
+Received item: 853,1555415736190005888
+Current pb_deadline: 1986000, recovered_ts: 1998000
+Stack rx ts: 854,1555415736206824154
+Received item: 854,1555415736206832748
+Current pb_deadline: 1989000, recovered_ts: 2001000
+Stack rx ts: 855,1555415736223104522
+Received item: 855,1555415736223113573
+Current pb_deadline: 1992000, recovered_ts: 2004000
+Stack rx ts: 856,1555415736240081282
+Received item: 856,1555415736240085594
+Current pb_deadline: 1995000, recovered_ts: 2007000
+Stack rx ts: 857,1555415736256301275
+Received item: 857,1555415736256306175
+Current pb_deadline: 1998000, recovered_ts: 2010000
+Stack rx ts: 858,1555415736273142040
+Received item: 858,1555415736273148448
+Current pb_deadline: 2001000, recovered_ts: 2013000
+Stack rx ts: 859,1555415736273160392
+Received item: 859,1555415736273161382
+Current pb_deadline: 2001000, recovered_ts: 2013000
+Stack rx ts: 860,1555415736273168514
+Received item: 860,1555415736273169223
+Current pb_deadline: 2001000, recovered_ts: 2013000
+Stack rx ts: 861,1555415736273175179
+Received item: 861,1555415736273176035
+Current pb_deadline: 2001000, recovered_ts: 2013000
+Stack rx ts: 862,1555415736290040516
+Received item: 862,1555415736290049512
+Current pb_deadline: 2004000, recovered_ts: 2016000
+Stack rx ts: 863,1555415736306428671
+Received item: 863,1555415736306437481
+Current pb_deadline: 2007000, recovered_ts: 2019000
+Stack rx ts: 864,1555415736323603900
+Received item: 864,1555415736323613978
+Current pb_deadline: 2010000, recovered_ts: 2022000
+Stack rx ts: 865,1555415736339192492
+Received item: 865,1555415736339201878
+Current pb_deadline: 2013000, recovered_ts: 2025000
+Stack rx ts: 866,1555415736356656567
+Received item: 866,1555415736356665387
+Current pb_deadline: 2016000, recovered_ts: 2028000
+Stack rx ts: 867,1555415736372879863
+Received item: 867,1555415736372888343
+Current pb_deadline: 2019000, recovered_ts: 2031000
+Stack rx ts: 868,1555415736389229456
+Received item: 868,1555415736389240808
+Current pb_deadline: 2022000, recovered_ts: 2034000
+Stack rx ts: 869,1555415736406715038
+Received item: 869,1555415736406724891
+Current pb_deadline: 2025000, recovered_ts: 2037000
+Stack rx ts: 870,1555415736423028417
+Received item: 870,1555415736423037167
+Current pb_deadline: 2028000, recovered_ts: 2040000
+Stack rx ts: 871,1555415736440177114
+Received item: 871,1555415736440186361
+Current pb_deadline: 2031000, recovered_ts: 2043000
+Stack rx ts: 872,1555415736440202753
+Received item: 872,1555415736440204212
+Current pb_deadline: 2031000, recovered_ts: 2043000
+Stack rx ts: 873,1555415736440283695
+Received item: 873,1555415736440285489
+Current pb_deadline: 2031000, recovered_ts: 2043000
+Stack rx ts: 874,1555415736440294500
+Received item: 874,1555415736440295838
+Current pb_deadline: 2031000, recovered_ts: 2043000
+Stack rx ts: 875,1555415736456607870
+Received item: 875,1555415736456616946
+Current pb_deadline: 2034000, recovered_ts: 2046000
+Stack rx ts: 876,1555415736473032981
+Received item: 876,1555415736473041782
+Current pb_deadline: 2037000, recovered_ts: 2049000
+Stack rx ts: 877,1555415736489367655
+Received item: 877,1555415736489376796
+Current pb_deadline: 2040000, recovered_ts: 2052000
+Stack rx ts: 878,1555415736506723582
+Received item: 878,1555415736506732283
+Current pb_deadline: 2043000, recovered_ts: 2055000
+Stack rx ts: 879,1555415736523066841
+Received item: 879,1555415736523075737
+Current pb_deadline: 2046000, recovered_ts: 2058000
+Stack rx ts: 880,1555415736539376210
+Received item: 880,1555415736539384505
+Current pb_deadline: 2049000, recovered_ts: 2061000
+Stack rx ts: 881,1555415736556965561
+Received item: 881,1555415736556974256
+Current pb_deadline: 2052000, recovered_ts: 2064000
+Stack rx ts: 882,1555415736573337566
+Received item: 882,1555415736573345549
+Current pb_deadline: 2055000, recovered_ts: 2067000
+Stack rx ts: 883,1555415736589296257
+Received item: 883,1555415736589304782
+Current pb_deadline: 2058000, recovered_ts: 2070000
+Stack rx ts: 884,1555415736606940518
+Received item: 884,1555415736606948958
+Current pb_deadline: 2061000, recovered_ts: 2073000
+Stack rx ts: 885,1555415736607231285
+Received item: 885,1555415736607236196
+Current pb_deadline: 2061000, recovered_ts: 2073000
+Stack rx ts: 886,1555415736607248660
+Received item: 886,1555415736607249782
+Current pb_deadline: 2061000, recovered_ts: 2073000
+Stack rx ts: 887,1555415736607259600
+Received item: 887,1555415736607260773
+Current pb_deadline: 2061000, recovered_ts: 2073000
+Stack rx ts: 888,1555415736623607539
+Received item: 888,1555415736623618555
+Current pb_deadline: 2064000, recovered_ts: 2076000
+Stack rx ts: 889,1555415736639713079
+Received item: 889,1555415736639721924
+Current pb_deadline: 2067000, recovered_ts: 2079000
+Stack rx ts: 890,1555415736656845238
+Received item: 890,1555415736656853949
+Current pb_deadline: 2070000, recovered_ts: 2082000
+Stack rx ts: 891,1555415736672584227
+Received item: 891,1555415736672595332
+Current pb_deadline: 2073000, recovered_ts: 2085000
+Stack rx ts: 892,1555415736689893911
+Received item: 892,1555415736689903308
+Current pb_deadline: 2076000, recovered_ts: 2088000
+Stack rx ts: 893,1555415736706898672
+Received item: 893,1555415736706907588
+Current pb_deadline: 2079000, recovered_ts: 2091000
+Stack rx ts: 894,1555415736723400026
+Received item: 894,1555415736723408796
+Current pb_deadline: 2082000, recovered_ts: 2094000
+Stack rx ts: 895,1555415736740688672
+Received item: 895,1555415736740706428
+Current pb_deadline: 2085000, recovered_ts: 2097000
+Stack rx ts: 896,1555415736756298015
+Received item: 896,1555415736756304190
+Current pb_deadline: 2088000, recovered_ts: 2100000
+Stack rx ts: 897,1555415736773631951
+Received item: 897,1555415736773640591
+Current pb_deadline: 2091000, recovered_ts: 2103000
+Stack rx ts: 898,1555415736773656503
+Received item: 898,1555415736773658121
+Current pb_deadline: 2091000, recovered_ts: 2103000
+Stack rx ts: 899,1555415736773668776
+Received item: 899,1555415736773669964
+Current pb_deadline: 2091000, recovered_ts: 2103000
+Stack rx ts: 900,1555415736773678889
+Received item: 900,1555415736773680152
+Current pb_deadline: 2091000, recovered_ts: 2103000
+Stack rx ts: 901,1555415736791603158
+Received item: 901,1555415736791614329
+Current pb_deadline: 2094000, recovered_ts: 2106000
+Stack rx ts: 902,1555415736806415076
+Received item: 902,1555415736806423967
+Current pb_deadline: 2097000, recovered_ts: 2109000
+Stack rx ts: 903,1555415736823821745
+Received item: 903,1555415736823830861
+Current pb_deadline: 2100000, recovered_ts: 2112000
+Stack rx ts: 904,1555415736839993533
+Received item: 904,1555415736840002073
+Current pb_deadline: 2103000, recovered_ts: 2115000
+Stack rx ts: 905,1555415736855952122
+Received item: 905,1555415736855960833
+Current pb_deadline: 2106000, recovered_ts: 2118000
+Stack rx ts: 906,1555415736872861076
+Received item: 906,1555415736872869942
+Current pb_deadline: 2109000, recovered_ts: 2121000
+Stack rx ts: 907,1555415736890051707
+Received item: 907,1555415736890060297
+Current pb_deadline: 2112000, recovered_ts: 2124000
+Stack rx ts: 908,1555415736906290950
+Received item: 908,1555415736906299655
+Current pb_deadline: 2115000, recovered_ts: 2127000
+Stack rx ts: 909,1555415736923129762
+Received item: 909,1555415736923140211
+Current pb_deadline: 2118000, recovered_ts: 2130000
+Stack rx ts: 910,1555415736939367031
+Received item: 910,1555415736939375546
+Current pb_deadline: 2121000, recovered_ts: 2133000
+Stack rx ts: 911,1555415736939393081
+Received item: 911,1555415736939394545
+Current pb_deadline: 2121000, recovered_ts: 2133000
+Stack rx ts: 912,1555415736939404463
+Received item: 912,1555415736939405545
+Current pb_deadline: 2121000, recovered_ts: 2133000
+Stack rx ts: 913,1555415736939641605
+Received item: 913,1555415736939645404
+Current pb_deadline: 2121000, recovered_ts: 2133000
+Stack rx ts: 914,1555415736956476563
+Received item: 914,1555415736956485649
+Current pb_deadline: 2124000, recovered_ts: 2136000
+Stack rx ts: 915,1555415736973593752
+Received item: 915,1555415736973598998
+Current pb_deadline: 2127000, recovered_ts: 2139000
+Stack rx ts: 916,1555415736989466163
+Received item: 916,1555415736989472649
+Current pb_deadline: 2130000, recovered_ts: 2142000
+Stack rx ts: 917,1555415737006535932
+Received item: 917,1555415737006546667
+Current pb_deadline: 2133000, recovered_ts: 2145000
+Stack rx ts: 918,1555415737022587215
+Received item: 918,1555415737022596266
+Current pb_deadline: 2136000, recovered_ts: 2148000
+Stack rx ts: 919,1555415737040126770
+Received item: 919,1555415737040135505
+Current pb_deadline: 2139000, recovered_ts: 2151000
+Stack rx ts: 920,1555415737056993617
+Received item: 920,1555415737057002407
+Current pb_deadline: 2142000, recovered_ts: 2154000
+Stack rx ts: 921,1555415737072580665
+Received item: 921,1555415737072591525
+Current pb_deadline: 2145000, recovered_ts: 2157000
+Stack rx ts: 922,1555415737090180731
+Received item: 922,1555415737090189657
+Current pb_deadline: 2148000, recovered_ts: 2160000
+Stack rx ts: 923,1555415737106944615
+Received item: 923,1555415737106953310
+Current pb_deadline: 2151000, recovered_ts: 2163000
+Stack rx ts: 924,1555415737106970575
+Received item: 924,1555415737106972024
+Current pb_deadline: 2151000, recovered_ts: 2163000
+Stack rx ts: 925,1555415737106982433
+Received item: 925,1555415737106983515
+Current pb_deadline: 2151000, recovered_ts: 2163000
+Stack rx ts: 926,1555415737107232119
+Received item: 926,1555415737107236159
+Current pb_deadline: 2151000, recovered_ts: 2163000
+Stack rx ts: 927,1555415737123421647
+Received item: 927,1555415737123430081
+Current pb_deadline: 2154000, recovered_ts: 2166000
+Stack rx ts: 928,1555415737140223980
+Received item: 928,1555415737140238589
+Current pb_deadline: 2157000, recovered_ts: 2169000
+Stack rx ts: 929,1555415737156415884
+Received item: 929,1555415737156421426
+Current pb_deadline: 2160000, recovered_ts: 2172000
+Stack rx ts: 930,1555415737173498231
+Received item: 930,1555415737173504793
+Current pb_deadline: 2163000, recovered_ts: 2175000
+Stack rx ts: 931,1555415737190213077
+Received item: 931,1555415737190219999
+Current pb_deadline: 2166000, recovered_ts: 2178000
+Stack rx ts: 932,1555415737206635577
+Received item: 932,1555415737206644784
+Current pb_deadline: 2169000, recovered_ts: 2181000
+Stack rx ts: 933,1555415737223603202
+Received item: 933,1555415737223612328
+Current pb_deadline: 2172000, recovered_ts: 2184000
+Stack rx ts: 934,1555415737239663427
+Received item: 934,1555415737239671816
+Current pb_deadline: 2175000, recovered_ts: 2187000
+Stack rx ts: 935,1555415737256726473
+Received item: 935,1555415737256735052
+Current pb_deadline: 2178000, recovered_ts: 2190000
+Stack rx ts: 936,1555415737272984589
+Received item: 936,1555415737272993203
+Current pb_deadline: 2181000, recovered_ts: 2193000
+Stack rx ts: 937,1555415737273078891
+Received item: 937,1555415737273080961
+Current pb_deadline: 2181000, recovered_ts: 2193000
+Stack rx ts: 938,1555415737273091240
+Received item: 938,1555415737273092367
+Current pb_deadline: 2181000, recovered_ts: 2193000
+Stack rx ts: 939,1555415737273100987
+Received item: 939,1555415737273102055
+Current pb_deadline: 2181000, recovered_ts: 2193000
+Stack rx ts: 940,1555415737289818411
+Received item: 940,1555415737289827191
+Current pb_deadline: 2184000, recovered_ts: 2196000
+Stack rx ts: 941,1555415737306774769
+Received item: 941,1555415737306783495
+Current pb_deadline: 2187000, recovered_ts: 2199000
+Stack rx ts: 942,1555415737323290946
+Received item: 942,1555415737323299556
+Current pb_deadline: 2190000, recovered_ts: 2202000
+Stack rx ts: 943,1555415737340007743
+Received item: 943,1555415737340016984
+Current pb_deadline: 2193000, recovered_ts: 2205000
+Stack rx ts: 944,1555415737356274214
+Received item: 944,1555415737356282829
+Current pb_deadline: 2196000, recovered_ts: 2208000
+Stack rx ts: 945,1555415737373300178
+Received item: 945,1555415737373309565
+Current pb_deadline: 2199000, recovered_ts: 2211000
+Stack rx ts: 946,1555415737389497118
+Received item: 946,1555415737389505763
+Current pb_deadline: 2202000, recovered_ts: 2214000
+Stack rx ts: 947,1555415737406647966
+Received item: 947,1555415737406656671
+Current pb_deadline: 2205000, recovered_ts: 2217000
+Stack rx ts: 948,1555415737423509115
+Received item: 948,1555415737423517880
+Current pb_deadline: 2208000, recovered_ts: 2220000
+Stack rx ts: 949,1555415737439649280
+Received item: 949,1555415737439665041
+Current pb_deadline: 2211000, recovered_ts: 2223000
+Stack rx ts: 950,1555415737439700899
+Received item: 950,1555415737439704221
+Current pb_deadline: 2211000, recovered_ts: 2223000
+Stack rx ts: 951,1555415737439723441
+Received item: 951,1555415737439725526
+Current pb_deadline: 2211000, recovered_ts: 2223000
+Stack rx ts: 952,1555415737439743848
+Received item: 952,1555415737439746168
+Current pb_deadline: 2211000, recovered_ts: 2223000
+Stack rx ts: 953,1555415737456780377
+Received item: 953,1555415737456787003
+Current pb_deadline: 2214000, recovered_ts: 2226000
+Stack rx ts: 954,1555415737473776197
+Received item: 954,1555415737473787288
+Current pb_deadline: 2217000, recovered_ts: 2229000
+Stack rx ts: 955,1555415737490329384
+Received item: 955,1555415737490337729
+Current pb_deadline: 2220000, recovered_ts: 2232000
+Stack rx ts: 956,1555415737507040417
+Received item: 956,1555415737507051067
+Current pb_deadline: 2223000, recovered_ts: 2235000
+Stack rx ts: 957,1555415737522742195
+Received item: 957,1555415737522753065
+Current pb_deadline: 2226000, recovered_ts: 2238000
+Stack rx ts: 958,1555415737540219331
+Received item: 958,1555415737540231048
+Current pb_deadline: 2229000, recovered_ts: 2241000
+Stack rx ts: 959,1555415737555867762
+Received item: 959,1555415737555879008
+Current pb_deadline: 2232000, recovered_ts: 2244000
+Stack rx ts: 960,1555415737573386608
+Received item: 960,1555415737573397398
+Current pb_deadline: 2235000, recovered_ts: 2247000
+Stack rx ts: 961,1555415737589286593
+Received item: 961,1555415737589295549
+Current pb_deadline: 2238000, recovered_ts: 2250000
+Stack rx ts: 962,1555415737606901999
+Received item: 962,1555415737606910364
+Current pb_deadline: 2241000, recovered_ts: 2253000
+Stack rx ts: 963,1555415737606926967
+Received item: 963,1555415737606928340
+Current pb_deadline: 2241000, recovered_ts: 2253000
+Stack rx ts: 964,1555415737606939381
+Received item: 964,1555415737606940458
+Current pb_deadline: 2241000, recovered_ts: 2253000
+Stack rx ts: 965,1555415737606949384
+Received item: 965,1555415737606950446
+Current pb_deadline: 2241000, recovered_ts: 2253000
+Stack rx ts: 966,1555415737622574599
+Received item: 966,1555415737622585610
+Current pb_deadline: 2244000, recovered_ts: 2256000
+Stack rx ts: 967,1555415737639259942
+Received item: 967,1555415737639271012
+Current pb_deadline: 2247000, recovered_ts: 2259000
+Stack rx ts: 968,1555415737656960995
+Received item: 968,1555415737656971640
+Current pb_deadline: 2250000, recovered_ts: 2262000
+Stack rx ts: 969,1555415737673210237
+Received item: 969,1555415737673218932
+Current pb_deadline: 2253000, recovered_ts: 2265000
+Stack rx ts: 970,1555415737689999890
+Received item: 970,1555415737690008625
+Current pb_deadline: 2256000, recovered_ts: 2268000
+Stack rx ts: 971,1555415737706849277
+Received item: 971,1555415737706857717
+Current pb_deadline: 2259000, recovered_ts: 2271000
+Stack rx ts: 972,1555415737723643793
+Received item: 972,1555415737723652548
+Current pb_deadline: 2262000, recovered_ts: 2274000
+Stack rx ts: 973,1555415737740145401
+Received item: 973,1555415737740154583
+Current pb_deadline: 2265000, recovered_ts: 2277000
+Stack rx ts: 974,1555415737756657059
+Received item: 974,1555415737756666105
+Current pb_deadline: 2268000, recovered_ts: 2280000
+Stack rx ts: 975,1555415737773725702
+Received item: 975,1555415737773734672
+Current pb_deadline: 2271000, recovered_ts: 2283000
+Stack rx ts: 976,1555415737773751105
+Received item: 976,1555415737773752514
+Current pb_deadline: 2271000, recovered_ts: 2283000
+Stack rx ts: 977,1555415737773763223
+Received item: 977,1555415737773764291
+Current pb_deadline: 2271000, recovered_ts: 2283000
+Stack rx ts: 978,1555415737773773632
+Received item: 978,1555415737773774705
+Current pb_deadline: 2271000, recovered_ts: 2283000
+Stack rx ts: 979,1555415737789678324
+Received item: 979,1555415737789687255
+Current pb_deadline: 2274000, recovered_ts: 2286000
+Stack rx ts: 980,1555415737806089879
+Received item: 980,1555415737806101030
+Current pb_deadline: 2277000, recovered_ts: 2289000
+Stack rx ts: 981,1555415737823386194
+Received item: 981,1555415737823395195
+Current pb_deadline: 2280000, recovered_ts: 2292000
+Stack rx ts: 982,1555415737839356541
+Received item: 982,1555415737839371070
+Current pb_deadline: 2283000, recovered_ts: 2295000
+Stack rx ts: 983,1555415737856646570
+Received item: 983,1555415737856655752
+Current pb_deadline: 2286000, recovered_ts: 2298000
+Stack rx ts: 984,1555415737873335867
+Received item: 984,1555415737873344783
+Current pb_deadline: 2289000, recovered_ts: 2301000
+Stack rx ts: 985,1555415737889867265
+Received item: 985,1555415737889875990
+Current pb_deadline: 2292000, recovered_ts: 2304000
+Stack rx ts: 986,1555415737906000600
+Received item: 986,1555415737906011275
+Current pb_deadline: 2295000, recovered_ts: 2307000
+Stack rx ts: 987,1555415737922481781
+Received item: 987,1555415737922492711
+Current pb_deadline: 2298000, recovered_ts: 2310000
+Stack rx ts: 988,1555415737940484365
+Received item: 988,1555415737940506185
+Current pb_deadline: 2301000, recovered_ts: 2313000
+Stack rx ts: 989,1555415737940554953
+Received item: 989,1555415737940560130
+Current pb_deadline: 2301000, recovered_ts: 2313000
+Stack rx ts: 990,1555415737940580948
+Received item: 990,1555415737940582561
+Current pb_deadline: 2301000, recovered_ts: 2313000
+Stack rx ts: 991,1555415737940593847
+Received item: 991,1555415737940595461
+Current pb_deadline: 2301000, recovered_ts: 2313000
+Stack rx ts: 992,1555415737956783777
+Received item: 992,1555415737956789089
+Current pb_deadline: 2304000, recovered_ts: 2316000
+Stack rx ts: 993,1555415737973194032
+Received item: 993,1555415737973201874
+Current pb_deadline: 2307000, recovered_ts: 2319000
+Stack rx ts: 994,1555415737990482656
+Received item: 994,1555415737990491607
+Current pb_deadline: 2310000, recovered_ts: 2322000
+Stack rx ts: 995,1555415738006639790
+Received item: 995,1555415738006648475
+Current pb_deadline: 2313000, recovered_ts: 2325000
+Stack rx ts: 996,1555415738023140818
+Received item: 996,1555415738023149332
+Current pb_deadline: 2316000, recovered_ts: 2328000
+Stack rx ts: 997,1555415738039925966
+Received item: 997,1555415738039934851
+Current pb_deadline: 2319000, recovered_ts: 2331000
+Stack rx ts: 998,1555415738057000844
+Received item: 998,1555415738057009684
+Current pb_deadline: 2322000, recovered_ts: 2334000
+Stack rx ts: 999,1555415738073273956
+Received item: 999,1555415738073282315
+Current pb_deadline: 2325000, recovered_ts: 2337000
+Stack rx ts: 1000,1555415738089612041
+Received item: 1000,1555415738089620416
+Current pb_deadline: 2328000, recovered_ts: 2340000
+Stack rx ts: 1001,1555415738106913267
+Received item: 1001,1555415738106921952
+Current pb_deadline: 2331000, recovered_ts: 2343000
+Stack rx ts: 1002,1555415738107212443
+Received item: 1002,1555415738107217460
+Current pb_deadline: 2331000, recovered_ts: 2343000
+Stack rx ts: 1003,1555415738107229362
+Received item: 1003,1555415738107230570
+Current pb_deadline: 2331000, recovered_ts: 2343000
+Stack rx ts: 1004,1555415738107240282
+Received item: 1004,1555415738107241350
+Current pb_deadline: 2331000, recovered_ts: 2343000
+Stack rx ts: 1005,1555415738123553420
+Received item: 1005,1555415738123564686
+Current pb_deadline: 2334000, recovered_ts: 2346000
+Stack rx ts: 1006,1555415738139856621
+Received item: 1006,1555415738139865181
+Current pb_deadline: 2337000, recovered_ts: 2349000
+Stack rx ts: 1007,1555415738156342910
+Received item: 1007,1555415738156352056
+Current pb_deadline: 2340000, recovered_ts: 2352000
+Stack rx ts: 1008,1555415738172581823
+Received item: 1008,1555415738172592718
+Current pb_deadline: 2343000, recovered_ts: 2355000
+Stack rx ts: 1009,1555415738190139520
+Received item: 1009,1555415738190150215
+Current pb_deadline: 2346000, recovered_ts: 2358000
+Stack rx ts: 1010,1555415738206134374
+Received item: 1010,1555415738206145610
+Current pb_deadline: 2349000, recovered_ts: 2361000
+Stack rx ts: 1011,1555415738223362241
+Received item: 1011,1555415738223370730
+Current pb_deadline: 2352000, recovered_ts: 2364000
+Stack rx ts: 1012,1555415738239247146
+Received item: 1012,1555415738239257840
+Current pb_deadline: 2355000, recovered_ts: 2367000
+Stack rx ts: 1013,1555415738256628756
+Received item: 1013,1555415738256634177
+Current pb_deadline: 2358000, recovered_ts: 2370000
+Stack rx ts: 1014,1555415738272699246
+Received item: 1014,1555415738272707995
+Current pb_deadline: 2361000, recovered_ts: 2373000
+Stack rx ts: 1015,1555415738272722172
+Received item: 1015,1555415738272723251
+Current pb_deadline: 2361000, recovered_ts: 2373000
+Stack rx ts: 1016,1555415738272730227
+Received item: 1016,1555415738272731062
+Current pb_deadline: 2361000, recovered_ts: 2373000
+Stack rx ts: 1017,1555415738272737451
+Received item: 1017,1555415738272738228
+Current pb_deadline: 2361000, recovered_ts: 2373000
+Stack rx ts: 1018,1555415738290180127
+Received item: 1018,1555415738290187736
+Current pb_deadline: 2364000, recovered_ts: 2376000
+Stack rx ts: 1019,1555415738306773110
+Received item: 1019,1555415738306781660
+Current pb_deadline: 2367000, recovered_ts: 2379000
+Stack rx ts: 1020,1555415738323297215
+Received item: 1020,1555415738323305955
+Current pb_deadline: 2370000, recovered_ts: 2382000
+Stack rx ts: 1021,1555415738340252155
+Received item: 1021,1555415738340274858
+Current pb_deadline: 2373000, recovered_ts: 2385000
+Stack rx ts: 1022,1555415738356522583
+Received item: 1022,1555415738356530321
+Current pb_deadline: 2376000, recovered_ts: 2388000
+Stack rx ts: 1023,1555415738373286657
+Received item: 1023,1555415738373294748
+Current pb_deadline: 2379000, recovered_ts: 2391000
+Stack rx ts: 1024,1555415738390258124
+Received item: 1024,1555415738390266469
+Current pb_deadline: 2382000, recovered_ts: 2394000
+Stack rx ts: 1025,1555415738406771155
+Received item: 1025,1555415738406779875
+Current pb_deadline: 2385000, recovered_ts: 2397000
+Stack rx ts: 1026,1555415738423410222
+Received item: 1026,1555415738423419132
+Current pb_deadline: 2388000, recovered_ts: 2400000
+Stack rx ts: 1027,1555415738439652867
+Received item: 1027,1555415738439662058
+Current pb_deadline: 2391000, recovered_ts: 2403000
+Stack rx ts: 1028,1555415738439942992
+Received item: 1028,1555415738439947853
+Current pb_deadline: 2391000, recovered_ts: 2403000
+Stack rx ts: 1029,1555415738439959029
+Received item: 1029,1555415738439960342
+Current pb_deadline: 2391000, recovered_ts: 2403000
+Stack rx ts: 1030,1555415738439969358
+Received item: 1030,1555415738439970576
+Current pb_deadline: 2391000, recovered_ts: 2403000
+Stack rx ts: 1031,1555415738457006319
+Received item: 1031,1555415738457016512
+Current pb_deadline: 2394000, recovered_ts: 2406000
+Stack rx ts: 1032,1555415738473243205
+Received item: 1032,1555415738473251760
+Current pb_deadline: 2397000, recovered_ts: 2409000
+Stack rx ts: 1033,1555415738489764620
+Received item: 1033,1555415738489773541
+Current pb_deadline: 2400000, recovered_ts: 2412000
+Stack rx ts: 1034,1555415738507213101
+Received item: 1034,1555415738507223250
+Current pb_deadline: 2403000, recovered_ts: 2415000
+Stack rx ts: 1035,1555415738523589024
+Received item: 1035,1555415738523597765
+Current pb_deadline: 2406000, recovered_ts: 2418000
+Stack rx ts: 1036,1555415738539945956
+Received item: 1036,1555415738539954721
+Current pb_deadline: 2409000, recovered_ts: 2421000
+Stack rx ts: 1037,1555415738556084385
+Received item: 1037,1555415738556093150
+Current pb_deadline: 2412000, recovered_ts: 2424000
+Stack rx ts: 1038,1555415738573721726
+Received item: 1038,1555415738573730612
+Current pb_deadline: 2415000, recovered_ts: 2427000
+Stack rx ts: 1039,1555415738590221727
+Received item: 1039,1555415738590232191
+Current pb_deadline: 2418000, recovered_ts: 2430000
+Stack rx ts: 1040,1555415738606152598
+Received item: 1040,1555415738606163388
+Current pb_deadline: 2421000, recovered_ts: 2433000
+Stack rx ts: 1041,1555415738606181640
+Received item: 1041,1555415738606183073
+Current pb_deadline: 2421000, recovered_ts: 2433000
+Stack rx ts: 1042,1555415738606192951
+Received item: 1042,1555415738606194344
+Current pb_deadline: 2421000, recovered_ts: 2433000
+Stack rx ts: 1043,1555415738606584305
+Received item: 1043,1555415738606589312
+Current pb_deadline: 2421000, recovered_ts: 2433000
+Stack rx ts: 1044,1555415738623535487
+Received item: 1044,1555415738623544056
+Current pb_deadline: 2424000, recovered_ts: 2436000
+Stack rx ts: 1045,1555415738639238627
+Received item: 1045,1555415738639249577
+Current pb_deadline: 2427000, recovered_ts: 2439000
+Stack rx ts: 1046,1555415738657016639
+Received item: 1046,1555415738657025444
+Current pb_deadline: 2430000, recovered_ts: 2442000
+Stack rx ts: 1047,1555415738673667878
+Received item: 1047,1555415738673677034
+Current pb_deadline: 2433000, recovered_ts: 2445000
+Stack rx ts: 1048,1555415738690211940
+Received item: 1048,1555415738690220635
+Current pb_deadline: 2436000, recovered_ts: 2448000
+Stack rx ts: 1049,1555415738706988313
+Received item: 1049,1555415738706997399
+Current pb_deadline: 2439000, recovered_ts: 2451000
+Stack rx ts: 1050,1555415738723088806
+Received item: 1050,1555415738723099044
+Current pb_deadline: 2442000, recovered_ts: 2454000
+Stack rx ts: 1051,1555415738740354338
+Received item: 1051,1555415738740363339
+Current pb_deadline: 2445000, recovered_ts: 2457000
+Stack rx ts: 1052,1555415738756856559
+Received item: 1052,1555415738756865204
+Current pb_deadline: 2448000, recovered_ts: 2460000
+Stack rx ts: 1053,1555415738773559279
+Received item: 1053,1555415738773568460
+Current pb_deadline: 2451000, recovered_ts: 2463000
+Stack rx ts: 1054,1555415738773584712
+Received item: 1054,1555415738773586121
+Current pb_deadline: 2451000, recovered_ts: 2463000
+Stack rx ts: 1055,1555415738773801998
+Received item: 1055,1555415738773805842
+Current pb_deadline: 2451000, recovered_ts: 2463000
+Stack rx ts: 1056,1555415738773817228
+Received item: 1056,1555415738773818381
+Current pb_deadline: 2451000, recovered_ts: 2463000
+Stack rx ts: 1057,1555415738790483488
+Received item: 1057,1555415738790494403
+Current pb_deadline: 2454000, recovered_ts: 2466000
+Stack rx ts: 1058,1555415738807001454
+Received item: 1058,1555415738807010074
+Current pb_deadline: 2457000, recovered_ts: 2469000
+Stack rx ts: 1059,1555415738823616059
+Received item: 1059,1555415738823625787
+Current pb_deadline: 2460000, recovered_ts: 2472000
+Stack rx ts: 1060,1555415738839479258
+Received item: 1060,1555415738839483694
+Current pb_deadline: 2463000, recovered_ts: 2475000
+Stack rx ts: 1061,1555415738856501672
+Received item: 1061,1555415738856509350
+Current pb_deadline: 2466000, recovered_ts: 2478000
+Stack rx ts: 1062,1555415738873531358
+Received item: 1062,1555415738873539872
+Current pb_deadline: 2469000, recovered_ts: 2481000
+Stack rx ts: 1063,1555415738889516141
+Received item: 1063,1555415738889520222
+Current pb_deadline: 2472000, recovered_ts: 2484000
+Stack rx ts: 1064,1555415738906537786
+Received item: 1064,1555415738906543459
+Current pb_deadline: 2475000, recovered_ts: 2487000
+Stack rx ts: 1065,1555415738923423621
+Received item: 1065,1555415738923430363
+Current pb_deadline: 2478000, recovered_ts: 2490000
+Stack rx ts: 1066,1555415738939510295
+Received item: 1066,1555415738939517071
+Current pb_deadline: 2481000, recovered_ts: 2493000
+Stack rx ts: 1067,1555415738939696183
+Received item: 1067,1555415738939699365
+Current pb_deadline: 2481000, recovered_ts: 2493000
+Stack rx ts: 1068,1555415738939707481
+Received item: 1068,1555415738939708338
+Current pb_deadline: 2481000, recovered_ts: 2493000
+Stack rx ts: 1069,1555415738939715860
+Received item: 1069,1555415738939716822
+Current pb_deadline: 2481000, recovered_ts: 2493000
+Stack rx ts: 1070,1555415738956190756
+Received item: 1070,1555415738956196467
+Current pb_deadline: 2484000, recovered_ts: 2496000
+Stack rx ts: 1071,1555415738973375484
+Received item: 1071,1555415738973382941
+Current pb_deadline: 2487000, recovered_ts: 2499000
+Stack rx ts: 1072,1555415738989497998
+Received item: 1072,1555415738989505432
+Current pb_deadline: 2490000, recovered_ts: 2502000
+Stack rx ts: 1073,1555415739006826976
+Received item: 1073,1555415739006835521
+Current pb_deadline: 2493000, recovered_ts: 2505000
+Stack rx ts: 1074,1555415739023515477
+Received item: 1074,1555415739023524959
+Current pb_deadline: 2496000, recovered_ts: 2508000
+Stack rx ts: 1075,1555415739039585901
+Received item: 1075,1555415739039594175
+Current pb_deadline: 2499000, recovered_ts: 2511000
+Stack rx ts: 1076,1555415739056964254
+Received item: 1076,1555415739056972969
+Current pb_deadline: 2502000, recovered_ts: 2514000
+Stack rx ts: 1077,1555415739073480717
+Received item: 1077,1555415739073489723
+Current pb_deadline: 2505000, recovered_ts: 2517000
+Stack rx ts: 1078,1555415739090012485
+Received item: 1078,1555415739090021170
+Current pb_deadline: 2508000, recovered_ts: 2520000
+Stack rx ts: 1079,1555415739106199750
+Received item: 1079,1555415739106206625
+Current pb_deadline: 2511000, recovered_ts: 2523000
+Stack rx ts: 1080,1555415739106223069
+Received item: 1080,1555415739106224551
+Current pb_deadline: 2511000, recovered_ts: 2523000
+Stack rx ts: 1081,1555415739106233588
+Received item: 1081,1555415739106234738
+Current pb_deadline: 2511000, recovered_ts: 2523000
+Stack rx ts: 1082,1555415739106486671
+Received item: 1082,1555415739106490769
+Current pb_deadline: 2511000, recovered_ts: 2523000
+Stack rx ts: 1083,1555415739123276431
+Received item: 1083,1555415739123282743
+Current pb_deadline: 2514000, recovered_ts: 2526000
+Stack rx ts: 1084,1555415739140159336
+Received item: 1084,1555415739140171389
+Current pb_deadline: 2517000, recovered_ts: 2529000
+Stack rx ts: 1085,1555415739159925997
+Received item: 1085,1555415739159933134
+Current pb_deadline: 2520000, recovered_ts: 2532000
+Stack rx ts: 1086,1555415739173365782
+Received item: 1086,1555415739173373136
+Current pb_deadline: 2523000, recovered_ts: 2535000
+Stack rx ts: 1087,1555415739189894766
+Received item: 1087,1555415739189902348
+Current pb_deadline: 2526000, recovered_ts: 2538000
+Stack rx ts: 1088,1555415739210100279
+Received item: 1088,1555415739210108294
+Current pb_deadline: 2529000, recovered_ts: 2541000
+Stack rx ts: 1089,1555415739223391650
+Received item: 1089,1555415739223397927
+Current pb_deadline: 2532000, recovered_ts: 2544000
+Stack rx ts: 1090,1555415739239297009
+Received item: 1090,1555415739239304917
+Current pb_deadline: 2535000, recovered_ts: 2547000
+Stack rx ts: 1091,1555415739256518902
+Received item: 1091,1555415739256530914
+Current pb_deadline: 2538000, recovered_ts: 2550000
+Stack rx ts: 1092,1555415739273070181
+Received item: 1092,1555415739273080990
+Current pb_deadline: 2541000, recovered_ts: 2553000
+Stack rx ts: 1093,1555415739273109495
+Received item: 1093,1555415739273112623
+Current pb_deadline: 2541000, recovered_ts: 2553000
+Stack rx ts: 1094,1555415739273128439
+Received item: 1094,1555415739273130283
+Current pb_deadline: 2541000, recovered_ts: 2553000
+Stack rx ts: 1095,1555415739273144402
+Received item: 1095,1555415739273146050
+Current pb_deadline: 2541000, recovered_ts: 2553000
+Stack rx ts: 1096,1555415739289650851
+Received item: 1096,1555415739289657339
+Current pb_deadline: 2544000, recovered_ts: 2556000
+Stack rx ts: 1097,1555415739305914711
+Received item: 1097,1555415739305924205
+Current pb_deadline: 2547000, recovered_ts: 2559000
+Stack rx ts: 1098,1555415739323205083
+Received item: 1098,1555415739323213853
+Current pb_deadline: 2550000, recovered_ts: 2562000
+Stack rx ts: 1099,1555415739339832912
+Received item: 1099,1555415739339843687
+Current pb_deadline: 2553000, recovered_ts: 2565000
+Stack rx ts: 1100,1555415739356530555
+Received item: 1100,1555415739356539245
+Current pb_deadline: 2556000, recovered_ts: 2568000
+Stack rx ts: 1101,1555415739373244549
+Received item: 1101,1555415739373253274
+Current pb_deadline: 2559000, recovered_ts: 2571000
+Stack rx ts: 1102,1555415739390420876
+Received item: 1102,1555415739390430107
+Current pb_deadline: 2562000, recovered_ts: 2574000
+Stack rx ts: 1103,1555415739406020802
+Received item: 1103,1555415739406031477
+Current pb_deadline: 2565000, recovered_ts: 2577000
+Stack rx ts: 1104,1555415739423288350
+Received item: 1104,1555415739423297526
+Current pb_deadline: 2568000, recovered_ts: 2580000
+Stack rx ts: 1105,1555415739439702752
+Received item: 1105,1555415739439711297
+Current pb_deadline: 2571000, recovered_ts: 2583000
+Stack rx ts: 1106,1555415739439729033
+Received item: 1106,1555415739439730326
+Current pb_deadline: 2571000, recovered_ts: 2583000
+Stack rx ts: 1107,1555415739439740359
+Received item: 1107,1555415739439741507
+Current pb_deadline: 2571000, recovered_ts: 2583000
+Stack rx ts: 1108,1555415739439991710
+Received item: 1108,1555415739439996305
+Current pb_deadline: 2571000, recovered_ts: 2583000
+Stack rx ts: 1109,1555415739456779529
+Received item: 1109,1555415739456790635
+Current pb_deadline: 2574000, recovered_ts: 2586000
+Stack rx ts: 1110,1555415739472596407
+Received item: 1110,1555415739472607603
+Current pb_deadline: 2577000, recovered_ts: 2589000
+Stack rx ts: 1111,1555415739489739222
+Received item: 1111,1555415739489747210
+Current pb_deadline: 2580000, recovered_ts: 2592000
+Stack rx ts: 1112,1555415739505827462
+Received item: 1112,1555415739505838437
+Current pb_deadline: 2583000, recovered_ts: 2595000
+Stack rx ts: 1113,1555415739523396019
+Received item: 1113,1555415739523404804
+Current pb_deadline: 2586000, recovered_ts: 2598000
+Stack rx ts: 1114,1555415739539941469
+Received item: 1114,1555415739539949919
+Current pb_deadline: 2589000, recovered_ts: 2601000
+Stack rx ts: 1115,1555415739556334292
+Received item: 1115,1555415739556342931
+Current pb_deadline: 2592000, recovered_ts: 2604000
+Stack rx ts: 1116,1555415739573414220
+Received item: 1116,1555415739573422890
+Current pb_deadline: 2595000, recovered_ts: 2607000
+Stack rx ts: 1117,1555415739590088398
+Received item: 1117,1555415739590097459
+Current pb_deadline: 2598000, recovered_ts: 2610000
+Stack rx ts: 1118,1555415739606108771
+Received item: 1118,1555415739606119822
+Current pb_deadline: 2601000, recovered_ts: 2613000
+Stack rx ts: 1119,1555415739606137588
+Received item: 1119,1555415739606138971
+Current pb_deadline: 2601000, recovered_ts: 2613000
+Stack rx ts: 1120,1555415739606148277
+Received item: 1120,1555415739606149340
+Current pb_deadline: 2601000, recovered_ts: 2613000
+Stack rx ts: 1121,1555415739606158847
+Received item: 1121,1555415739606160044
+Current pb_deadline: 2601000, recovered_ts: 2613000
+Stack rx ts: 1122,1555415739623539876
+Received item: 1122,1555415739623549974
+Current pb_deadline: 2604000, recovered_ts: 2616000
+Stack rx ts: 1123,1555415739639974611
+Received item: 1123,1555415739639983015
+Current pb_deadline: 2607000, recovered_ts: 2619000
+Stack rx ts: 1124,1555415739656748449
+Received item: 1124,1555415739656757324
+Current pb_deadline: 2610000, recovered_ts: 2622000
+Stack rx ts: 1125,1555415739672668560
+Received item: 1125,1555415739672679290
+Current pb_deadline: 2613000, recovered_ts: 2625000
+Stack rx ts: 1126,1555415739690153364
+Received item: 1126,1555415739690162224
+Current pb_deadline: 2616000, recovered_ts: 2628000
+Stack rx ts: 1127,1555415739706684005
+Received item: 1127,1555415739706693432
+Current pb_deadline: 2619000, recovered_ts: 2631000
+Stack rx ts: 1128,1555415739723449334
+Received item: 1128,1555415739723458194
+Current pb_deadline: 2622000, recovered_ts: 2634000
+Stack rx ts: 1129,1555415739740331160
+Received item: 1129,1555415739740340261
+Current pb_deadline: 2625000, recovered_ts: 2637000
+Stack rx ts: 1130,1555415739756631028
+Received item: 1130,1555415739756639788
+Current pb_deadline: 2628000, recovered_ts: 2640000
+Stack rx ts: 1131,1555415739773521304
+Received item: 1131,1555415739773530811
+Current pb_deadline: 2631000, recovered_ts: 2643000
+Stack rx ts: 1132,1555415739773549128
+Received item: 1132,1555415739773550772
+Current pb_deadline: 2631000, recovered_ts: 2643000
+Stack rx ts: 1133,1555415739773561221
+Received item: 1133,1555415739773562675
+Current pb_deadline: 2631000, recovered_ts: 2643000
+Stack rx ts: 1134,1555415739773571695
+Received item: 1134,1555415739773572783
+Current pb_deadline: 2631000, recovered_ts: 2643000
+Stack rx ts: 1135,1555415739790495003
+Received item: 1135,1555415739790504294
+Current pb_deadline: 2634000, recovered_ts: 2646000
+Stack rx ts: 1136,1555415739806881942
+Received item: 1136,1555415739806890457
+Current pb_deadline: 2637000, recovered_ts: 2649000
+Stack rx ts: 1137,1555415739823051404
+Received item: 1137,1555415739823060119
+Current pb_deadline: 2640000, recovered_ts: 2652000
+Stack rx ts: 1138,1555415739839692392
+Received item: 1138,1555415739839698276
+Current pb_deadline: 2643000, recovered_ts: 2655000
+Stack rx ts: 1139,1555415739856991671
+Received item: 1139,1555415739857000496
+Current pb_deadline: 2646000, recovered_ts: 2658000
+Stack rx ts: 1140,1555415739873249077
+Received item: 1140,1555415739873257060
+Current pb_deadline: 2649000, recovered_ts: 2661000
+Stack rx ts: 1141,1555415739889523739
+Received item: 1141,1555415739889532379
+Current pb_deadline: 2652000, recovered_ts: 2664000
+Stack rx ts: 1142,1555415739905937342
+Received item: 1142,1555415739905948187
+Current pb_deadline: 2655000, recovered_ts: 2667000
+Stack rx ts: 1143,1555415739923634206
+Received item: 1143,1555415739923642390
+Current pb_deadline: 2658000, recovered_ts: 2670000
+Stack rx ts: 1144,1555415739939323640
+Received item: 1144,1555415739939335337
+Current pb_deadline: 2661000, recovered_ts: 2673000
+Stack rx ts: 1145,1555415739939353975
+Received item: 1145,1555415739939355388
+Current pb_deadline: 2661000, recovered_ts: 2673000
+Stack rx ts: 1146,1555415739939364950
+Received item: 1146,1555415739939366073
+Current pb_deadline: 2661000, recovered_ts: 2673000
+Stack rx ts: 1147,1555415739939374592
+Received item: 1147,1555415739939375670
+Current pb_deadline: 2661000, recovered_ts: 2673000
+Stack rx ts: 1148,1555415739957022509
+Received item: 1148,1555415739957034140
+Current pb_deadline: 2664000, recovered_ts: 2676000
+Stack rx ts: 1149,1555415739973789969
+Received item: 1149,1555415739973800505
+Current pb_deadline: 2667000, recovered_ts: 2679000
+Stack rx ts: 1150,1555415739989874140
+Received item: 1150,1555415739989882515
+Current pb_deadline: 2670000, recovered_ts: 2682000
+Stack rx ts: 1151,1555415740005918800
+Received item: 1151,1555415740005929104
+Current pb_deadline: 2673000, recovered_ts: 2685000
+Stack rx ts: 1152,1555415740023665193
+Received item: 1152,1555415740023673978
+Current pb_deadline: 2676000, recovered_ts: 2688000
+Stack rx ts: 1153,1555415740039283979
+Received item: 1153,1555415740039295490
+Current pb_deadline: 2679000, recovered_ts: 2691000
+Stack rx ts: 1154,1555415740056325900
+Received item: 1154,1555415740056336329
+Current pb_deadline: 2682000, recovered_ts: 2694000
+Stack rx ts: 1155,1555415740073730183
+Received item: 1155,1555415740073739133
+Current pb_deadline: 2685000, recovered_ts: 2697000
+Stack rx ts: 1156,1555415740090210342
+Received item: 1156,1555415740090218957
+Current pb_deadline: 2688000, recovered_ts: 2700000
+Stack rx ts: 1157,1555415740106606755
+Received item: 1157,1555415740106615370
+Current pb_deadline: 2691000, recovered_ts: 2703000
+Stack rx ts: 1158,1555415740106631261
+Received item: 1158,1555415740106632845
+Current pb_deadline: 2691000, recovered_ts: 2703000
+Stack rx ts: 1159,1555415740106713942
+Received item: 1159,1555415740106715486
+Current pb_deadline: 2691000, recovered_ts: 2703000
+Stack rx ts: 1160,1555415740106725178
+Received item: 1160,1555415740106726241
+Current pb_deadline: 2691000, recovered_ts: 2703000
+Stack rx ts: 1161,1555415740123621026
+Received item: 1161,1555415740123629586
+Current pb_deadline: 2694000, recovered_ts: 2706000
+Stack rx ts: 1162,1555415740140188177
+Received item: 1162,1555415740140196741
+Current pb_deadline: 2697000, recovered_ts: 2709000
+Stack rx ts: 1163,1555415740156706935
+Received item: 1163,1555415740156715931
+Current pb_deadline: 2700000, recovered_ts: 2712000
+Stack rx ts: 1164,1555415740173266031
+Received item: 1164,1555415740173275253
+Current pb_deadline: 2703000, recovered_ts: 2715000
+Stack rx ts: 1165,1555415740190238524
+Received item: 1165,1555415740190244602
+Current pb_deadline: 2706000, recovered_ts: 2718000
+Stack rx ts: 1166,1555415740206488331
+Received item: 1166,1555415740206492326
+Current pb_deadline: 2709000, recovered_ts: 2721000
+Stack rx ts: 1167,1555415740222564977
+Received item: 1167,1555415740222570794
+Current pb_deadline: 2712000, recovered_ts: 2724000
+Stack rx ts: 1168,1555415740240027971
+Received item: 1168,1555415740240034236
+Current pb_deadline: 2715000, recovered_ts: 2727000
+Stack rx ts: 1169,1555415740256598763
+Received item: 1169,1555415740256604905
+Current pb_deadline: 2718000, recovered_ts: 2730000
+Stack rx ts: 1170,1555415740272810301
+Received item: 1170,1555415740272814512
+Current pb_deadline: 2721000, recovered_ts: 2733000
+Stack rx ts: 1171,1555415740272822381
+Received item: 1171,1555415740272823024
+Current pb_deadline: 2721000, recovered_ts: 2733000
+Stack rx ts: 1172,1555415740272827256
+Received item: 1172,1555415740272827719
+Current pb_deadline: 2721000, recovered_ts: 2733000
+Stack rx ts: 1173,1555415740272831710
+Received item: 1173,1555415740272832171
+Current pb_deadline: 2721000, recovered_ts: 2733000
+Stack rx ts: 1174,1555415740289204298
+Received item: 1174,1555415740289212374
+Current pb_deadline: 2724000, recovered_ts: 2736000
+Stack rx ts: 1175,1555415740306572100
+Received item: 1175,1555415740306580565
+Current pb_deadline: 2727000, recovered_ts: 2739000
+Stack rx ts: 1176,1555415740322348525
+Received item: 1176,1555415740322358017
+Current pb_deadline: 2730000, recovered_ts: 2742000
+Stack rx ts: 1177,1555415740339941804
+Received item: 1177,1555415740339952253
+Current pb_deadline: 2733000, recovered_ts: 2745000
+Stack rx ts: 1178,1555415740356627267
+Received item: 1178,1555415740356635681
+Current pb_deadline: 2736000, recovered_ts: 2748000
+Stack rx ts: 1179,1555415740373318695
+Received item: 1179,1555415740373327350
+Current pb_deadline: 2739000, recovered_ts: 2751000
+Stack rx ts: 1180,1555415740390052414
+Received item: 1180,1555415740390060949
+Current pb_deadline: 2742000, recovered_ts: 2754000
+Stack rx ts: 1181,1555415740406639992
+Received item: 1181,1555415740406649203
+Current pb_deadline: 2745000, recovered_ts: 2757000
+Stack rx ts: 1182,1555415740423303495
+Received item: 1182,1555415740423312235
+Current pb_deadline: 2748000, recovered_ts: 2760000
+Stack rx ts: 1183,1555415740439542386
+Received item: 1183,1555415740439549968
+Current pb_deadline: 2751000, recovered_ts: 2763000
+Stack rx ts: 1184,1555415740439564642
+Received item: 1184,1555415740439566041
+Current pb_deadline: 2751000, recovered_ts: 2763000
+Stack rx ts: 1185,1555415740439574224
+Received item: 1185,1555415740439575090
+Current pb_deadline: 2751000, recovered_ts: 2763000
+Stack rx ts: 1186,1555415740439582439
+Received item: 1186,1555415740439583321
+Current pb_deadline: 2751000, recovered_ts: 2763000
+Stack rx ts: 1187,1555415740456665085
+Received item: 1187,1555415740456676336
+Current pb_deadline: 2754000, recovered_ts: 2766000
+Stack rx ts: 1188,1555415740472938556
+Received item: 1188,1555415740472944534
+Current pb_deadline: 2757000, recovered_ts: 2769000
+Stack rx ts: 1189,1555415740489600305
+Received item: 1189,1555415740489606772
+Current pb_deadline: 2760000, recovered_ts: 2772000
+Stack rx ts: 1190,1555415740506750307
+Received item: 1190,1555415740506756987
+Current pb_deadline: 2763000, recovered_ts: 2775000
+Stack rx ts: 1191,1555415740522868002
+Received item: 1191,1555415740522873938
+Current pb_deadline: 2766000, recovered_ts: 2778000
+Stack rx ts: 1192,1555415740539471501
+Received item: 1192,1555415740539479839
+Current pb_deadline: 2769000, recovered_ts: 2781000
+Stack rx ts: 1193,1555415740556611317
+Received item: 1193,1555415740556616338
+Current pb_deadline: 2772000, recovered_ts: 2784000
+Stack rx ts: 1194,1555415740572757028
+Received item: 1194,1555415740572761827
+Current pb_deadline: 2775000, recovered_ts: 2787000
+Stack rx ts: 1195,1555415740589813213
+Received item: 1195,1555415740589819211
+Current pb_deadline: 2778000, recovered_ts: 2790000
+Stack rx ts: 1196,1555415740606631623
+Received item: 1196,1555415740606638208
+Current pb_deadline: 2781000, recovered_ts: 2793000
+Stack rx ts: 1197,1555415740606848450
+Received item: 1197,1555415740606852672
+Current pb_deadline: 2781000, recovered_ts: 2793000
+Stack rx ts: 1198,1555415740606863187
+Received item: 1198,1555415740606864526
+Current pb_deadline: 2781000, recovered_ts: 2793000
+Stack rx ts: 1199,1555415740606872430
+Received item: 1199,1555415740606873486
+Current pb_deadline: 2781000, recovered_ts: 2793000
+Stack rx ts: 1200,1555415740622749641
+Received item: 1200,1555415740622755783
+Current pb_deadline: 2784000, recovered_ts: 2796000
+Stack rx ts: 1201,1555415740639803318
+Received item: 1201,1555415740639810367
+Current pb_deadline: 2787000, recovered_ts: 2799000
+Stack rx ts: 1202,1555415740656608002
+Received item: 1202,1555415740656616363
+Current pb_deadline: 2790000, recovered_ts: 2802000
+Stack rx ts: 1203,1555415740672686982
+Received item: 1203,1555415740672691911
+Current pb_deadline: 2793000, recovered_ts: 2805000
+Stack rx ts: 1204,1555415740689758433
+Received item: 1204,1555415740689763910
+Current pb_deadline: 2796000, recovered_ts: 2808000
+Stack rx ts: 1205,1555415740705688767
+Received item: 1205,1555415740705695330
+Current pb_deadline: 2799000, recovered_ts: 2811000
+Stack rx ts: 1206,1555415740723097360
+Received item: 1206,1555415740723105544
+Current pb_deadline: 2802000, recovered_ts: 2814000
+Stack rx ts: 1207,1555415740739982620
+Received item: 1207,1555415740739991385
+Current pb_deadline: 2805000, recovered_ts: 2817000
+Stack rx ts: 1208,1555415740756961280
+Received item: 1208,1555415740756972175
+Current pb_deadline: 2808000, recovered_ts: 2820000
+Stack rx ts: 1209,1555415740773075525
+Received item: 1209,1555415740773083954
+Current pb_deadline: 2811000, recovered_ts: 2823000
+Stack rx ts: 1210,1555415740773326134
+Received item: 1210,1555415740773330429
+Current pb_deadline: 2811000, recovered_ts: 2823000
+Stack rx ts: 1211,1555415740773341464
+Received item: 1211,1555415740773342567
+Current pb_deadline: 2811000, recovered_ts: 2823000
+Stack rx ts: 1212,1555415740773351417
+Received item: 1212,1555415740773352489
+Current pb_deadline: 2811000, recovered_ts: 2823000
+Stack rx ts: 1213,1555415740790131741
+Received item: 1213,1555415740790140732
+Current pb_deadline: 2814000, recovered_ts: 2826000
+Stack rx ts: 1214,1555415740805986460
+Received item: 1214,1555415740805997666
+Current pb_deadline: 2817000, recovered_ts: 2829000
+Stack rx ts: 1215,1555415740823230769
+Received item: 1215,1555415740823241909
+Current pb_deadline: 2820000, recovered_ts: 2832000
+Stack rx ts: 1216,1555415740839315475
+Received item: 1216,1555415740839324401
+Current pb_deadline: 2823000, recovered_ts: 2835000
+Stack rx ts: 1217,1555415740856713545
+Received item: 1217,1555415740856722029
+Current pb_deadline: 2826000, recovered_ts: 2838000
+Stack rx ts: 1218,1555415740873721422
+Received item: 1218,1555415740873730152
+Current pb_deadline: 2829000, recovered_ts: 2841000
+Stack rx ts: 1219,1555415740889342473
+Received item: 1219,1555415740889353574
+Current pb_deadline: 2832000, recovered_ts: 2844000
+Stack rx ts: 1220,1555415740906949750
+Received item: 1220,1555415740906960334
+Current pb_deadline: 2835000, recovered_ts: 2847000
+Stack rx ts: 1221,1555415740923723768
+Received item: 1221,1555415740923734979
+Current pb_deadline: 2838000, recovered_ts: 2850000
+Stack rx ts: 1222,1555415740940213283
+Received item: 1222,1555415740940224509
+Current pb_deadline: 2841000, recovered_ts: 2853000
+Stack rx ts: 1223,1555415740940256227
+Received item: 1223,1555415740940260121
+Current pb_deadline: 2841000, recovered_ts: 2853000
+Stack rx ts: 1224,1555415740940279717
+Received item: 1224,1555415740940281992
+Current pb_deadline: 2841000, recovered_ts: 2853000
+Stack rx ts: 1225,1555415740940300710
+Received item: 1225,1555415740940302800
+Current pb_deadline: 2841000, recovered_ts: 2853000
+Stack rx ts: 1226,1555415740956870106
+Received item: 1226,1555415740956876012
+Current pb_deadline: 2844000, recovered_ts: 2856000
+Stack rx ts: 1227,1555415740973066103
+Received item: 1227,1555415740973072697
+Current pb_deadline: 2847000, recovered_ts: 2859000
+Stack rx ts: 1228,1555415740990184522
+Received item: 1228,1555415740990192352
+Current pb_deadline: 2850000, recovered_ts: 2862000
+Stack rx ts: 1229,1555415741006570755
+Received item: 1229,1555415741006579267
+Current pb_deadline: 2853000, recovered_ts: 2865000
+Stack rx ts: 1230,1555415741023067078
+Received item: 1230,1555415741023075125
+Current pb_deadline: 2856000, recovered_ts: 2868000
+Stack rx ts: 1231,1555415741039315691
+Received item: 1231,1555415741039326962
+Current pb_deadline: 2859000, recovered_ts: 2871000
+Stack rx ts: 1232,1555415741056566045
+Received item: 1232,1555415741056574960
+Current pb_deadline: 2862000, recovered_ts: 2874000
+Stack rx ts: 1233,1555415741072911738
+Received item: 1233,1555415741072920543
+Current pb_deadline: 2865000, recovered_ts: 2877000
+Stack rx ts: 1234,1555415741090347860
+Received item: 1234,1555415741090358735
+Current pb_deadline: 2868000, recovered_ts: 2880000
+Stack rx ts: 1235,1555415741106649277
+Received item: 1235,1555415741106658744
+Current pb_deadline: 2871000, recovered_ts: 2883000
+Stack rx ts: 1236,1555415741106675302
+Received item: 1236,1555415741106676976
+Current pb_deadline: 2871000, recovered_ts: 2883000
+Stack rx ts: 1237,1555415741106690081
+Received item: 1237,1555415741106691981
+Current pb_deadline: 2871000, recovered_ts: 2883000
+Stack rx ts: 1238,1555415741106706995
+Received item: 1238,1555415741106709020
+Current pb_deadline: 2871000, recovered_ts: 2883000
+Stack rx ts: 1239,1555415741122653834
+Received item: 1239,1555415741122664633
+Current pb_deadline: 2874000, recovered_ts: 2886000
+Stack rx ts: 1240,1555415741139223510
+Received item: 1240,1555415741139232320
+Current pb_deadline: 2877000, recovered_ts: 2889000
+Stack rx ts: 1241,1555415741156765656
+Received item: 1241,1555415741156774166
+Current pb_deadline: 2880000, recovered_ts: 2892000
+Stack rx ts: 1242,1555415741173137755
+Received item: 1242,1555415741173146225
+Current pb_deadline: 2883000, recovered_ts: 2895000
+Stack rx ts: 1243,1555415741189158469
+Received item: 1243,1555415741189167074
+Current pb_deadline: 2886000, recovered_ts: 2898000
+Stack rx ts: 1244,1555415741206813703
+Received item: 1244,1555415741206822292
+Current pb_deadline: 2889000, recovered_ts: 2901000
+Stack rx ts: 1245,1555415741223073502
+Received item: 1245,1555415741223082273
+Current pb_deadline: 2892000, recovered_ts: 2904000
+Stack rx ts: 1246,1555415741239211161
+Received item: 1246,1555415741239222628
+Current pb_deadline: 2895000, recovered_ts: 2907000
+Stack rx ts: 1247,1555415741256751448
+Received item: 1247,1555415741256760705
+Current pb_deadline: 2898000, recovered_ts: 2910000
+Stack rx ts: 1248,1555415741273436948
+Received item: 1248,1555415741273445468
+Current pb_deadline: 2901000, recovered_ts: 2913000
+Stack rx ts: 1249,1555415741273464161
+Received item: 1249,1555415741273465584
+Current pb_deadline: 2901000, recovered_ts: 2913000
+Stack rx ts: 1250,1555415741273475322
+Received item: 1250,1555415741273476424
+Current pb_deadline: 2901000, recovered_ts: 2913000
+Stack rx ts: 1251,1555415741273485320
+Received item: 1251,1555415741273486392
+Current pb_deadline: 2901000, recovered_ts: 2913000
+Stack rx ts: 1252,1555415741289781263
+Received item: 1252,1555415741289790144
+Current pb_deadline: 2904000, recovered_ts: 2916000
+Stack rx ts: 1253,1555415741306922714
+Received item: 1253,1555415741306934070
+Current pb_deadline: 2907000, recovered_ts: 2919000
+Stack rx ts: 1254,1555415741323541092
+Received item: 1254,1555415741323548285
+Current pb_deadline: 2910000, recovered_ts: 2922000
+Stack rx ts: 1255,1555415741339852593
+Received item: 1255,1555415741339861163
+Current pb_deadline: 2913000, recovered_ts: 2925000
+Stack rx ts: 1256,1555415741357034162
+Received item: 1256,1555415741357042972
+Current pb_deadline: 2916000, recovered_ts: 2928000
+Stack rx ts: 1257,1555415741373511088
+Received item: 1257,1555415741373519462
+Current pb_deadline: 2919000, recovered_ts: 2931000
+Stack rx ts: 1258,1555415741389556159
+Received item: 1258,1555415741389567064
+Current pb_deadline: 2922000, recovered_ts: 2934000
+Stack rx ts: 1259,1555415741406431500
+Received item: 1259,1555415741406440401
+Current pb_deadline: 2925000, recovered_ts: 2937000
+Stack rx ts: 1260,1555415741423792058
+Received item: 1260,1555415741423802758
+Current pb_deadline: 2928000, recovered_ts: 2940000
+Stack rx ts: 1261,1555415741440145023
+Received item: 1261,1555415741440153317
+Current pb_deadline: 2931000, recovered_ts: 2943000
+Stack rx ts: 1262,1555415741440169730
+Received item: 1262,1555415741440171164
+Current pb_deadline: 2931000, recovered_ts: 2943000
+Stack rx ts: 1263,1555415741440180560
+Received item: 1263,1555415741440181638
+Current pb_deadline: 2931000, recovered_ts: 2943000
+Stack rx ts: 1264,1555415741440190543
+Received item: 1264,1555415741440191611
+Current pb_deadline: 2931000, recovered_ts: 2943000
+Stack rx ts: 1265,1555415741456397527
+Received item: 1265,1555415741456406558
+Current pb_deadline: 2934000, recovered_ts: 2946000
+Stack rx ts: 1266,1555415741472467063
+Received item: 1266,1555415741472474436
+Current pb_deadline: 2937000, recovered_ts: 2949000
+Stack rx ts: 1267,1555415741490158820
+Received item: 1267,1555415741490164809
+Current pb_deadline: 2940000, recovered_ts: 2952000
+Stack rx ts: 1268,1555415741505984222
+Received item: 1268,1555415741505988562
+Current pb_deadline: 2943000, recovered_ts: 2955000
+Stack rx ts: 1269,1555415741522505958
+Received item: 1269,1555415741522512894
+Current pb_deadline: 2946000, recovered_ts: 2958000
+Stack rx ts: 1270,1555415741539213154
+Received item: 1270,1555415741539223774
+Current pb_deadline: 2949000, recovered_ts: 2961000
+Stack rx ts: 1271,1555415741555838739
+Received item: 1271,1555415741555849884
+Current pb_deadline: 2952000, recovered_ts: 2964000
+Stack rx ts: 1272,1555415741572628001
+Received item: 1272,1555415741572638971
+Current pb_deadline: 2955000, recovered_ts: 2967000
+Stack rx ts: 1273,1555415741589831696
+Received item: 1273,1555415741589840591
+Current pb_deadline: 2958000, recovered_ts: 2970000
+Stack rx ts: 1274,1555415741606628371
+Received item: 1274,1555415741606637162
+Current pb_deadline: 2961000, recovered_ts: 2973000
+Stack rx ts: 1275,1555415741606653770
+Received item: 1275,1555415741606655113
+Current pb_deadline: 2961000, recovered_ts: 2973000
+Stack rx ts: 1276,1555415741606664475
+Received item: 1276,1555415741606665703
+Current pb_deadline: 2961000, recovered_ts: 2973000
+Stack rx ts: 1277,1555415741606674267
+Received item: 1277,1555415741606675701
+Current pb_deadline: 2961000, recovered_ts: 2973000
+Stack rx ts: 1278,1555415741623347903
+Received item: 1278,1555415741623356728
+Current pb_deadline: 2964000, recovered_ts: 2976000
+Stack rx ts: 1279,1555415741639995454
+Received item: 1279,1555415741640004375
+Current pb_deadline: 2967000, recovered_ts: 2979000
+Stack rx ts: 1280,1555415741656762776
+Received item: 1280,1555415741656771136
+Current pb_deadline: 2970000, recovered_ts: 2982000
+Stack rx ts: 1281,1555415741673286944
+Received item: 1281,1555415741673295318
+Current pb_deadline: 2973000, recovered_ts: 2985000
+Stack rx ts: 1282,1555415741690055097
+Received item: 1282,1555415741690063843
+Current pb_deadline: 2976000, recovered_ts: 2988000
+Stack rx ts: 1283,1555415741706622252
+Received item: 1283,1555415741706630882
+Current pb_deadline: 2979000, recovered_ts: 2991000
+Stack rx ts: 1284,1555415741722812012
+Received item: 1284,1555415741722823318
+Current pb_deadline: 2982000, recovered_ts: 2994000
+Stack rx ts: 1285,1555415741739873478
+Received item: 1285,1555415741739882344
+Current pb_deadline: 2985000, recovered_ts: 2997000
+Stack rx ts: 1286,1555415741756888071
+Received item: 1286,1555415741756896681
+Current pb_deadline: 2988000, recovered_ts: 3000000
+Stack rx ts: 1287,1555415741773373529
+Received item: 1287,1555415741773382335
+Current pb_deadline: 2991000, recovered_ts: 3003000
+Stack rx ts: 1288,1555415741773398537
+Received item: 1288,1555415741773400071
+Current pb_deadline: 2991000, recovered_ts: 3003000
+Stack rx ts: 1289,1555415741773617067
+Received item: 1289,1555415741773620961
+Current pb_deadline: 2991000, recovered_ts: 3003000
+Stack rx ts: 1290,1555415741773632437
+Received item: 1290,1555415741773633585
+Current pb_deadline: 2991000, recovered_ts: 3003000
+Stack rx ts: 1291,1555415741790225341
+Received item: 1291,1555415741790233936
+Current pb_deadline: 2994000, recovered_ts: 3006000
+Stack rx ts: 1292,1555415741807033538
+Received item: 1292,1555415741807042333
+Current pb_deadline: 2997000, recovered_ts: 3009000
+Stack rx ts: 1293,1555415741823634902
+Received item: 1293,1555415741823643768
+Current pb_deadline: 3000000, recovered_ts: 3012000
+Stack rx ts: 1294,1555415741840378289
+Received item: 1294,1555415741840390282
+Current pb_deadline: 3003000, recovered_ts: 3015000
+Stack rx ts: 1295,1555415741856612203
+Received item: 1295,1555415741856618271
+Current pb_deadline: 3006000, recovered_ts: 3018000
+Stack rx ts: 1296,1555415741873678037
+Received item: 1296,1555415741873682951
+Current pb_deadline: 3009000, recovered_ts: 3021000
+Stack rx ts: 1297,1555415741890967497
+Received item: 1297,1555415741890976365
+Current pb_deadline: 3012000, recovered_ts: 3024000
+Stack rx ts: 1298,1555415741906476853
+Received item: 1298,1555415741906482923
+Current pb_deadline: 3015000, recovered_ts: 3027000
+Stack rx ts: 1299,1555415741923086598
+Received item: 1299,1555415741923095215
+Current pb_deadline: 3018000, recovered_ts: 3030000
+Final: 10400,0,0
