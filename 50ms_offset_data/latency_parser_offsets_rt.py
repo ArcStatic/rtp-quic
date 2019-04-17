@@ -429,7 +429,7 @@ plt.ylabel("Actual playback time (s)")
 #y = y0.copy() + 2.5
 #y = pb_delay_counter_array
 x = sent_times
-plt.xlabel("Time sent (ms)")
+plt.xlabel("Time sent (s)")
 
 lines = plt.step(x, y, label='Actual time each packet is played when reaching application')
 
