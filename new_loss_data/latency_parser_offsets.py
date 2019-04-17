@@ -340,7 +340,7 @@ for i in range(len(app_seqnums)):
     
     delay_encountered = (playback_diff > playback_diff_prev)
     
-    print("i: %d" % i)
+    #print("i: %d" % i)
     sent_time = (start_app_times.get(app_seqnums[i]))
     #played_time = (end_app_times.get(app_seqnums[i]))
     #add playback delay and diff per frame
@@ -368,9 +368,9 @@ for i in range(len(app_seqnums)):
         else:
           played_time = (played_times_ns[i-1] + diff_per_frame_ns)
         fragment = 0
-    print("pb_delay_counter: %d " % pb_delay_counter)
-    print("pb_delay_counter ns: %d " % (((pb_delay_counter)/3000) * diff_per_frame_ns))
-    print("played_time: %d (%f)" % (played_time, (played_time - first_ts)/1000000000.0))
+    #print("pb_delay_counter: %d " % pb_delay_counter)
+    #print("pb_delay_counter ns: %d " % (((pb_delay_counter)/3000) * diff_per_frame_ns))
+    #print("played_time: %d (%f)" % (played_time, (played_time - first_ts)/1000000000.0))
     #playback time calculated in s
     #playback_offsets_array.append((played_time - sent_time)/1000000000.0)
     #playback_offsets_array.append(((played_time - sent_time) + (((pb_delay_counter)/3000) * diff_per_frame_ns))/1000000000.0)
@@ -385,7 +385,7 @@ for i in range(len(app_seqnums)):
       #playback_times_actual[i] = playback_times_rtp_ts[i]
     
     pb_offset_seconds = ((pb_delay_counter)/3000) * diff_per_frame;
-    print("pb_offset_seconds: %f " % pb_offset_seconds)
+    #print("pb_offset_seconds: %f " % pb_offset_seconds)
     
     
    
@@ -393,9 +393,9 @@ for i in range(len(app_seqnums)):
     played_times.append((played_time - first_ts)/1000000000.0)
     played_times_ns.append((played_time))
     playback_offsets_array.append(played_times[i] - sent_times[i])
-    print(played_times[i])
-    print(played_times_ns[i])
-    print("#####")
+    #print(played_times[i])
+    #print(played_times_ns[i])
+    #print("#####")
       #print("played_times appended val: %f" % ((played_time - first_ts)/1000000000.0))
     #playback_offsets_array.append((played_times[i] - (sent_time/1000000000.0)))
     pb_offsets_array.append(pb_offset_seconds)
