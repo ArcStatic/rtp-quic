@@ -246,6 +246,7 @@ for i in range(len(app_seqnums)):
     #if ((playback_offsets_array[i] != 0) and (playback_offsets_array[i-1] < 0) and (playback_offsets_array[i] > 0)):
     if ((playback_diff_prev <= 0) and (playback_diff > 0)):
       pb_delay_counter += playback_diff
+      print("%d - %d = %d" % ((end_app_times.get(app_seqnums[i])), (start_app_times.get(app_seqnums[i])), ((end_app_times.get(app_seqnums[i])) - start_app_times.get(app_seqnums[i]))))
     
     if(playback_diff > 0):
       stale_packets += 1
@@ -394,7 +395,7 @@ for i in range(len(app_seqnums)):
         if ((playback_diff > playback_diff_prev) and (playback_diff > 0)):
           #played_time = (played_times_ns[i-1] + (((pb_delay_counter)/3000) * diff_per_frame_ns) + diff_per_frame_ns)
           played_time = (played_times_ns[i-1] + ((((pb_delay_counter)/3000) * diff_per_frame_ns) + (diff_per_frame_ns * frame_gap)))
-          print("i-frame stall at %d" % i)
+          #print("i-frame stall at %d" % i)
           stalls += 1
         else:
           #played_time = (played_times_ns[i-1] + diff_per_frame_ns)
@@ -408,8 +409,8 @@ for i in range(len(app_seqnums)):
         if ((playback_diff > playback_diff_prev) and (playback_diff > 0)):
           #played_time = (played_times_ns[i-1] + (((pb_delay_counter)/3000) * diff_per_frame_ns) + diff_per_frame_ns)
           played_time = (played_times_ns[i-1] + (((pb_delay_counter)/3000) * diff_per_frame_ns) + (diff_per_frame_ns * frame_gap))
-          print("p-frame stall at %d" % i)
-          print("playback_diff %d, playback_diff_prev %d " % (playback_diff, playback_diff_prev))
+          #print("p-frame stall at %d" % i)
+          #print("playback_diff %d, playback_diff_prev %d " % (playback_diff, playback_diff_prev))
           stalls += 1
         else:
           #played_time = (played_times_ns[i-1] + diff_per_frame_ns)
