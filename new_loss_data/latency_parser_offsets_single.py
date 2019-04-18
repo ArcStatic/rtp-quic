@@ -29,6 +29,9 @@ processed_seqnums = []
 received_count = 0
 questionable_entries = []
 
+graph_start_idx = 0
+graph_end_idx = 0
+
 #timestamps seem to be in ns
 for i in range(len(end_app_data)):
   if ("stream frame received" in end_app_data[i]):
@@ -217,6 +220,9 @@ for i in range(len(app_seqnums)):
     #if ((playback_offsets_array[i] != 0) and (playback_offsets_array[i-1] < 0) and (playback_offsets_array[i] > 0)):
     if ((playback_diff_prev <= 0) and (playback_diff > 0)):
       pb_delay_counter += playback_diff
+      if (graph_start_idx == 0):  
+        graph_start_idx = i - 20
+        graph_end_idx = i + 20
     
     '''
     playback_offsets_array.append(((playback_times_actual[i] + playback_diff) - (playback_times_rtp_ts[i] + playback_diff)))
@@ -493,7 +499,7 @@ plt.ylabel("Latency (ms)")
 lines = plt.plot(x, y, 'ro')
 plt.setp(lines, markersize=0.4)
 plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 300, 0, 300])
+plt.axis([0, 300, 0, 175])
 
 #y -= 0.5
 #plt.step(x, y, where='post', label='post')
@@ -524,7 +530,7 @@ plt.ylabel("Latency (ms)")
 lines = plt.plot(x, y, 'ro')
 plt.setp(lines, markersize=0.4)
 plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 300, 0, 300])
+plt.axis([0, 300, 0, 175])
 
 #y -= 0.5
 #plt.step(x, y, where='post', label='post')
@@ -571,7 +577,7 @@ plt.ylim(0, 300)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-relative-%s.png' % sys.argv[1][:-4])
+plt.savefig('offsets-relative-single.png')
 
 l = lines.pop(0)
 l.remove()
@@ -579,13 +585,13 @@ del l
 
 #################
 
-x = time_axis_data_app_array
+x = time_axis_data_app_array[graph_start_idx:graph_end_idx]
 plt.xlabel("Time elapsed (s)")
 #y0 = latencies
 #y = y0.copy() + 2.5
 #y = pb_delay_counter_array
 #y = playback_offsets_array
-y = pb_offsets_array
+y = pb_offsets_array[graph_start_idx:graph_end_idx]
 plt.ylabel("Cumulative delay in playback time (s)")
 
 lines = plt.step(x, y, label='Difference between actual and originally intended playback times')
@@ -595,8 +601,10 @@ lines = plt.step(x, y, label='Difference between actual and originally intended 
 
 #plt.legend()
 
-plt.xlim(0, 300)
-plt.ylim(0, 2)
+#plt.xlim(0, 300)
+#plt.ylim(0, 2)
+plt.xlim(time_axis_data_app_array[graph_start_idx], time_axis_data_app_array[graph_end_idx] - 0.025)
+plt.ylim(pb_offsets_array[graph_start_idx], pb_offsets_array[graph_end_idx] + 0.01)
 
 #y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
 #plt.step(x, y, label='masked (pre)')
@@ -604,7 +612,7 @@ plt.ylim(0, 2)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-%s.png' % sys.argv[1][:-4])
+plt.savefig('offsets-single.png')
 
 
 
