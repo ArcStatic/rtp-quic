@@ -1,13 +1,62 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{IP-RFC}
 {RFC 791: Internet Protocol: DARPA Internet Program Protocol Specification}.
 \newblock Sep 1981.
 
+\bibitem{ngtcp2}
+{ngtcp2}.
+\newblock 2019 Apr.
+
+\bibitem{Bhat2017}
+D.~Bhat, A.~Rizk, and M.~Zink.
+\newblock {Not so QUIC: A Performance Study of DASH over QUIC}.
+\newblock {\em MMSys 17}, pages 1--6, 2017.
+
 \bibitem{CISCO2015}
 CISCO.
 \newblock {The Zettabyte Era: Trends and Analysis}.
 \newblock {\em Cisco}, (May 2015):1--29, 2015.
+
+\bibitem{quic-transport-16}
+J.~Iyengar and M.~Thomson.
+\newblock {QUIC: A UDP-Based Multiplexed and Secure Transport,
+  draft-ietf-quic-transport-16}.
+\newblock Oct 2018.
+
+\bibitem{RTP-TCP-RFC}
+J.~Lazzaro.
+\newblock {RFC 4571: Framing Real-time Transport Protocol (RTP) and RTP Control
+  Protocol (RTCP) Packets over Connection-Oriented Transport}.
+\newblock 2006 Jul.
+
+\bibitem{Lubashev2018}
+I.~Lubashev.
+\newblock {Partially Reliable Message Streams for QUIC:
+  draft-lubashev-quic-partial-reliability-03}.
+\newblock 2018 May.
+
+\bibitem{McQuistin2016}
+S.~McQuistin, C.~Perkins, and M.~Fayed.
+\newblock {TCP goes to hollywood}.
+\newblock {\em Proceedings of the 26th International Workshop on Network and
+  Operating Systems Support for Digital Audio and Video - NOSSDAV '16}, pages
+  1--6, 2016.
+
+\bibitem{Palmer2018}
+M.~Palmer, T.~Kr{\"{u}}ger, B.~Chandrasekaran, and A.~Feldmann.
+\newblock {The QUIC Fix for Optimal Video Streaming}.
+\newblock (im):43--49, 2018.
+
+\bibitem{UDP-RFC}
+J.~Postel.
+\newblock {RFC 768: User Datagram Protocol}.
+\newblock Aug 1980.
+
+\bibitem{TLS-RFC}
+E.~Rescorla.
+\newblock {RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3}.
+\newblock 2018 Aug.
 
 \bibitem{TCP-RFC}
 J.~Rey, D.~Leon, A.~Miyazaki, V.~Varsa, and R.~Hakenberg.
@@ -26,6 +75,12 @@ J.~R{\"{u}}th, I.~Poese, C.~Dietzel, and O.~Hohlfeld.
 H.~Schulzrinne, S.~Casner, R.~Frederick, and V.~Jacobson.
 \newblock {RFC 3550: RTP: A Transport Protocol for Real-Time Applications}.
 \newblock Jul 2003.
+
+\bibitem{Tiesel2017}
+P.~Tiesel, M.~Palmer, B.~Chandrasekaran, A.~Feldmann, and J.~Ott.
+\newblock {Considerations for Unreliable Streams in QUIC:
+  draft-tiesel-quic-unreliable-streams-01}.
+\newblock 2017 Oct.
 
 \bibitem{ITU-REC}
 I.~T. Union.

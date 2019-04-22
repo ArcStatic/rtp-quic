@@ -1,18 +1,21 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Motivation}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Related Work}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Design}{}% 5
-\BOOKMARK [1][-]{section.4}{Results}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Differences in Stack Latency}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Differences in Application Latency}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{Differences in Playback Time}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Future Work}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{Congestion Control}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Improved I-frame Handling}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.3}{Multiple Streams}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Conclusions}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Placement of Complexity}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Partial Reliability for Other Real-Time Applcations}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.3}{Uses for QUICsilver}{section.6}% 17
-\BOOKMARK [1][-]{section.7}{References}{}% 18
+\BOOKMARK [2][-]{subsection.2.1}{Video Frames}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Head-of-Line Blocking}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Related Work}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Reliable and Unreliable QUIC Streams}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Deadline Awareness}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Design}{}% 8
+\BOOKMARK [1][-]{section.5}{Results}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Differences in Stack Latency}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Differences in Application Latency}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Differences in Playback Time}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Future Work}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Congestion Control}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Improved I-frame Handling}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Multiple Streams}{section.6}% 16
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 17
+\BOOKMARK [2][-]{subsection.7.1}{Placement of Complexity}{section.7}% 18
+\BOOKMARK [2][-]{subsection.7.2}{Partial Reliability for Other Real-Time Applcations}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.3}{Uses for QUICsilver}{section.7}% 20
+\BOOKMARK [1][-]{section.8}{References}{}% 21

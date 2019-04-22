@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.11)  22 APR 2019 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.11)  22 APR 2019 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,7 +503,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-<CompSci_colour.pdf, id=76, 340.27126pt x 49.18375pt>
+<CompSci_colour.pdf, id=88, 340.27126pt x 49.18375pt>
 File: CompSci_colour.pdf Graphic file (type pdf)
  <use CompSci_colour.pdf>
 Package pdftex.def Info: CompSci_colour.pdf used on input line 15.
@@ -513,281 +513,298 @@ Package pdftex.def Info: CompSci_colour.pdf used on input line 15.
 LaTeX Warning: Citation `Langley2017' on page 1 undefined on input line 52.
 
 
-Overfull \hbox (7.78111pt too wide) in paragraph at lines 60--61
+Overfull \hbox (7.78111pt too wide) in paragraph at lines 58--59
 \T1/aer/m/n/9 sub-ject to play-back dead-lines, in or-der to im-prove the throu
 gh-
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./CompSci_colour.pdf>]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 140.
+<images/holtcp.png, id=118, 661.47125pt x 453.695pt>
+File: images/holtcp.png Graphic file (type png)
+ <use images/holtcp.png>
+Package pdftex.def Info: images/holtcp.png used on input line 129.
+(pdftex.def)             Requested size: 264.58382pt x 181.47478pt.
 
+Overfull \hbox (24.58382pt too wide) in paragraph at lines 129--131
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 143.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [2]
-<images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png, id=113, 462
+)
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [2 <./images/holtcp.png>] [3] [4
+
+]
+<images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png, id=159, 462
 .528pt x 346.896pt>
 File: images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png Graphic
  file (type png)
 
 <use images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/50ms-stack-latencies-combined-
-PARTIAL.png used on input line 169.
+PARTIAL.png used on input line 210.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-partial/100ms-stack-latencies-combined-PARTIAL.png, id=115, 46
+<images/graphics-partial/100ms-stack-latencies-combined-PARTIAL.png, id=161, 46
 2.528pt x 346.896pt>
 File: images/graphics-partial/100ms-stack-latencies-combined-PARTIAL.png Graphi
 c file (type png)
 
 <use images/graphics-partial/100ms-stack-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/100ms-stack-latencies-combined
--PARTIAL.png used on input line 174.
+-PARTIAL.png used on input line 215.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-partial/150ms-stack-latencies-combined-PARTIAL.png, id=116, 46
+<images/graphics-partial/150ms-stack-latencies-combined-PARTIAL.png, id=162, 46
 2.528pt x 346.896pt>
 File: images/graphics-partial/150ms-stack-latencies-combined-PARTIAL.png Graphi
 c file (type png)
 
 <use images/graphics-partial/150ms-stack-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/150ms-stack-latencies-combined
--PARTIAL.png used on input line 180.
+-PARTIAL.png used on input line 221.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/50ms-stack-latencies-combined-reliable.png, id=117, 4
+<images/graphics-reliable/50ms-stack-latencies-combined-reliable.png, id=163, 4
 62.528pt x 346.896pt>
 File: images/graphics-reliable/50ms-stack-latencies-combined-reliable.png Graph
 ic file (type png)
 
 <use images/graphics-reliable/50ms-stack-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/50ms-stack-latencies-combined
--reliable.png used on input line 190.
+-reliable.png used on input line 231.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/100ms-stack-latencies-combined-reliable.png, id=118, 
+<images/graphics-reliable/100ms-stack-latencies-combined-reliable.png, id=164, 
 462.528pt x 346.896pt>
 File: images/graphics-reliable/100ms-stack-latencies-combined-reliable.png Grap
 hic file (type png)
 
 <use images/graphics-reliable/100ms-stack-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/100ms-stack-latencies-combine
-d-reliable.png used on input line 195.
+d-reliable.png used on input line 236.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/150ms-stack-latencies-combined-reliable.png, id=119, 
+<images/graphics-reliable/150ms-stack-latencies-combined-reliable.png, id=165, 
 462.528pt x 346.896pt>
 File: images/graphics-reliable/150ms-stack-latencies-combined-reliable.png Grap
 hic file (type png)
 
 <use images/graphics-reliable/150ms-stack-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/150ms-stack-latencies-combine
-d-reliable.png used on input line 201.
+d-reliable.png used on input line 242.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-[3 <./images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png> <./ima
+[5 <./images/graphics-partial/50ms-stack-latencies-combined-PARTIAL.png> <./ima
 ges/graphics-partial/100ms-stack-latencies-combined-PARTIAL.png> <./images/grap
 hics-partial/150ms-stack-latencies-combined-PARTIAL.png> <./images/graphics-rel
 iable/50ms-stack-latencies-combined-reliable.png> <./images/graphics-reliable/1
 00ms-stack-latencies-combined-reliable.png> <./images/graphics-reliable/150ms-s
 tack-latencies-combined-reliable.png>]
-<images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png, id=136, 462.5
+<images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png, id=183, 462.5
 28pt x 346.896pt>
 File: images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png Graphic f
 ile (type png)
 
 <use images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/50ms-app-latencies-combined-PA
-RTIAL.png used on input line 214.
+RTIAL.png used on input line 255.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-partial/100ms-app-latencies-combined-PARTIAL.png, id=137, 462.
+<images/graphics-partial/100ms-app-latencies-combined-PARTIAL.png, id=184, 462.
 528pt x 346.896pt>
 File: images/graphics-partial/100ms-app-latencies-combined-PARTIAL.png Graphic 
 file (type png)
 
 <use images/graphics-partial/100ms-app-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/100ms-app-latencies-combined-P
-ARTIAL.png used on input line 219.
+ARTIAL.png used on input line 260.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-partial/150ms-app-latencies-combined-PARTIAL.png, id=138, 462.
+<images/graphics-partial/150ms-app-latencies-combined-PARTIAL.png, id=185, 462.
 528pt x 346.896pt>
 File: images/graphics-partial/150ms-app-latencies-combined-PARTIAL.png Graphic 
 file (type png)
 
 <use images/graphics-partial/150ms-app-latencies-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/150ms-app-latencies-combined-P
-ARTIAL.png used on input line 225.
+ARTIAL.png used on input line 266.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/50ms-app-latencies-combined-reliable.png, id=139, 462
+<images/graphics-reliable/50ms-app-latencies-combined-reliable.png, id=186, 462
 .528pt x 346.896pt>
 File: images/graphics-reliable/50ms-app-latencies-combined-reliable.png Graphic
  file (type png)
 
 <use images/graphics-reliable/50ms-app-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/50ms-app-latencies-combined-r
-eliable.png used on input line 235.
+eliable.png used on input line 276.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/100ms-app-latencies-combined-reliable.png, id=140, 46
+<images/graphics-reliable/100ms-app-latencies-combined-reliable.png, id=187, 46
 2.528pt x 346.896pt>
 File: images/graphics-reliable/100ms-app-latencies-combined-reliable.png Graphi
 c file (type png)
 
 <use images/graphics-reliable/100ms-app-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/100ms-app-latencies-combined-
-reliable.png used on input line 240.
+reliable.png used on input line 281.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/150ms-app-latencies-combined-reliable.png, id=141, 46
+<images/graphics-reliable/150ms-app-latencies-combined-reliable.png, id=188, 46
 2.528pt x 346.896pt>
 File: images/graphics-reliable/150ms-app-latencies-combined-reliable.png Graphi
 c file (type png)
 
 <use images/graphics-reliable/150ms-app-latencies-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/150ms-app-latencies-combined-
-reliable.png used on input line 246.
+reliable.png used on input line 287.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-[4 <./images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png> <./image
+[6 <./images/graphics-partial/50ms-app-latencies-combined-PARTIAL.png> <./image
 s/graphics-partial/100ms-app-latencies-combined-PARTIAL.png> <./images/graphics
 -partial/150ms-app-latencies-combined-PARTIAL.png> <./images/graphics-reliable/
 50ms-app-latencies-combined-reliable.png> <./images/graphics-reliable/100ms-app
 -latencies-combined-reliable.png> <./images/graphics-reliable/150ms-app-latenci
 es-combined-reliable.png>]
-<images/offsets-single.png, id=161, 462.528pt x 346.896pt>
+<images/offsets-single.png, id=208, 462.528pt x 346.896pt>
 File: images/offsets-single.png Graphic file (type png)
 
 <use images/offsets-single.png>
-Package pdftex.def Info: images/offsets-single.png used on input line 275.
+Package pdftex.def Info: images/offsets-single.png used on input line 316.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/offsets-single-100ms.png, id=162, 462.528pt x 346.896pt>
+<images/offsets-single-100ms.png, id=209, 462.528pt x 346.896pt>
 File: images/offsets-single-100ms.png Graphic file (type png)
 
 <use images/offsets-single-100ms.png>
-Package pdftex.def Info: images/offsets-single-100ms.png used on input line 280
+Package pdftex.def Info: images/offsets-single-100ms.png used on input line 321
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/offsets-single-150ms.png, id=163, 462.528pt x 346.896pt>
+<images/offsets-single-150ms.png, id=210, 462.528pt x 346.896pt>
 File: images/offsets-single-150ms.png Graphic file (type png)
 
 <use images/offsets-single-150ms.png>
-Package pdftex.def Info: images/offsets-single-150ms.png used on input line 286
+Package pdftex.def Info: images/offsets-single-150ms.png used on input line 327
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 299.
+LaTeX Font Info:    Try loading font information for U+msa on input line 340.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 299.
+LaTeX Font Info:    Try loading font information for U+msb on input line 340.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 []|\T1/aer/m/n/9 Frames
  []
 
 
-<images/graphics-reliable/50ms-offsets-combined-reliable.png, id=167, 462.528pt
+<images/graphics-reliable/50ms-offsets-combined-reliable.png, id=214, 462.528pt
  x 346.896pt>
 File: images/graphics-reliable/50ms-offsets-combined-reliable.png Graphic file 
 (type png)
 
 <use images/graphics-reliable/50ms-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/50ms-offsets-combined-reliabl
-e.png used on input line 318.
+e.png used on input line 359.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/100ms-offsets-combined-reliable.png, id=168, 462.528p
+<images/graphics-reliable/100ms-offsets-combined-reliable.png, id=215, 462.528p
 t x 346.896pt>
 File: images/graphics-reliable/100ms-offsets-combined-reliable.png Graphic file
  (type png)
 
 <use images/graphics-reliable/100ms-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/100ms-offsets-combined-reliab
-le.png used on input line 323.
+le.png used on input line 364.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/150ms-offsets-combined-reliable.png, id=169, 462.528p
+<images/graphics-reliable/150ms-offsets-combined-reliable.png, id=216, 462.528p
 t x 346.896pt>
 File: images/graphics-reliable/150ms-offsets-combined-reliable.png Graphic file
  (type png)
 
 <use images/graphics-reliable/150ms-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/150ms-offsets-combined-reliab
-le.png used on input line 329.
+le.png used on input line 370.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/50ms-relative-offsets-combined-reliable.png, id=170, 
+<images/graphics-reliable/50ms-relative-offsets-combined-reliable.png, id=217, 
 462.528pt x 346.896pt>
 File: images/graphics-reliable/50ms-relative-offsets-combined-reliable.png Grap
 hic file (type png)
 
 <use images/graphics-reliable/50ms-relative-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/50ms-relative-offsets-combine
-d-reliable.png used on input line 339.
+d-reliable.png used on input line 380.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/100ms-relative-offsets-combined-reliable.png, id=171,
+<images/graphics-reliable/100ms-relative-offsets-combined-reliable.png, id=218,
  462.528pt x 346.896pt>
 File: images/graphics-reliable/100ms-relative-offsets-combined-reliable.png Gra
 phic file (type png)
 
 <use images/graphics-reliable/100ms-relative-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/100ms-relative-offsets-combin
-ed-reliable.png used on input line 344.
+ed-reliable.png used on input line 385.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-<images/graphics-reliable/150ms-relative-offsets-combined-reliable.png, id=172,
+<images/graphics-reliable/150ms-relative-offsets-combined-reliable.png, id=219,
  462.528pt x 346.896pt>
 File: images/graphics-reliable/150ms-relative-offsets-combined-reliable.png Gra
 phic file (type png)
 
 <use images/graphics-reliable/150ms-relative-offsets-combined-reliable.png>
 Package pdftex.def Info: images/graphics-reliable/150ms-relative-offsets-combin
-ed-reliable.png used on input line 350.
+ed-reliable.png used on input line 391.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
 []|\T1/aer/m/n/9 Latency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
 []|\T1/aer/m/n/9 Discrepancy
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 362--362
+Underfull \hbox (badness 1199) in paragraph at lines 403--403
 []|\T1/aer/m/n/9 Total la-tency
  []
 
 
-Overfull \hbox (4.8692pt too wide) in paragraph at lines 360--374
+Overfull \hbox (4.8692pt too wide) in paragraph at lines 401--415
  [] 
  []
 
-[5
+[7
 
 
 
  <./images/offsets-single.png> <./images/offsets-single-100ms.png> <./images/of
-fsets-single-150ms.png>] [6 <./images/graphics-reliable/50ms-offsets-combined-r
+fsets-single-150ms.png>] [8 <./images/graphics-reliable/50ms-offsets-combined-r
 eliable.png> <./images/graphics-reliable/100ms-offsets-combined-reliable.png> <
 ./images/graphics-reliable/150ms-offsets-combined-reliable.png> <./images/graph
 ics-reliable/50ms-relative-offsets-combined-reliable.png> <./images/graphics-re
 liable/100ms-relative-offsets-combined-reliable.png> <./images/graphics-reliabl
 e/150ms-relative-offsets-combined-reliable.png>]
-Overfull \hbox (6.7664pt too wide) in paragraph at lines 391--392
+Overfull \hbox (6.7664pt too wide) in paragraph at lines 432--433
 []\T1/aer/m/n/9 QUICsilver ex-pe-ri-ences no stalls due to in-cre-ment-ing stre
 am
  []
@@ -796,14 +813,14 @@ am
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png, id=211, 46
+<images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png, id=258, 46
 2.528pt x 346.896pt>
 File: images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png Graphi
 c file (type png)
 
 <use images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png>
 Package pdftex.def Info: images/graphics-partial/50ms-relative-offsets-combined
--PARTIAL.png used on input line 413.
+-PARTIAL.png used on input line 454.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
 
@@ -812,66 +829,67 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png>] [8
+ [9 <./images/graphics-partial/50ms-relative-offsets-combined-PARTIAL.png>] [10
 
 ]
-Overfull \hbox (1.19536pt too wide) in paragraph at lines 465--466
+Overfull \hbox (1.19536pt too wide) in paragraph at lines 506--507
 \T1/aer/m/n/9 ple-men-ta-tion of par-tial re-li-a-bil-ity which de-liv-ers vide
 o frames
  []
 
 
-Overfull \hbox (5.4337pt too wide) in paragraph at lines 484--484
+Overfull \hbox (5.4337pt too wide) in paragraph at lines 525--525
 []\secfnt Partial Re-li-a-bil-ity for Other Real-Time Ap-
  []
 
 
-Overfull \hbox (9.8623pt too wide) in paragraph at lines 485--486
+Overfull \hbox (9.8623pt too wide) in paragraph at lines 526--527
 []\T1/aer/m/n/9 The de-vel-op-ment of video-based real-time ap-pli-ca-tions whi
 ch
  []
 
-[9
+[11
 
 ] (./example.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 500.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 541.
 - LAST -
-Extra skip:9.79596pt
-Left:251.5pt/1.74596pt
-Right:241.2pt/2.25pt
-Output:251.59999pt
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 500.
+Extra skip:20.28148pt
+Left:418.7pt/1.74596pt
+Right:398.41852pt/1.74596pt
+Output:413.80925pt
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 541.
  (./example.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 500.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 500.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 541.
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 97228BE213B746EDB4E6FB7CC5B3E9AF;1124.
+(rerunfilecheck)             Checksum: B6DCE0032640F7CB69E54F22344691B2;1337.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 500.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 541.
  ) 
 Here is how much of TeX's memory you used:
- 9335 strings out of 494953
- 140145 string characters out of 6180976
- 252962 words of memory out of 5000000
- 12392 multiletter control sequences out of 15000+600000
- 46331 words of font info for 62 fonts, out of 8000000 for 9000
+ 9373 strings out of 494953
+ 140653 string characters out of 6180976
+ 252317 words of memory out of 5000000
+ 12410 multiletter control sequences out of 15000+600000
+ 48844 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,10n,49p,1269b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,49p,1776b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
-r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on example.pdf (10 pages, 1042198 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
+etic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on example.pdf (12 pages, 1181446 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 

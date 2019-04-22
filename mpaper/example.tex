@@ -92,7 +92,7 @@ The removal of items which will not be useful to the client based on predicted p
 % the reader a road-map for the rest of the paper. Try to avoid redundant
 % phrasing, "In Section 2, In section 3, ..., In Section 4, ... ", etc.
 
-The remainder of this paper is structured as follows. Section 2 explores the background knowledge of sending video content using RTP and existing work on optimising QUIC for multimedia content. 
+The remainder of this paper is structured as follows. Section 2 explores the background knowledge of sending video content using RTP and section 3 reviews existing work on optimising reliable transport protocols for multimedia content. The design of QUICsilver is explained in section 4, and analysis of the tests performed to compare its performance to standard QUIC is conducted in section 5. Future work to improve QUICsilver is proposed in section 6, and conclusions about using QUIC for multimedia which have been gained from this project are discussed in section 7.
 
 %==================================================================================================
 % Concentrate single-mindedly on a narrative that:
@@ -117,13 +117,57 @@ The remainder of this paper is structured as follows. Section 2 explores the bac
 
 % The problem
 
-\subsection{Motivation}
+\subsection{Video Frames} 
 
-\subsection{Related Work}
+
+
+\subsection{Head-of-Line Blocking}
+
+Reliable transports such as QUIC and TCP suffer from high latency due to head-of-line blocking. This occurs due to the guaranteed, ordered delivery of data: in order to ensure that all data is delivered in-order to an application, the protocol waits for .
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{images/holtcp}
+\centering
+\caption{Head-of-line blocking within TCP as illustrated by McQuistin \textit{et al} \cite{McQuistin2016}. The loss of the packet with sequence number 3 prevents any subsequent packets being delivered to the application until it is received.}
+\end{figure}
+
+QUIC mitigates this issue by using several streams demultiplexed 
+over a single UDP socket. Although head-of-line blocking still occurs in response to loss, the 
+obstruction is confined to a single stream rather than blocking the entire connection. With some 
+adjustments to optimisation algorithms used in DASH, QUIC could be used to provide higher quality 
+streaming services for unidirectional media content \cite{Bhat2017}.
+
+
+%==================================================================================================
+\section{Related Work}
+QUIC-R, a set of real-time extensions to QUIC suggested by Perkins and Ott, contains valuable background information about the evolution of video streaming technologies and their potential place in QUIC. RTP was historically used to stream media on less reliable networks from the mid-1990s, but applications using this protocol are complex due to the mechanisms required to mitigate the effects of packet loss and out-of-order arrival. Dynamic Adaptive Streaming over HTTP (DASH) is less complex, providing media content in pre-encoded chunks through a series of HTTP \texttt{GET} requests; this approach has become more widely used as networks have increased in quality and demand has risen for unidirectional streaming (i.e. the content being sent is not impacted by the actions of the receiver and therefore has more relaxed latency bounds).
+
+
+Adapting a mapping of RTP onto TCP specified in RFC 4751 \cite{RTP-TCP-RFC} for use with QUIC is discussed in the QUIC-R paper, but deemed unacceptable for applications with strict latency bounds. This is due to problems with head-of-line blocking which are inherent in all standard TCP stacks: any packets received by a TCP socket with a sequence number greater than the one held by a lost packet cannot be accessed by the application until this lost packet is received. Even if content flows can be multiplexed within the application, all flows are blocked by instances of packet loss even for streams unrelated to the content within the lost packet. An individual stream within QUIC does not suffer head-of-line blocking due to loss on other streams within the connection as a result of streams being multiplexed over a UDP socket, but the affected content does still encounter high latency due to head-of-line blocking occurring within its own stream. This is a problem for real-time multimedia applications where content delivered on parallel streams may be require synchronisation, such as lip-synchronisation on video calls.
+
+\subsection{Reliable and Unreliable QUIC Streams}
+
+The idea of marking some QUIC streams as either reliable, partially reliable, or unreliable was proposed in an IETF draft by Tiesel \textit{et al} \cite{Tiesel2017}. A separate draft by Lubashev \cite{Lubashev2018} elaborates on partial reliability and message abstractions within QUIC, using single octet gaps to notify the application of message boundaries and marking data written to the transport as transmittable or non-retransmittable using offset markers. This approach may work for real-time media through marking data sent before the most recently sent I-frame as being ineligible for retransmission, but this does not guarantee that retransmitted frames will arrive before their respective playback deadlines; additional offset markers would be required to allow stale I-frames to be retransmitted for dependent live P-frames while preventing stale P-frames from being retransmitted. I-frames could be sent at an increased frequency to minimise this issue, but this would impact performance due to applications having to process a large amount of image data more frequently as well as potentially having to retransmit larger frames more often.
+
+An approach which is less generalised, but does not require extensive configuration at the application level is explored in a paper by Palmer \textit{et al} \cite{Palmer2018}. Their extensions to QUIC, named ClipStream, sends I-frames and end-of-stream markers reliably, while P-frames and B-frames are sent on unreliable streams. These unreliable streams perform opportunistic transmission, sending new data instead of retransmitting lost data. This is an improvement on marking contiguous sections of data as retransmittable or non-retransmittable due to less non-useful data being retransmitted, but it assumes that resending P-frames and B-frames is always unnecessary; retransmitting these frames if they will arrive before the playback deadline would improve media quality with no significant disadvantages.
+
+ClipStream requires an application to specify which type of stream it wants to use for sending video files, but the underlying complexities of video reassembly and reliability are abstracted away in several shim layers and 200 lines of modification to their chosen QUIC implementation, \texttt{quic-go}. A reliable control stream containing multiplexing and demultiplexing information co-ordinates the reads of QUIC streams performed by the receiver, allowing it to reconstruct the sent video file. It also uses a shim layer at the sender to mark I-frames as reliable and P-frames and B-frames as unreliable, and another shim layer at the receiver to reassemble the video frames in the correct order before passing this data to the client application.
+
+\subsection{Deadline Awareness}
+
+The API required to use ClipStream is simple compared to the partially reliable streams described by Tiesel and Lubashev, but all three of these approaches lack awareness of playback deadlines for real-time media. This is less of an issue for media playback where latency bounds are more relaxed, such as on-demand TV streaming services, but for applications which should appear to respond to user interactions in real-time, such as multiplayer gaming or video conferencing, determining the usefulness of content before (re-)sending it is vital for reducing the amount of unnecessary data sent.
+
+Previous attempts have been made to implement deadline awareness for partial reliability within reliable, byte-stream oriented transports. TCP Hollywood, a transport protocol developed by McQuistin \textit{et al} \cite{McQuistin2016} for use with real-time applications, has awareness of playback deadlines for real-time applications to determine the usefulness of retransmittable content. If a message marked for retransmission will not reach the receiver before its associated playback deadline, TCP Hollywood will send a different message which will be useful under the same TCP sequence number instead. These are known as inconsistent retransmissions, and are analagous to placing different data into a retransmitted \texttt{STREAM} frame in QUIC; ClipStream performs a similar process, calling it `opportunistic transmission'. As of IETF draft 16 of QUIC transport, QUIC endpoints may treat inconsistent payloads as a \texttt{PROTOCOL\_VIOLATION} error and respond with a \texttt{CONNECTION\_CLOSE} frame \cite{quic-transport-16}, however, it is currently not mandatory. Inconsistent retransmissions could be used as an optimisation for real-time applications using QUIC, with the caveat that not all implementations of the protocol are required to accept this behaviour, but there are two reasons to simply send a new packet for the new payload and not retransmit the old one: firstly, sending a new packet would minimise the chances of the connection being closed as a result of a protocol violation error. Secondly, and more importantly, it is pointless to send an old packet when a client will increment its read offsets based on playback deadlines rather than waiting on lost data: the new data would never be passed to the application.
+
 
 
 %==================================================================================================
 \section{Design}
+
+QUICsilver is a modified version of the \texttt{ngtcp2} QUIC implementation \cite{ngtcp2} which takes a different approach to partial reliability to ClipStream \cite{Palmer2018}: instead of always sending I-frames reliably and P-frames unreliably, packets containing I-frames segments and P-frames are both eligible for retransmission based on whether the server predicts that the packet will reach the client in time to be useful for video playback. 
+
+Video frames transmitted as an RTP packet have an associated 32-bit timestamp and 32-bit sequence number. The RTP sequence number included as part of the payload in each QUIC packet increases monotonically regardless of frame type, but the RTP timestamp section of the payload is the same for all sections of an I-frame; this increments for each distinct frame, rather than for each packet. Only the RTP timestamp and RTP sequence number were included as payloads in QUIC packets; no RTP payload data (i.e. encoded video data) was included, as this did not assist the main point of investigation for this project: to investigate how implementing partial reliability within QUIC can assist with reducing latencies and playback delays.
+
 
 % My idea
 
@@ -483,11 +527,14 @@ Delivering complete video frames in-order while allowing gaps, as the implementa
 The development of video-based real-time applications which rely on a limited number of message types (I-frames and P-frames) can be simplified by making QUIC aware of how to parse these messages and pass them to the application as complete frames in sequential order; this project has been successful in achieving improved real-time video playback performance using this approach. However, the increasing popularity of real-time applications with variable information and behaviour, such as augmented reality, virtual reality, and multiplayer gaming, suggests that passing data to the application as soon as it arrives is the better approach to take for a generalised real-time implementation of QUIC. This prevents ossification in terms of which applications which can use real-time QUIC and also avoids adding an unrealistic level of complexity to QUIC implementations. Creating a new partially reliable QUIC stream type for use alongside guaranteed reliability streams would ensure that key information reaches the receiver while allowing low-latency for other content.
 
 
-\subsection{Uses for QUICsilver}
-QUICsilver provides better performance for applications which require timely responses to user input than standard QUIC through the use of partial reliablity. It achieves this by adjusting its stream read offsets and removing items from its retransmit buffers in response to playback deadlines, yielding consistently lower application latencies at all link latencies and loss levels. This results in intermittent glitches in video playback, but over 95\% of unique frames sent by the server are played back without glitches even in 1\% loss environments, and QUICsilver experiences no cumulative playback latency which prevents extended sessions of real-time media applications from suffering an increasing delay between frames being sent and frames being played. Adjustments to the rate at which I-frames are sent would allow I-frame retransmissions to allow subsequent P-frames to be played correctly; at the current rate of 1 in 10 frames, QUICsilver effectively performs as an unreliable transport at path latencies above 66.6ms.
+\subsection{Utility of QUICsilver}
+%Adjustments to the rate at which I-frames are sent would allow I-frame retransmissions to allow subsequent P-frames to be played correctly; at the current rate of 1 in 10 frames, QUICsilver effectively performs as an unreliable transport at path latencies above 66.6ms.
 
+Standard QUIC is more suited for high-quality video streaming than QUICsilver: pre-existing content can be buffered in advance to mask stalls, and 100\% of frames are played without glitches. Buffering pre-existing content could also be performed with QUICsilver, but the stack and application latencies would increase due to performing liveness checks on many items which would be stored in the retransmit and reorder buffers at the client and server respectively; this is wasted time given that these checks to prevent stalls are not necessary when stalls are already being masked by buffered content.
 
-Standard QUIC could potentially be used for real-time applications over low latency paths with less than 0.01\% loss, but it is vulnerable to increased application latency and playback discrepancies lasting for the rest of the sessions as a result of latency spikes on the path. However, standard QUIC is more suited for high-quality video streaming than QUICsilver: pre-existing content can be buffered in advance to mask stalls, and 100\% of frames are played without glitches. Buffering pre-existing content could also be performed with QUICsilver, but the stack and application latencies would increase due to performing liveliness checks on many items which would be stored in the retransmit and reorder buffers at the client and server respectively; this is wasted time given that these checks to prevent stalls are not necessary when stalls are already being masked by buffered content. 
+However, QUICsilver provides far better performance for applications which transmit data live and require timely responses to user input than standard QUIC. It achieves this by adjusting its stream read offsets and removing items from its retransmit buffers in response to playback deadlines, yielding consistently lower application latencies at all link latencies and loss levels. This results in intermittent glitches in video playback, but over 95\% of unique frames sent by the server are played back without glitches even in 1\% loss environments.
+
+ClipStream, the alternate partially reliable QUIC implementation discussed in section 3 \cite{Palmer2018}, encounters stalls very rarely due to I-frames being transmitted reliably. QUICsilver, however, eliminates stalls completely though use of deadline awareness, ensuring that zero cumulative playback latency occurs at any loss rate and therefore preventing extended sessions of real-time media applications from suffering an increasing cumulative playback delay. This consistent, predictable low-latency performance makes QUICsilver a promising option for running responsive, real-time applications over QUIC.
 
 %more accurate measuring of useful frames if data delivered in-order to application as complete frame - incomplete I-frame would still pose problems even if data was immediately passed to application from stack
 
