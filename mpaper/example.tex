@@ -47,7 +47,20 @@
 % are working in and why is it important? It is important to set the larger
 % context here. Why is the problem of interest and importance to the larger
 % community?
+According to \textit{The Zettabyte Era} white paper by Cisco \cite{CISCO2015}, the percentage of Internet Protocol (IP)\cite{IP-RFC} traffic carrying multimedia data will increase from 73\% of all IP traffic in 2016 to 83\% by 2021. Live video and online gaming are commonly used applications on the modern Internet and are predicted to form 13\% and 4\% of all IP traffic by 2021 respectively; these applications have strict latency bounds in order to appear to respond in real-time to user input.
 
+QUIC is a modern, fully-reliable userspace transport protocol which is being adopted as an alternative to the Transmission Control Protocol (TCP)\cite{TCP-RFC} for delay-tolerant client-server applications. QUIC accounted for a over 30\% of Google's outbound traffic in 2016 \cite{Langley2017}, and traffic using QUIC as a transport protocol represented up to 9.1\% of global Internet traffic in 2018 \cite{Ruth2018}. However, standard QUIC not suitable for real-time applications due to high latencies caused by head-of-line blocking as a result of its reliability guarantees and in-order delivery of data to the application. QUIC is a userspace protocol which uses the Userspace Datagram Protocol (UDP) \cite{UDP-RFC} as a substrate, and can be modified more easily than kernel-level implementations of transport protocols such as TCP. The lack of required behaviours in UDP allows QUIC to be significantly modified, meaning that QUIC can be adapted for use with real-time multimedia applications.
+  
+  %  - Say why it's an interesting problem
+Real-time multimedia applications typically use the Real-Time Transport Protocol (RTP) \cite{RTP-RFC}, an unreliable transport protocol which runs over UDP. This lack of retransmissions allows applications using UDP to maintain low latency, but modifying QUIC to be partially reliable in that it will perform selective retransmissions based on estimated playback deadlines has the potential to increase the throughput of useful data compared to a fully unreliable transport like RTP.
+
+  %  - Say what your solution achieves
+QUICsilver is a partially reliable implementation of QUIC which achieves low-latency by allowing some packet loss, subject to playback deadlines, in order to improve the throughput of data to the receiver application. Video playback quality can be further improved by taking advantage of existing retransmission behaviours in QUIC, allowing the retransmission of video frames which will still be useful when they reach the receiver as well as any dependent frames required for live ones. The RTP packets sent by QUICsilver are also protected by QUIC's Transport Layer Security version 1.3 (TLS 1.3) \cite{TLS-RFC} encryption mechanisms by default, offering extra privacy to users compared to standard RTP, as well as the potential for the parallel delivery of content through multiplexed content streams.
+  
+  %  - Say what follows from your solution
+This paper shows that partial reliability eliminates the occurrence of stalls and cumulative playback delays encountered by standard, fully reliable QUIC by allowing a client to skip lost packets if the playback deadline is approaching for previously received packets with a higher packet number. This lack of stalling is observed for all loss rates; on low-latency links, QUICsilver maintains the strict latency bounds required for real-time applications even in challenging, high-loss environments.
+
+The removal of items which will not be useful to the client based on predicted playback deadlines is important to avoid wasteful retransmissions, however, this results in I-frames and P-frames only being retransmitted on low-latency links: if 1 in every 10 frames sent is an I-frame, retransmissions of stale I-frames which have live dependent P-frames are only performed on links with a latency lower than 66.6ms. Beyond this, QUICsilver effectively functions as an unreliable transport with added security and in-built support for multiplexed content streams.
 
 
 % Paragraph 2: What is the specific problem considered in this paper? This
@@ -171,18 +184,18 @@ This head-of-line blocking behaviour associated with guaranteed reliability does
 
 \begin{figure}
  \centering
- \subfloat[Guaranteed reliability, 50ms]{
+ \subfloat[Standard QUIC, , 50ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/50ms-stack-latencies-combined-reliable.png}
    \label{stack-rel-50}
  }
  \\
- \subfloat[Guaranteed reliability, 100ms]{
+ \subfloat[Standard QUIC, , 100ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/100ms-stack-latencies-combined-reliable.png}
    \label{stack-rel-100}
  }
  \\
  \centering
- \subfloat[Guaranteed reliability, 150ms]{
+ \subfloat[Standard QUIC,  150ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/150ms-stack-latencies-combined-reliable.png}
    \label{stack-rel-150}
  }
@@ -216,22 +229,22 @@ This head-of-line blocking behaviour associated with guaranteed reliability does
 
 \begin{figure}
  \centering
- \subfloat[Guaranteed reliability, 50ms]{
+ \subfloat[Standard QUIC, 50ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/50ms-app-latencies-combined-reliable.png}
    \label{app-rel-50}
  }
  \\
- \subfloat[Guaranteed reliability, 100ms]{
+ \subfloat[Standard QUIC, 100ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/100ms-app-latencies-combined-reliable.png}
    \label{app-rel-100}
  }
  \\
  \centering
- \subfloat[Guaranteed reliability, 150ms]{
+ \subfloat[Standard QUIC, 150ms]{
    \includegraphics[scale=0.5]{images/graphics-reliable/150ms-app-latencies-combined-reliable.png}
    \label{app-rel-150}
  }
- \caption{Latency between server and client application (guaranteed reliability)}
+ \caption{Latency between server and client application (standard QUIC, guaranteed reliability)}
  \label{app-rel}
 \end{figure}
 
@@ -292,7 +305,7 @@ Loss Rate & Stalls & Frames Played\\ \hline
 1\%  & 198 & 100.0\% \\ \hline
 
 \end{tabular}
-\caption{Number of stalls and percentage of frames played for guaranteed reliability, 100ms}
+\caption{Number of stalls and percentage of frames played for standard QUIC, 100ms}
 \label{reliable-stalls}
 \end{center}
 \end{table}
@@ -314,7 +327,7 @@ Loss Rate & Stalls & Frames Played\\ \hline
    \includegraphics[scale=0.5]{images/graphics-reliable/150ms-offsets-combined-reliable.png}
    \label{playback-rel-150}
  }
- \caption{Differences between when a frame is played out compared to the intended playback time (guaranteed reliability)}
+ \caption{Differences between when a frame is played out compared to the intended playback time (standard QUIC, guaranteed reliability)}
  \label{playback-rel}
 \end{figure}
 
@@ -335,7 +348,7 @@ Loss Rate & Stalls & Frames Played\\ \hline
    \includegraphics[scale=0.5]{images/graphics-reliable/150ms-relative-offsets-combined-reliable.png}
    \label{playback-offsets-rel-150}
  }
- \caption{Differences between when a frame is played out compared to when the frame was sent (guaranteed reliability)}
+ \caption{Differences between when a frame is played out compared to when the frame was sent (standard QUIC, guaranteed reliability)}
  \label{playback-offsets-rel}
 \end{figure}
 
@@ -358,7 +371,7 @@ Loss Rate & Latency (ms) & Discrepancy (s) & Total latency (s)\\ \hline
 1\%  & 150 & 66.0 & 216.0 \\ \hline
 
 \end{tabular}
-\caption{Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for guaranteed reliability}
+\caption{Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for standard QUIC}
 \label{relative-offset-table}
 \end{center}
 \end{table}
