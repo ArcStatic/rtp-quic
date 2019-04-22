@@ -17,18 +17,16 @@
 \begin{abstract}
   % Four sentences:
   %  - State the problem
-  The vast majority of IP traffic (~80\%) is multimedia traffic. Teleconferencing and online gaming are commonly used applications on the modern Internet; these need to appear to respond in real-time to user input and require low latency to achieve this.
-  
-  QUIC is seeing more adoption as a transport protocol for client-server applications, accounting for a signficant portion of Google's outbound traffic and making up ~7\% of total Internet traffic as of 2017. However, it is not currently suitable for real-time traffic due to high latency caused by guaranteed reliability and in-order delivery.
+  QUIC, a fully reliable stream-oriented transport protocol, is gaining popularity but is too high-latency to use as a transport for real-time multimedia playback.
   
   %  - Say why it's an interesting problem
-  QUIC is a userspace protocol; these can be modified more easily than kernel-level implementations of transport protocols, like TCP. This flexibility allows QUIC to be significantly adapted, allowing the protocol to be used for real-time multimedia applications.
+    As a userspace protocol, QUIC can be easily modified due to not requiring kernel modifications. The retransmission behaviours can be altered to be partially reliable rather than fully reliable.
   
   %  - Say what your solution achieves
-  The modifications made in this project allow QUIC to achieve low-latency by allowing some packet loss, subject to playback deadlines, in order to improve the throughput of data to the receiver application. Video playback quality is further improved by taking advantage of existing retransmission behaviours in QUIC, allowing the retransmission of frames which will still be useful when they reach the receiver as well as any dependent frames required for live ones.
+  QUICsilver, the partially reliable QUIC implementation developed in this project, performs selective retransmissions based on deadline awareness to increase the throughput of useful data while avoiding stalls to keep latency low.
   
   %  - Say what follows from your solution
-  Our solution shows that partial reliability through the use of deadline-aware retransmissions minimises the occurrence of stalls by improving the throughput of useful ('live') multimedia data. This use of selective retransmissions is particularly important in loss-prone environments (e.g. wireless links).
+  This solution shows that QUIC can be modified within a relatively short timeframe to better support real-time multimedia applications which have strict latency bounds.
   
 
 \end{abstract}
@@ -118,24 +116,41 @@ The remainder of this paper is structured as follows. Section 2 explores the bac
 % The problem
 
 \subsection{Video Frames} 
+For multimedia applications, there are three types of video frames: intra-frames (I-frames), predicted frames (P-frames), and bidirectional predicted frames (B-frames). I-frames provide data for a whole image; the data required to specify this for most resolutions is in excess of the QUIC payload size of 1232 bytes, so a single I-frame must be sent using multiple QUIC packets (an I-frame is sent as 4 QUIC packets in this project). P-frames only describe changes in a small section of the display in relation to an I-frame; these are small enough to be transmitted in a single QUIC packet in their entirety, but the I-frame on which they depend must be noted to ensure the changes are applied to the correct base image. B-frames are even more compressed than P-frames due to referring to previous and next video frames to describe changes; B-frames are not included in this project due to time constraints and a focus on reducing transmission latencies rather than compression efficiencies.
 
+\begin{figure}[h!]
+ \centering
+ \subfloat[An example of an I-frame, detailing an entire image]{
+   \includegraphics[scale=0.2]{images/bunny-i-frame}
+   \label{bunny-i-frame}
+ }
+ \\
+ \centering
+ \subfloat[An example of a P-frame applied to an I-frame to change only the highlighted sections]{
+   \includegraphics[scale=0.2]{images/bunny-p-frame}
+   \label{bunny-i-frame}
+ }
+ \caption{Example of I-frames and P-frames}
+ \label{frame-example}
+\end{figure}
+
+I-frames are sent to provide an initial image to work from and to refresh the image being played back to correct any glitches which may have occured as a result of P-frames being applied to an incorrect I-frame. P-frames are sent much more often, and make up the majority of sent video frames for live video streaming.
 
 
 \subsection{Head-of-Line Blocking}
 
-Reliable transports such as QUIC and TCP suffer from high latency due to head-of-line blocking. This occurs due to the guaranteed, ordered delivery of data: in order to ensure that all data is delivered in-order to an application, the protocol waits for .
+Reliable transports such as QUIC and TCP suffer from high latency due to head-of-line blocking. This occurs due to the guaranteed, ordered delivery of data: in order to ensure that all data is delivered in-order to an application, the protocol waits for missing packets to arrive before releasing data which was received previously in packets with a higher packet number.
 
 \begin{figure}[h]
-\includegraphics[scale=0.4]{images/holtcp}
+\includegraphics[scale=0.5]{images/head-of-line-blocking}
 \centering
-\caption{Head-of-line blocking within TCP as illustrated by McQuistin \textit{et al} \cite{McQuistin2016}. The loss of the packet with sequence number 3 prevents any subsequent packets being delivered to the application until it is received.}
+\caption{Head-of-line blocking in QUIC. The loss of packet number 3 prevents any subsequent packets being delivered to the application until it is received, causing the blue packet to have a stack latency of 1.5 times the round-trip time and a playback delay of 1 round-trip time.}
+\label{hol}
 \end{figure}
 
-QUIC mitigates this issue by using several streams demultiplexed 
+QUIC mitigates the impact of head-of-line blocking by using several streams demultiplexed 
 over a single UDP socket. Although head-of-line blocking still occurs in response to loss, the 
-obstruction is confined to a single stream rather than blocking the entire connection. With some 
-adjustments to optimisation algorithms used in DASH, QUIC could be used to provide higher quality 
-streaming services for unidirectional media content \cite{Bhat2017}.
+obstruction is confined to a single stream rather than blocking the entire connection, as happens with TCP. However, this still causes unacceptably high latency for real-time media data being delivered on this stream: as illustrated in figure \ref{hol}, the total latency between the packet being sent the first time and finally being received by the application is 1.5 times the path's round-trip time. Allowing some loss under partial reliability is necessary to reduce stack to application latency.
 
 
 %==================================================================================================
@@ -164,10 +179,22 @@ Previous attempts have been made to implement deadline awareness for partial rel
 %==================================================================================================
 \section{Design}
 
-QUICsilver is a modified version of the \texttt{ngtcp2} QUIC implementation \cite{ngtcp2} which takes a different approach to partial reliability to ClipStream \cite{Palmer2018}: instead of always sending I-frames reliably and P-frames unreliably, packets containing I-frames segments and P-frames are both eligible for retransmission based on whether the server predicts that the packet will reach the client in time to be useful for video playback. 
+QUICsilver is a modified version of the \texttt{ngtcp2} QUIC implementation \cite{ngtcp2}, and takes a different approach to partial reliability to ClipStream \cite{Palmer2018}: instead of always sending I-frames reliably and P-frames unreliably, packets containing I-frames segments and P-frames are both eligible for retransmission based on whether the server predicts that the packet will reach the client in time to be useful for video playback. 
 
-Video frames transmitted as an RTP packet have an associated 32-bit timestamp and 32-bit sequence number. The RTP sequence number included as part of the payload in each QUIC packet increases monotonically regardless of frame type, but the RTP timestamp section of the payload is the same for all sections of an I-frame; this increments for each distinct frame, rather than for each packet. Only the RTP timestamp and RTP sequence number were included as payloads in QUIC packets; no RTP payload data (i.e. encoded video data) was included, as this did not assist the main point of investigation for this project: to investigate how implementing partial reliability within QUIC can assist with reducing latencies and playback delays.
+Video frames transmitted as an RTP packet have an associated 32-bit timestamp and 32-bit sequence number. The RTP sequence number included as part of the QUIC payload increases monotonically for each QUIC packet, regardless of frame type, but the RTP timestamp section of the QUIC payload is the same for all sections of an I-frame; the RTP timestamp increments for each distinct frame, rather than for each packet. Only the RTP timestamp and RTP sequence number were included as payloads in QUIC packets for both standard QUIC and QUICsilver; no RTP payload data (i.e. encoded video data) was included, as this did not assist the main research question for this project: \textit{`how can implementing partial reliability within QUIC can assist with reducing latencies and playback delays for real-time media applications?'}
 
+The client and server call read and write functions respectively as callbacks triggered by a timer 60 times per second; the gap between these calls is equivalent to 16.7ms and represents a 60 frames-per-second recording and playback rate for live video (e.g. a one-to-one video call). The server sends an RTP timestamp and an RTP sequence number as the payload of a QUIC packet to represent sending media data using RTP over QUIC.
+
+\subsection{Deadline Awareness at the Server}
+Before starting to send packets, the server has to calculate what the playback deadline will be at the client when the first packet arrives in terms of an RTP timestamp; this is calculated as \texttt{((path\_latency/16.7) * 3000) + 12000} to allow a 4-frame playback buffer. Since the first frame sent is always an I-frame, this calculated timestamp is inserted into the first four packets sent to the client; failing to increment it correctly will result in the client interpreting all received data as stale, and never passing any data to the application. Sequence numbers increment by 1 per packet sent, while timestamps increment by 3000 per callback; the latter is an arbitrary amount and mostly serves as a relative measurement for determining which frames should be played together and for estimating delay. Timestamps and sequence numbers are supplied by the application and passed to the stack through a send function call.
+
+When the stack at the server sends a packet, it adds the sent packet to the retransmit buffer for that specific stream along with dependency information: given that I-frames are sent once every 10 frames, the RTP timestamp within the payload of a given packet can be used to calculate if a packet contains a whole P-frame or an I-frame fragment. If the packet is a P-frame, the most recently sent I-frame is added as a dependency.
+
+If a packet has been received by a client, an acknowledgement is sent as normal and the corresponding item is removed from the retransmit buffer in the same way as it would be in standard QUIC. However, every time a packet is sent, the stack at the server iterates through the retransmit buffer to detect if packets are still useful based on predicted deadlines: if the server predicts that an item containing a P-frame in the retransmit buffer won't reach the client in time to be useful, it removes the item from the buffer. If the item is a packet containing an I-frame, it is only removed during liveness checks if there are no useful P-frames which depend on it present in the retransmit buffer. This process prevents stale data lingering in the retransmit buffer if the client happens to skip over it without passing it to the application and sending an acknowledgement, and it reduces the volume of redundant data on the network by ensuring that only useful data will be retransmitted.
+
+\subsection{Deadline Awareness at the Client}
+
+When the client application makes a read call as a result of the 60fps callback, it increments its playback deadline by 3000 and attempts to retrieve data held within the stack. In standard QUIC, the stack will pass data to the application until it encounters a gap in the packet numbers received. QUICsilver will also allow the application to access data until there is a gap, but it will also increment the starting offsets for read calls in response to playback deadlines: if a missing packet would contain data with a timestamp below the current playback deadline, it is considered stale and must be skipped to avert stalls and maintain low latency. The 4-frame buffer added to timestamps by the server attempts to allow time to receive retransmitted data: the offset will only be advanced when the playback deadline is imminent, so the client will wait a maximum of 66ms for lost data to arrive before incrementing the deadline and skipping it. This waiting behaviour aims to improve the throughput of useful data to the application without noticeably impacting performance.
 
 % My idea
 
@@ -176,24 +203,31 @@ Video frames transmitted as an RTP packet have an associated 32-bit timestamp an
 %==================================================================================================
 \section{Results}
 
-Each test was performed using a simulated network on mininet, consisting of a server node connected to a client node over a single link with a specifically defined latency. This link latency was varied between 50ms, 100ms, and 150ms, and loss rates of 0\%, 0.01\%, 0.1\%, and 1\% were introduced for tests on each latency. Each test ran for 300 seconds with client and server both operating at a framerate of 60 fps; an I-frame was sent every 10th frame, consisting of 4 QUIC packets to represent the fact that I-frames are too large to be sent as a single QUIC payload.
+\begin{figure}[h!]
+\includegraphics[scale=0.7]{images/topology}
+\centering
+\caption{Simulated mininet network used for testing: data flowing from a server to a client over a link with one of three defined latencies}
+\label{topology}
+\end{figure}
+
+Each test was performed using a simulated network on mininet, consisting of a server node connected to a client node over a single link with a specifically defined latency (figure \ref{topology}). This link latency was varied between 50ms, 100ms, and 150ms, and loss rates of 0\%, 0.01\%, 0.1\%, and 1\% were introduced for tests on each latency. Each test ran for 300 seconds with client and server both operating at a framerate of 60 fps; an I-frame was sent every 10th frame, consisting of 4 QUIC packets to represent the fact that I-frames are too large to be sent as a single QUIC payload.
 
 
-Tests for guaranteed reliability used the \texttt{ngtcp2} QUIC stack with standard retransmission behaviours, while tests for partial reliability used the QUICsilver implementation with partial reliability behaviours described above [TODO: write design section].
+Tests for guaranteed reliability used the \texttt{ngtcp2} QUIC stack with standard retransmission behaviours, while tests for partial reliability used the QUICsilver implementation with partial reliability behaviours described above.
 
 \subsection{Differences in Stack Latency}
 
 Stack latencies remain consistently within 15ms of the path latency in QUICsilver for all loss rates (figure \ref{stack-par}), but have slightly more variance than stack latencies in the guaranteed reliability implementation in equivalent conditions. This is due to the extra checks which are performed by the server after sending a packet: each item in the retransmission buffer for the relevant stream is checked to see if it has become stale and needs to be removed.
 
 
-When loss is introduced on the link, the guaranteed reliability implementation begins to show an increase in the number of higher stack latencies \ref{stack-rel}. QUIC determines a packet is lost when it receives an acknowledgement for a higher packet number; this requires a minimum of the time taken to send the packet over the link, plus a multiple of the total round trip time depending on how many times the packet in question was lost in transit. This causes the latency data to gather in bands: the latencies of lost packets will be multiples of the total round-trip time on the link. In contrast, QUICsilver maintains similar performance all rates of loss; this is due to the server removing packets which will not be useful to the client upon arrival from its retransmit buffer without receiving an acknowledgement.
+When loss is introduced on the link, the guaranteed reliability implementation begins to show an increase in the number of higher stack latencies (figure \ref{stack-rel}). QUIC determines a packet is lost when it receives an acknowledgement for a higher packet number; this requires a minimum of the time taken to send the packet over the link, plus a multiple of the total round trip time depending on how many times the packet in question was lost in transit. This causes the latency data to gather in bands: the latencies of lost packets will be multiples of the total round-trip time on the link. In contrast, QUICsilver maintains similar performance all rates of loss; this is due to the server removing packets which will not be useful to the client upon arrival from its retransmit buffer without receiving an acknowledgement.
 
 \subsection{Differences in Application Latency}
 
 QUICsilver achieves consistently lower application latencies for all link latencies compared to standard QUIC with guaranteed reliability (figure \ref{app-par}). Application latencies for partially reliable QUIC have a greater range than stack latencies due to the frame buffer: if there is a gap in received packets, the stack will wait for the missing packet; if the packet doesn't arrive before its predicted playback deadline expires, the read offsets for the stream are advanced and a sequence of video frames with contiguous RTP timestamps is passed to the application (this may only be a single frame). This buffer was intended to be set as 4 frames, corresponding to an additional latency of 66ms at a 60fps playback rate, but was incorrectly set at a single frame during the 50ms and 100ms tests. A single frame at 60fps is equivalent to 16.7ms; this is added to application latency in the event of loss, with decreasing latencies following as subsequent blocks of received frames are passed to the application. In the case of 150ms tests, the buffer limit was set to the intended 4 frames; application latencies can be seen in bands at multiples of 16.7ms to around a maximum of 66.6ms greater than the link latency as a result.
 
 
-The distinctive four-band pattern present in all instances of QUICsilver tests is due to I-frames being sent as 4 QUIC packets without a 16.7ms delay between them; four packets must be delivered to the application within the same call, but iterating through the reorder buffer and removing relevant items takes time to execute.
+The distinctive wide band present in all instances of QUICsilver tests is due to I-frames being sent as 4 QUIC packets without a 16.7ms delay between them; four packets must be delivered to the application within the same call, but iterating through the reorder buffer and removing relevant items takes time to execute.
 
 
 The bands in the standard QUIC application latencies are caused by video frames being sent by the server at 16.7ms intervals; the latency of each frame is increased by a multiple of this until the missing packet is received at the client, even though all of these frames are delivered to the application within the same function call. The occasional spikes in 1\% loss test are caused by a packet being lost twice; these occur at twice the round-trip time, plus two frame playback times at 60fps, beyond the initial link latency.
@@ -424,7 +458,7 @@ Table \ref{relative-offset-table} shows the cumulative discrepancy between inten
 Although 100\% of the video frames in the media content being sent are delivered to the client application with guaranteed reliability behaviours, there is an increasing latency between sending a frame and playing it at the client; the longer an application is running, the greater this playback discrepancy becomes. The path latencies in these tests were constant, but path latencies `in the wild' are variable, and occasionally subject to spikes if a link is congested. The total playback discrepancy suffered by an application would sharply increase as a result of these spikes; a return to lower latencies afterwards would not reduce it.
 
 
-It should also be noted that this discrepancy is applied to packets which have not been lost in transit: lost packets are subject to even higher latencies, and are increased by multiples of the round-trip time depending on the number of times they are lost. As shown in figure \ref{app-rel}, packets which have been received before a missing packet but have a higher packet number also suffer from increased application latency. International Telecommunication Recommendation G.114 recommends no more than 150ms latency ``mouth-to-ear'' for audio communications \cite{ITU-REC}; the path latency must be even smaller than this to allow for time to capture live audio and video and to perform codec processing. Figure \ref{app-rel} shows that fully reliable QUIC stays within this limit at 0\% and 0.01\% loss for 50ms and 100ms links, but it often exceeds even the ``mouth-to-ear'' limit at 0.1\% and 1\% loss for all links; 0\% and 0.01\% loss flows on a 150ms link cannot satisfy the recommended latency requirement due to the link latency. Gaming has even stricter latency bounds [TODO: I know gaming latencies should be around 80ms or below anecdotally, but need a citation with exact bounds for this].
+It should also be noted that this discrepancy is applied to packets which have not been lost in transit: lost packets are subject to even higher latencies, and are increased by multiples of the round-trip time depending on the number of times they are lost. As shown in figure \ref{app-rel}, packets which have been received before a missing packet but have a higher packet number also suffer from increased application latency. International Telecommunication Recommendation G.114 recommends no more than 150ms latency ``mouth-to-ear'' for audio communications \cite{ITU-REC}; the path latency must be even smaller than this to allow for time to capture live audio and video and to perform codec processing. Figure \ref{app-rel} shows that fully reliable QUIC stays within this limit at 0\% and 0.01\% loss for 50ms and 100ms links, but it often exceeds even the ``mouth-to-ear'' limit at 0.1\% and 1\% loss for all links; 0\% and 0.01\% loss flows on a 150ms link cannot satisfy the recommended latency requirement due to the link latency.
 
 
 In the case of video streaming, content buffering can be used to disguise stalls. For example, if a user wanted to stream a 1 hour, pre-recorded video, the client might buffer a given amount of content before starting playback. Given that an I-frame is sent every 10th frame as 4 QUIC packets, 216,000 video frames will be sent using 280,800 QUIC packets in total: 28 stalls can be expected to occur at 0.01\% loss, 281 stalls at 0.1\% loss, and 2808 stalls at 1\% loss. At a cumulative latency increase of 100ms per lost packet on a 50ms link, a buffer of 200 seconds should completely conceal stalls for 0.01\% and 0.1\% loss rates, and will conceal stalls at 1\% until 2564 seconds (around 43 minutes) into playback. For a 100ms link with a 216ms latency increase, a buffer of 200 seconds should completely conceal stalls for 0.01\% and 0.1\% loss rates, and will conceal stalls until 1183 seconds (around 20 minutes) into playback. A 400 second buffer should conceal all stalls. However, buffering is not a feasible strategy for reducing the number of stalls in real-time media delivery: live-generated content cannot be buffered in advance, and buffering does not reduce the cumulative playback delay created as a result of stalls in fully reliable QUIC.
@@ -472,7 +506,6 @@ For a test run of 300 seconds, 18,000 video frames are sent. On average 180 of t
 
 An application using guaranteed reliability could discard stale frames and continue playback from the frame with the closest RTP timestamp to the current playback deadline to reduce this cumulative delay, but it would play fewer frames than the partially reliable implementation: the minimum and maximum absences of correctly updated content for partially reliable QUIC for all link latencies are 16.7ms and 167ms respectively, while delays in the datasets gathered for fully reliable QUIC range between 100ms and 333ms, depending on the link latency. This shows that QUICsilver results in improved throughput of useful data compared to attempting to optimise applications on top of standard QUIC for real-time behaviour.
 
-\clearpage
 %==================================================================================================
 %\section{Related Work}
 
@@ -537,6 +570,11 @@ However, QUICsilver provides far better performance for applications which trans
 ClipStream, the alternate partially reliable QUIC implementation discussed in section 3 \cite{Palmer2018}, encounters stalls very rarely due to I-frames being transmitted reliably. QUICsilver, however, eliminates stalls completely though use of deadline awareness, ensuring that zero cumulative playback latency occurs at any loss rate and therefore preventing extended sessions of real-time media applications from suffering an increasing cumulative playback delay. This consistent, predictable low-latency performance makes QUICsilver a promising option for running responsive, real-time applications over QUIC.
 
 %more accurate measuring of useful frames if data delivered in-order to application as complete frame - incomplete I-frame would still pose problems even if data was immediately passed to application from stack
+
+%==================================================================================================
+\section{Acknowledgements}
+
+I would like to thank my advisor, Dr Colin Perkins, for introducing me to the hydra that is the inner workings of the modern Internet and for providing advice on how to make contributions to an exciting new transport protocol. I would also like to thank the many friends who helped keep morale high through every new segmentation fault.
 
 \bibliographystyle{abbrv}
 \bibliography{example}

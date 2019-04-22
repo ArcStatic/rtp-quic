@@ -25,142 +25,153 @@
 \citation{RTP-RFC}
 \citation{TLS-RFC}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
-\citation{McQuistin2016}
-\citation{McQuistin2016}
-\citation{Bhat2017}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{1}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Video Frames}{1}{subsection.2.1}}
 \citation{RTP-TCP-RFC}
+\newlabel{bunny-i-frame}{{1a}{2}{Subfigure 1a}{subfigure.1.1}{}}
+\newlabel{sub@bunny-i-frame}{{(a)}{a}{Subfigure 1a\relax }{subfigure.1.1}{}}
+\newlabel{bunny-i-frame}{{1b}{2}{Subfigure 1b}{subfigure.1.2}{}}
+\newlabel{sub@bunny-i-frame}{{(b)}{b}{Subfigure 1b\relax }{subfigure.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of I-frames and P-frames}}{2}{figure.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {An example of an I-frame, detailing an entire image}}}{2}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {An example of a P-frame applied to an I-frame to change only the highlighted sections}}}{2}{subfigure.1.2}}
+\newlabel{frame-example}{{1}{2}{Example of I-frames and P-frames}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Head-of-Line Blocking}{2}{subsection.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Head-of-line blocking in QUIC. The loss of packet number 3 prevents any subsequent packets being delivered to the application until it is received, causing the blue packet to have a stack latency of 1.5 times the round-trip time and a playback delay of 1 round-trip time.}}{2}{figure.2}}
+\newlabel{hol}{{2}{2}{Head-of-line blocking in QUIC. The loss of packet number 3 prevents any subsequent packets being delivered to the application until it is received, causing the blue packet to have a stack latency of 1.5 times the round-trip time and a playback delay of 1 round-trip time}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Related Work}{2}{section.3}}
 \citation{Tiesel2017}
 \citation{Lubashev2018}
 \citation{Palmer2018}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{2}{section.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Video Frames}{2}{subsection.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Head-of-Line Blocking}{2}{subsection.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Head-of-line blocking within TCP as illustrated by McQuistin \textit  {et al} \cite  {McQuistin2016}. The loss of the packet with sequence number 3 prevents any subsequent packets being delivered to the application until it is received.}}{2}{figure.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Related Work}{2}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Reliable and Unreliable QUIC Streams}{2}{subsection.3.1}}
 \citation{McQuistin2016}
 \citation{quic-transport-16}
 \citation{ngtcp2}
 \citation{Palmer2018}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Reliable and Unreliable QUIC Streams}{3}{subsection.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Deadline Awareness}{3}{subsection.3.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Design}{3}{section.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{3}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Differences in Stack Latency}{3}{subsection.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Differences in Application Latency}{3}{subsection.5.2}}
-\newlabel{stack-par-50}{{2a}{5}{Subfigure 2a}{subfigure.2.1}{}}
-\newlabel{sub@stack-par-50}{{(a)}{a}{Subfigure 2a\relax }{subfigure.2.1}{}}
-\newlabel{stack-par-100}{{2b}{5}{Subfigure 2b}{subfigure.2.2}{}}
-\newlabel{sub@stack-par-100}{{(b)}{b}{Subfigure 2b\relax }{subfigure.2.2}{}}
-\newlabel{stack-par-150}{{2c}{5}{Subfigure 2c}{subfigure.2.3}{}}
-\newlabel{sub@stack-par-150}{{(c)}{c}{Subfigure 2c\relax }{subfigure.2.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Latency between server and client stack (QUICsilver, partial reliability)}}{5}{figure.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {QUICsilver, 50ms}}}{5}{subfigure.2.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {QUICsilver, 100ms}}}{5}{subfigure.2.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {QUICsilver, 150ms}}}{5}{subfigure.2.3}}
-\newlabel{stack-par}{{2}{5}{Latency between server and client stack (QUICsilver, partial reliability)}{figure.2}{}}
-\newlabel{stack-rel-50}{{3a}{5}{Subfigure 3a}{subfigure.3.1}{}}
-\newlabel{sub@stack-rel-50}{{(a)}{a}{Subfigure 3a\relax }{subfigure.3.1}{}}
-\newlabel{stack-rel-100}{{3b}{5}{Subfigure 3b}{subfigure.3.2}{}}
-\newlabel{sub@stack-rel-100}{{(b)}{b}{Subfigure 3b\relax }{subfigure.3.2}{}}
-\newlabel{stack-rel-150}{{3c}{5}{Subfigure 3c}{subfigure.3.3}{}}
-\newlabel{sub@stack-rel-150}{{(c)}{c}{Subfigure 3c\relax }{subfigure.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Latency between server and client stack (standard QUIC, guaranteed reliability)}}{5}{figure.3}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Standard QUIC, , 50ms}}}{5}{subfigure.3.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Standard QUIC, , 100ms}}}{5}{subfigure.3.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Standard QUIC, 150ms}}}{5}{subfigure.3.3}}
-\newlabel{stack-rel}{{3}{5}{Latency between server and client stack (standard QUIC, guaranteed reliability)}{figure.3}{}}
-\newlabel{app-par-50}{{4a}{6}{Subfigure 4a}{subfigure.4.1}{}}
-\newlabel{sub@app-par-50}{{(a)}{a}{Subfigure 4a\relax }{subfigure.4.1}{}}
-\newlabel{app-par-100}{{4b}{6}{Subfigure 4b}{subfigure.4.2}{}}
-\newlabel{sub@app-par-100}{{(b)}{b}{Subfigure 4b\relax }{subfigure.4.2}{}}
-\newlabel{app-par-150}{{4c}{6}{Subfigure 4c}{subfigure.4.3}{}}
-\newlabel{sub@app-par-150}{{(c)}{c}{Subfigure 4c\relax }{subfigure.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Latency between server and client application (QUICsilver, partial reliability)}}{6}{figure.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Deadline Awareness at the Server}{4}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Deadline Awareness at the Client}{4}{subsection.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{4}{section.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Simulated mininet network used for testing: data flowing from a server to a client over a link with one of three defined latencies}}{4}{figure.3}}
+\newlabel{topology}{{3}{4}{Simulated mininet network used for testing: data flowing from a server to a client over a link with one of three defined latencies}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Differences in Stack Latency}{4}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Differences in Application Latency}{5}{subsection.5.2}}
+\newlabel{stack-par-50}{{4a}{6}{Subfigure 4a}{subfigure.4.1}{}}
+\newlabel{sub@stack-par-50}{{(a)}{a}{Subfigure 4a\relax }{subfigure.4.1}{}}
+\newlabel{stack-par-100}{{4b}{6}{Subfigure 4b}{subfigure.4.2}{}}
+\newlabel{sub@stack-par-100}{{(b)}{b}{Subfigure 4b\relax }{subfigure.4.2}{}}
+\newlabel{stack-par-150}{{4c}{6}{Subfigure 4c}{subfigure.4.3}{}}
+\newlabel{sub@stack-par-150}{{(c)}{c}{Subfigure 4c\relax }{subfigure.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Latency between server and client stack (QUICsilver, partial reliability)}}{6}{figure.4}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {QUICsilver, 50ms}}}{6}{subfigure.4.1}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {QUICsilver, 100ms}}}{6}{subfigure.4.2}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {QUICsilver, 150ms}}}{6}{subfigure.4.3}}
-\newlabel{app-par}{{4}{6}{Latency between server and client application (QUICsilver, partial reliability)}{figure.4}{}}
-\newlabel{app-rel-50}{{5a}{6}{Subfigure 5a}{subfigure.5.1}{}}
-\newlabel{sub@app-rel-50}{{(a)}{a}{Subfigure 5a\relax }{subfigure.5.1}{}}
-\newlabel{app-rel-100}{{5b}{6}{Subfigure 5b}{subfigure.5.2}{}}
-\newlabel{sub@app-rel-100}{{(b)}{b}{Subfigure 5b\relax }{subfigure.5.2}{}}
-\newlabel{app-rel-150}{{5c}{6}{Subfigure 5c}{subfigure.5.3}{}}
-\newlabel{sub@app-rel-150}{{(c)}{c}{Subfigure 5c\relax }{subfigure.5.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Latency between server and client application (standard QUIC, guaranteed reliability)}}{6}{figure.5}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Standard QUIC, 50ms}}}{6}{subfigure.5.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Standard QUIC, 100ms}}}{6}{subfigure.5.2}}
+\newlabel{stack-par}{{4}{6}{Latency between server and client stack (QUICsilver, partial reliability)}{figure.4}{}}
+\newlabel{stack-rel-50}{{5a}{6}{Subfigure 5a}{subfigure.5.1}{}}
+\newlabel{sub@stack-rel-50}{{(a)}{a}{Subfigure 5a\relax }{subfigure.5.1}{}}
+\newlabel{stack-rel-100}{{5b}{6}{Subfigure 5b}{subfigure.5.2}{}}
+\newlabel{sub@stack-rel-100}{{(b)}{b}{Subfigure 5b\relax }{subfigure.5.2}{}}
+\newlabel{stack-rel-150}{{5c}{6}{Subfigure 5c}{subfigure.5.3}{}}
+\newlabel{sub@stack-rel-150}{{(c)}{c}{Subfigure 5c\relax }{subfigure.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Latency between server and client stack (standard QUIC, guaranteed reliability)}}{6}{figure.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Standard QUIC, , 50ms}}}{6}{subfigure.5.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Standard QUIC, , 100ms}}}{6}{subfigure.5.2}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Standard QUIC, 150ms}}}{6}{subfigure.5.3}}
-\newlabel{app-rel}{{5}{6}{Latency between server and client application (standard QUIC, guaranteed reliability)}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Differences in Playback Time}{7}{subsection.5.3}}
-\newlabel{stalls-data-rel}{{5.3}{7}{Differences in Playback Time}{figure.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of stalls and percentage of frames played for standard QUIC, 100ms}}{7}{table.1}}
-\newlabel{reliable-stalls}{{1}{7}{Number of stalls and percentage of frames played for standard QUIC, 100ms}{table.1}{}}
-\newlabel{stalls-data-rel}{{5.3}{7}{Differences in Playback Time}{figure.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for standard QUIC}}{7}{table.2}}
-\newlabel{relative-offset-table}{{2}{7}{Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for standard QUIC}{table.2}{}}
-\newlabel{single-50}{{6a}{7}{Subfigure 6a}{subfigure.6.1}{}}
-\newlabel{sub@single-50}{{(a)}{a}{Subfigure 6a\relax }{subfigure.6.1}{}}
-\newlabel{single-100}{{6b}{7}{Subfigure 6b}{subfigure.6.2}{}}
-\newlabel{sub@single-100}{{(b)}{b}{Subfigure 6b\relax }{subfigure.6.2}{}}
-\newlabel{single-150}{{6c}{7}{Subfigure 6c}{subfigure.6.3}{}}
-\newlabel{sub@single-150}{{(c)}{c}{Subfigure 6c\relax }{subfigure.6.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Increase in cumulative playback delay as a result of a single lost packet on various links (standard QUIC, guaranteed reliability)}}{7}{figure.6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Single instance playback delay, 50ms}}}{7}{subfigure.6.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Single instance playback delay, 100ms}}}{7}{subfigure.6.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Single instance playback delay, 150ms}}}{7}{subfigure.6.3}}
-\newlabel{single-rel}{{6}{7}{Increase in cumulative playback delay as a result of a single lost packet on various links (standard QUIC, guaranteed reliability)}{figure.6}{}}
-\newlabel{playback-rel-50}{{7a}{8}{Subfigure 7a}{subfigure.7.1}{}}
-\newlabel{sub@playback-rel-50}{{(a)}{a}{Subfigure 7a\relax }{subfigure.7.1}{}}
-\newlabel{playback-rel-100}{{7b}{8}{Subfigure 7b}{subfigure.7.2}{}}
-\newlabel{sub@playback-rel-100}{{(b)}{b}{Subfigure 7b\relax }{subfigure.7.2}{}}
-\newlabel{playback-rel-150}{{7c}{8}{Subfigure 7c}{subfigure.7.3}{}}
-\newlabel{sub@playback-rel-150}{{(c)}{c}{Subfigure 7c\relax }{subfigure.7.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Differences between when a frame is played out compared to the intended playback time (standard QUIC, guaranteed reliability)}}{8}{figure.7}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Playback offsets, 50ms}}}{8}{subfigure.7.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Playback offsets, 100ms}}}{8}{subfigure.7.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Playback offsets, 150ms}}}{8}{subfigure.7.3}}
-\newlabel{playback-rel}{{7}{8}{Differences between when a frame is played out compared to the intended playback time (standard QUIC, guaranteed reliability)}{figure.7}{}}
-\newlabel{playback-offsets-rel-50}{{8a}{8}{Subfigure 8a}{subfigure.8.1}{}}
-\newlabel{sub@playback-offsets-rel-50}{{(a)}{a}{Subfigure 8a\relax }{subfigure.8.1}{}}
-\newlabel{playback-offsets-rel-100}{{8b}{8}{Subfigure 8b}{subfigure.8.2}{}}
-\newlabel{sub@playback-offsets-rel-100}{{(b)}{b}{Subfigure 8b\relax }{subfigure.8.2}{}}
-\newlabel{playback-offsets-rel-150}{{8c}{8}{Subfigure 8c}{subfigure.8.3}{}}
-\newlabel{sub@playback-offsets-rel-150}{{(c)}{c}{Subfigure 8c\relax }{subfigure.8.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Differences between when a frame is played out compared to when the frame was sent (standard QUIC, guaranteed reliability)}}{8}{figure.8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Playback times, 50ms}}}{8}{subfigure.8.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Playback times, 100ms}}}{8}{subfigure.8.2}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Playback times, 150ms}}}{8}{subfigure.8.3}}
-\newlabel{playback-offsets-rel}{{8}{8}{Differences between when a frame is played out compared to when the frame was sent (standard QUIC, guaranteed reliability)}{figure.8}{}}
+\newlabel{stack-rel}{{5}{6}{Latency between server and client stack (standard QUIC, guaranteed reliability)}{figure.5}{}}
+\newlabel{app-par-50}{{6a}{7}{Subfigure 6a}{subfigure.6.1}{}}
+\newlabel{sub@app-par-50}{{(a)}{a}{Subfigure 6a\relax }{subfigure.6.1}{}}
+\newlabel{app-par-100}{{6b}{7}{Subfigure 6b}{subfigure.6.2}{}}
+\newlabel{sub@app-par-100}{{(b)}{b}{Subfigure 6b\relax }{subfigure.6.2}{}}
+\newlabel{app-par-150}{{6c}{7}{Subfigure 6c}{subfigure.6.3}{}}
+\newlabel{sub@app-par-150}{{(c)}{c}{Subfigure 6c\relax }{subfigure.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Latency between server and client application (QUICsilver, partial reliability)}}{7}{figure.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {QUICsilver, 50ms}}}{7}{subfigure.6.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {QUICsilver, 100ms}}}{7}{subfigure.6.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {QUICsilver, 150ms}}}{7}{subfigure.6.3}}
+\newlabel{app-par}{{6}{7}{Latency between server and client application (QUICsilver, partial reliability)}{figure.6}{}}
+\newlabel{app-rel-50}{{7a}{7}{Subfigure 7a}{subfigure.7.1}{}}
+\newlabel{sub@app-rel-50}{{(a)}{a}{Subfigure 7a\relax }{subfigure.7.1}{}}
+\newlabel{app-rel-100}{{7b}{7}{Subfigure 7b}{subfigure.7.2}{}}
+\newlabel{sub@app-rel-100}{{(b)}{b}{Subfigure 7b\relax }{subfigure.7.2}{}}
+\newlabel{app-rel-150}{{7c}{7}{Subfigure 7c}{subfigure.7.3}{}}
+\newlabel{sub@app-rel-150}{{(c)}{c}{Subfigure 7c\relax }{subfigure.7.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Latency between server and client application (standard QUIC, guaranteed reliability)}}{7}{figure.7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Standard QUIC, 50ms}}}{7}{subfigure.7.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Standard QUIC, 100ms}}}{7}{subfigure.7.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Standard QUIC, 150ms}}}{7}{subfigure.7.3}}
+\newlabel{app-rel}{{7}{7}{Latency between server and client application (standard QUIC, guaranteed reliability)}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Differences in Playback Time}{8}{subsection.5.3}}
+\newlabel{stalls-data-rel}{{5.3}{8}{Differences in Playback Time}{figure.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of stalls and percentage of frames played for standard QUIC, 100ms}}{8}{table.1}}
+\newlabel{reliable-stalls}{{1}{8}{Number of stalls and percentage of frames played for standard QUIC, 100ms}{table.1}{}}
+\newlabel{stalls-data-rel}{{5.3}{8}{Differences in Playback Time}{figure.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for standard QUIC}}{8}{table.2}}
+\newlabel{relative-offset-table}{{2}{8}{Playback discrepancy and total latency for a live-recorded frame to be played by the client application at the end of each test run for each loss rate and latency for standard QUIC}{table.2}{}}
+\newlabel{single-50}{{8a}{8}{Subfigure 8a}{subfigure.8.1}{}}
+\newlabel{sub@single-50}{{(a)}{a}{Subfigure 8a\relax }{subfigure.8.1}{}}
+\newlabel{single-100}{{8b}{8}{Subfigure 8b}{subfigure.8.2}{}}
+\newlabel{sub@single-100}{{(b)}{b}{Subfigure 8b\relax }{subfigure.8.2}{}}
+\newlabel{single-150}{{8c}{8}{Subfigure 8c}{subfigure.8.3}{}}
+\newlabel{sub@single-150}{{(c)}{c}{Subfigure 8c\relax }{subfigure.8.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Increase in cumulative playback delay as a result of a single lost packet on various links (standard QUIC, guaranteed reliability)}}{8}{figure.8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Single instance playback delay, 50ms}}}{8}{subfigure.8.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Single instance playback delay, 100ms}}}{8}{subfigure.8.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Single instance playback delay, 150ms}}}{8}{subfigure.8.3}}
+\newlabel{single-rel}{{8}{8}{Increase in cumulative playback delay as a result of a single lost packet on various links (standard QUIC, guaranteed reliability)}{figure.8}{}}
+\newlabel{playback-rel-50}{{9a}{9}{Subfigure 9a}{subfigure.9.1}{}}
+\newlabel{sub@playback-rel-50}{{(a)}{a}{Subfigure 9a\relax }{subfigure.9.1}{}}
+\newlabel{playback-rel-100}{{9b}{9}{Subfigure 9b}{subfigure.9.2}{}}
+\newlabel{sub@playback-rel-100}{{(b)}{b}{Subfigure 9b\relax }{subfigure.9.2}{}}
+\newlabel{playback-rel-150}{{9c}{9}{Subfigure 9c}{subfigure.9.3}{}}
+\newlabel{sub@playback-rel-150}{{(c)}{c}{Subfigure 9c\relax }{subfigure.9.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Differences between when a frame is played out compared to the intended playback time (standard QUIC, guaranteed reliability)}}{9}{figure.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Playback offsets, 50ms}}}{9}{subfigure.9.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Playback offsets, 100ms}}}{9}{subfigure.9.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Playback offsets, 150ms}}}{9}{subfigure.9.3}}
+\newlabel{playback-rel}{{9}{9}{Differences between when a frame is played out compared to the intended playback time (standard QUIC, guaranteed reliability)}{figure.9}{}}
+\newlabel{playback-offsets-rel-50}{{10a}{9}{Subfigure 10a}{subfigure.10.1}{}}
+\newlabel{sub@playback-offsets-rel-50}{{(a)}{a}{Subfigure 10a\relax }{subfigure.10.1}{}}
+\newlabel{playback-offsets-rel-100}{{10b}{9}{Subfigure 10b}{subfigure.10.2}{}}
+\newlabel{sub@playback-offsets-rel-100}{{(b)}{b}{Subfigure 10b\relax }{subfigure.10.2}{}}
+\newlabel{playback-offsets-rel-150}{{10c}{9}{Subfigure 10c}{subfigure.10.3}{}}
+\newlabel{sub@playback-offsets-rel-150}{{(c)}{c}{Subfigure 10c\relax }{subfigure.10.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Differences between when a frame is played out compared to when the frame was sent (standard QUIC, guaranteed reliability)}}{9}{figure.10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Playback times, 50ms}}}{9}{subfigure.10.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Playback times, 100ms}}}{9}{subfigure.10.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Playback times, 150ms}}}{9}{subfigure.10.3}}
+\newlabel{playback-offsets-rel}{{10}{9}{Differences between when a frame is played out compared to when the frame was sent (standard QUIC, guaranteed reliability)}{figure.10}{}}
 \citation{ITU-REC}
-\newlabel{stalls-data-par}{{5.3}{9}{Differences in Playback Time}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Number of stalls and percentage of useful frames played for QUICsilver}}{9}{table.3}}
-\newlabel{par-playback-stats}{{3}{9}{Number of stalls and percentage of useful frames played for QUICsilver}{table.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Differences between when a frame is played out compared to when the frame was sent (QUICsilver, partial reliability, all loss rates)}}{9}{figure.9}}
-\newlabel{playback-par}{{9}{9}{Differences between when a frame is played out compared to when the frame was sent (QUICsilver, partial reliability, all loss rates)}{figure.9}{}}
+\newlabel{stalls-data-par}{{5.3}{10}{Differences in Playback Time}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Number of stalls and percentage of useful frames played for QUICsilver}}{10}{table.3}}
+\newlabel{par-playback-stats}{{3}{10}{Number of stalls and percentage of useful frames played for QUICsilver}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Differences between when a frame is played out compared to when the frame was sent (QUICsilver, partial reliability, all loss rates)}}{10}{figure.11}}
+\newlabel{playback-par}{{11}{10}{Differences between when a frame is played out compared to when the frame was sent (QUICsilver, partial reliability, all loss rates)}{figure.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Future Work}{11}{section.6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Congestion Control}{11}{subsection.6.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Improved I-frame Handling}{11}{subsection.6.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Multiple Streams}{11}{subsection.6.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{11}{section.7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Placement of Complexity}{11}{subsection.7.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Partial Reliability for Other Real-Time Applcations}{11}{subsection.7.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Uses for QUICsilver}{11}{subsection.7.3}}
+\citation{Palmer2018}
 \bibstyle{abbrv}
 \bibdata{example}
 \bibcite{IP-RFC}{1}
 \bibcite{ngtcp2}{2}
-\bibcite{Bhat2017}{3}
-\bibcite{CISCO2015}{4}
-\bibcite{quic-transport-16}{5}
-\bibcite{RTP-TCP-RFC}{6}
-\bibcite{Lubashev2018}{7}
-\bibcite{McQuistin2016}{8}
-\bibcite{Palmer2018}{9}
-\bibcite{UDP-RFC}{10}
-\bibcite{TLS-RFC}{11}
-\bibcite{TCP-RFC}{12}
-\bibcite{Ruth2018}{13}
-\bibcite{RTP-RFC}{14}
-\bibcite{Tiesel2017}{15}
-\bibcite{ITU-REC}{16}
-\@writefile{toc}{\contentsline {section}{\numberline {8}References}{12}{section.8}}
+\bibcite{CISCO2015}{3}
+\bibcite{quic-transport-16}{4}
+\bibcite{RTP-TCP-RFC}{5}
+\bibcite{Lubashev2018}{6}
+\bibcite{McQuistin2016}{7}
+\bibcite{Palmer2018}{8}
+\bibcite{UDP-RFC}{9}
+\bibcite{TLS-RFC}{10}
+\bibcite{TCP-RFC}{11}
+\bibcite{Ruth2018}{12}
+\bibcite{RTP-RFC}{13}
+\bibcite{Tiesel2017}{14}
+\bibcite{ITU-REC}{15}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Partial Reliability for Other Real-Time Applcations}{12}{subsection.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Utility of QUICsilver}{12}{subsection.7.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Acknowledgements}{12}{section.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}References}{12}{section.9}}

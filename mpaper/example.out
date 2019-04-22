@@ -6,16 +6,19 @@
 \BOOKMARK [2][-]{subsection.3.1}{Reliable and Unreliable QUIC Streams}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Deadline Awareness}{section.3}% 7
 \BOOKMARK [1][-]{section.4}{Design}{}% 8
-\BOOKMARK [1][-]{section.5}{Results}{}% 9
-\BOOKMARK [2][-]{subsection.5.1}{Differences in Stack Latency}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.2}{Differences in Application Latency}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.3}{Differences in Playback Time}{section.5}% 12
-\BOOKMARK [1][-]{section.6}{Future Work}{}% 13
-\BOOKMARK [2][-]{subsection.6.1}{Congestion Control}{section.6}% 14
-\BOOKMARK [2][-]{subsection.6.2}{Improved I-frame Handling}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.3}{Multiple Streams}{section.6}% 16
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 17
-\BOOKMARK [2][-]{subsection.7.1}{Placement of Complexity}{section.7}% 18
-\BOOKMARK [2][-]{subsection.7.2}{Partial Reliability for Other Real-Time Applcations}{section.7}% 19
-\BOOKMARK [2][-]{subsection.7.3}{Uses for QUICsilver}{section.7}% 20
-\BOOKMARK [1][-]{section.8}{References}{}% 21
+\BOOKMARK [2][-]{subsection.4.1}{Deadline Awareness at the Server}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Deadline Awareness at the Client}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Differences in Stack Latency}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Differences in Application Latency}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Differences in Playback Time}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Future Work}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Congestion Control}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{Improved I-frame Handling}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.3}{Multiple Streams}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Placement of Complexity}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Partial Reliability for Other Real-Time Applcations}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.3}{Utility of QUICsilver}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{Acknowledgements}{}% 23
+\BOOKMARK [1][-]{section.9}{References}{}% 24

@@ -573,13 +573,13 @@ for s in range(3):
   #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
   #plt.savefig('app-%s.png' % filename[-1])
   if (s == 0):
-    plt.axis([0, 300, 50, 100])
+    plt.axis([0, 300, 0, 600])
     plt.savefig('50ms-app-latencies-combined-PARTIAL.png')
   elif (s == 1):
-    plt.axis([0, 300, 100, 150])
+    plt.axis([0, 300, 0, 600])
     plt.savefig('100ms-app-latencies-combined-PARTIAL.png')
   elif (s == 2):
-    plt.axis([0, 300, 150, 225])
+    plt.axis([0, 300, 0, 600])
     plt.savefig('150ms-app-latencies-combined-PARTIAL.png')
     
   plt.clf()
@@ -622,13 +622,13 @@ for s in range(3):
   plt.legend()
   
   if (s == 0):
-    plt.axis([0, 300, 50, 75]) 
+    plt.axis([0, 300, 0, 600]) 
     plt.savefig('50ms-stack-latencies-combined-PARTIAL.png')
   elif (s == 1):
-    plt.axis([0, 300, 100, 125])
+    plt.axis([0, 300, 0, 600])
     plt.savefig('100ms-stack-latencies-combined-PARTIAL.png')
   elif (s == 2):
-    plt.axis([0, 300, 150, 175])
+    plt.axis([0, 300, 0, 600])
     plt.savefig('150ms-stack-latencies-combined-PARTIAL.png')
     
   plt.clf()

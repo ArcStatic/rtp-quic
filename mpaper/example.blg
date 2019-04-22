@@ -22,45 +22,45 @@ Warning--empty journal in TCP-RFC
 Warning--empty journal in RTP-RFC
 Warning--empty journal in Tiesel2017
 Warning--empty journal in ITU-REC
-You've used 16 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            586 strings with 6055 characters,
-and the built_in function-call counts, 4387 in all, are:
-= -- 411
-> -- 218
-< -- 2
-+ -- 88
-- -- 72
-* -- 303
-:= -- 766
-add.period$ -- 46
-call.type$ -- 16
-change.case$ -- 84
+            581 strings with 5932 characters,
+and the built_in function-call counts, 4008 in all, are:
+= -- 372
+> -- 200
+< -- 1
++ -- 81
+- -- 66
+* -- 279
+:= -- 705
+add.period$ -- 43
+call.type$ -- 15
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 175
-empty$ -- 317
-format.name$ -- 72
-if$ -- 868
+cite$ -- 33
+duplicate$ -- 159
+empty$ -- 291
+format.name$ -- 66
+if$ -- 786
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 81
-num.names$ -- 28
-pop$ -- 106
+int.to.str$ -- 15
+missing$ -- 15
+newline$ -- 76
+num.names$ -- 26
+pop$ -- 100
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 63
 quote$ -- 0
-skip$ -- 120
+skip$ -- 107
 stack$ -- 0
-substring$ -- 172
-swap$ -- 14
-text.length$ -- 2
+substring$ -- 151
+swap$ -- 8
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 60
 warning$ -- 18
-while$ -- 40
-width$ -- 18
-write$ -- 151
+while$ -- 35
+width$ -- 17
+write$ -- 140
 (There were 19 warnings)

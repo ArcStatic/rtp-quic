@@ -8,11 +8,6 @@
 {ngtcp2}.
 \newblock 2019 Apr.
 
-\bibitem{Bhat2017}
-D.~Bhat, A.~Rizk, and M.~Zink.
-\newblock {Not so QUIC: A Performance Study of DASH over QUIC}.
-\newblock {\em MMSys 17}, pages 1--6, 2017.
-
 \bibitem{CISCO2015}
 CISCO.
 \newblock {The Zettabyte Era: Trends and Analysis}.
