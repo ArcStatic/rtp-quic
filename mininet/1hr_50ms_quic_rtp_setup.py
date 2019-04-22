@@ -87,7 +87,7 @@ def quic_exchange():
     #print("client command run")
     
     #appClient.cmd('./ngtcp2/examples/client -b 3 -e -a 3000 -q ', appServer.IP(), ' 5004 > ngtcp2/datasets/PARTIAL_3B_0L_18000F_2000D_60R_client.txt')
-    
+    '''
     #0.01% loss, reliable
     #################################
     appServer.cmd('./ngtcp2-reliable/examples/server -b 3 -t 0.0001 -l 216000 -i 3000 -q -f 60 ', appServer.IP(), ' 5004 ngtcp2/test-ca/rsa/ca.key ngtcp2/test-ca/rsa/ca.cert > ngtcp2/datasets/1hr/50ms/RELIABLE_3B_001L_216000F_2000D_60R_server.txt &')
@@ -105,11 +105,11 @@ def quic_exchange():
     
     time.sleep(20)
     ################################
-    
+    '''
     
     #1% loss, reliable
     #################################
-    appServer.cmd('./ngtcp2-reliable/examples/server -b 3 -t 0.01 -l 216000 -i 3000 -q -f 60 ', appServer.IP(), ' 5004 ngtcp2/test-ca/rsa/ca.key ngtcp2/test-ca/rsa/ca.cert > ngtcp2/datasets/hr/50ms/PARTIAL_3B_1L_216000F_2000D_60R_server.txt &')
+    appServer.cmd('./ngtcp2-reliable/examples/server -b 3 -t 0.01 -l 216000 -i 3000 -q -f 60 ', appServer.IP(), ' 5004 ngtcp2/test-ca/rsa/ca.key ngtcp2/test-ca/rsa/ca.cert > ngtcp2/datasets/1hr/50ms/PARTIAL_3B_1L_216000F_2000D_60R_server.txt &')
     
     appClient.cmd('./ngtcp2-reliable/examples/client -b 3 -e -a 3000 -q ', appServer.IP(), ' 5004 > ngtcp2/datasets/1hr/50ms/RELIABLE_3B_1L_216000F_2000D_60R_client.txt')
     

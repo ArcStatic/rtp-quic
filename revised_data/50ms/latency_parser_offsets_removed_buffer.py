@@ -13,6 +13,8 @@ with open(sys.argv[1]) as start:
 with open(sys.argv[2]) as end:
   end_app_data = end.readlines()
 
+filename = sys.argv[1].split("/")
+
 first_ts = 0
 
 app_seqnums = []
@@ -387,7 +389,8 @@ plt.axis([0, 300, 0, 175])
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('app-%s.png' % sys.argv[1][:-4])
+#plt.savefig('app-%s.png' % filename[-1])
+plt.savefig('%s/app-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 
 #'''
@@ -421,7 +424,8 @@ plt.axis([0, 300, 0, 175])
 #plt.xlim(0, 300)
 #plt.ylim(0, 300)
 
-plt.savefig('stack-%s.png' % sys.argv[1][:-4])
+#plt.savefig('stack-%s.png' % filename[-1])
+plt.savefig('%s/stack-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 #'''
 
 l = lines.pop(0)
@@ -455,7 +459,8 @@ plt.ylim(0, 300)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-relative-%s.png' % sys.argv[1][:-4])
+#plt.savefig('offsets-relative-%s.png' % filename[-1])
+plt.savefig('%s/offsets-relative-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 l = lines.pop(0)
 l.remove()
@@ -488,7 +493,8 @@ plt.ylim(0, 2)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-%s.png' % sys.argv[1][:-4])
+#plt.savefig('%s/offsets-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
+plt.savefig('%s/offsets-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 
 

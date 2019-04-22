@@ -169,7 +169,7 @@ def quic_exchange():
     
     #1% loss, reliable
     #################################
-    appServer.cmd('./ngtcp2-reliable/examples/server -b 3 -t 0.01 -l 18000 -i 3000 -q -f 60 ', appServer.IP(), ' 5004 ngtcp2/test-ca/rsa/ca.key ngtcp2/test-ca/rsa/ca.cert > ngtcp2/datasets/150ms/PARTIAL_3B_1L_18000F_2000D_60R_server.txt &')
+    appServer.cmd('./ngtcp2-reliable/examples/server -b 3 -t 0.01 -l 18000 -i 3000 -q -f 60 ', appServer.IP(), ' 5004 ngtcp2/test-ca/rsa/ca.key ngtcp2/test-ca/rsa/ca.cert > ngtcp2/datasets/150ms/RELIABLE_3B_1L_18000F_2000D_60R_server.txt &')
     
     appClient.cmd('./ngtcp2-reliable/examples/client -b 3 -e -a 3000 -q ', appServer.IP(), ' 5004 > ngtcp2/datasets/150ms/RELIABLE_3B_1L_18000F_2000D_60R_client.txt')
     

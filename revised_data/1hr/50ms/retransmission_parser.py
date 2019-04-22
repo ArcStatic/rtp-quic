@@ -15,6 +15,8 @@ with open(sys.argv[2]) as end:
 
 first_ts = 0
 
+filename = sys.argv[1].split("/")
+
 app_seqnums = []
 stack_seqnums = []
 start_app_times = {}

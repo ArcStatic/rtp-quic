@@ -13,6 +13,8 @@ with open(sys.argv[1]) as start:
 with open(sys.argv[2]) as end:
   end_app_data = end.readlines()
 
+filename = sys.argv[1].split("/")
+
 first_ts = 0
 
 app_seqnums = []
@@ -369,69 +371,6 @@ for i in range(min(len(start_stack_times_array), (len(end_stack_times_array)))):
 #print(time_axis_data_app[0:60])
 #print(time_axis_data_stack)
 
-#'''
-x = time_axis_data_app_array
-plt.xlabel("Time elapsed (s)")
-#y0 = latencies
-#y = y0.copy() + 2.5
-y = app_latencies
-plt.ylabel("Latency (ms)")
-
-#lines = plt.step(x, y, label='Delay between sending data and receiving application data')
-lines = plt.plot(x, y, 'ro')
-plt.setp(lines, markersize=0.4)
-plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 3600, 0, 300])
-
-#y -= 0.5
-#plt.step(x, y, where='post', label='post')
-
-#y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
-#plt.step(x, y, label='masked (preplt.legend()
-
-#plt.show()
-#plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('app-%s.png' % sys.argv[1][:-4])
-
-
-#'''
-l = lines.pop(0)
-l.remove()
-del l
-
-#################
-
-x = time_axis_data_stack_array
-plt.xlabel("Time elapsed (s)")
-#y0 = latencies
-#y = y0.copy() + 2.5
-y = stack_latencies
-plt.ylabel("Latency (ms)")
-
-#lines = plt.step(x, y, label='Delay between sending data and receiving data at the stack')
-lines = plt.plot(x, y, 'ro')
-plt.setp(lines, markersize=0.4)
-plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 3600, 0, 300])
-
-#y -= 0.5
-#plt.step(x, y, where='post', label='post')
-
-#y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
-#plt.step(x, y, label='masked (pre)')
-
-#plt.legend()
-
-#plt.xlim(0, 300)
-#plt.ylim(0, 300)
-
-plt.savefig('stack-%s.png' % sys.argv[1][:-4])
-#'''
-
-l = lines.pop(0)
-l.remove()
-del l
-
 
 #################
 
@@ -450,8 +389,8 @@ lines = plt.step(x, y, label='Actual time each packet is played when reaching ap
 
 #plt.legend()
 
-plt.xlim(0, 3600)
-plt.ylim(0, 3600)
+plt.xlim(0, 300)
+plt.ylim(0, 300)
 
 #y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
 #plt.step(x, y, label='masked (pre)')
@@ -494,7 +433,8 @@ plt.ylim(pb_offsets_array[graph_start_idx], pb_offsets_array[graph_end_idx] + 0.
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-single.png')
+#plt.savefig('offsets-single.png')
+plt.savefig('%s/offsets-single.png' % ("/".join(str(s) for s in filename[:-1])))
 
 
 

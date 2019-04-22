@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Motivation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Related Work}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Design}{}% 5
+\BOOKMARK [1][-]{section.4}{Results}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Differences in Stack Latency}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Differences in Application Latency}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Differences in Playback Time}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Related Work}{}% 10
+\BOOKMARK [1][-]{section.6}{Future Work}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Congestion Control}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{Improved I-frame Handling}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.3}{Multiple Streams}{section.6}% 14
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 15

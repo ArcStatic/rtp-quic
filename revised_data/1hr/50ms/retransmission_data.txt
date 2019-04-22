@@ -1,0 +1,13 @@
+\n1hr/50ms/PARTIAL, 0% loss
+
+\n1hr/50ms/PARTIAL, 0.01% loss
+
+\n1hr/50ms/PARTIAL, 0.1% loss
+
+\n1hr/50ms/PARTIAL, 1% loss
+
+\n1hr/50ms/PARTIAL, 3% loss
+
+\n1hr/50ms/RELIABLE, 0% loss
+
+\n1hr/50ms/RELIABLE, 0.01% loss

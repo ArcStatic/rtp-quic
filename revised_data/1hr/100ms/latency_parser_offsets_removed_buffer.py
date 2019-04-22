@@ -13,6 +13,8 @@ with open(sys.argv[1]) as start:
 with open(sys.argv[2]) as end:
   end_app_data = end.readlines()
 
+filename = sys.argv[1].split("/")
+
 first_ts = 0
 
 app_seqnums = []
@@ -128,7 +130,8 @@ for i in range(len(end_app_data)):
     #else:
       #end_times.append(0)
     playback_item = end_app_data[i+1].split(',')
-    playback_times_actual.append(int(playback_item[0][21:]))
+    #playback_times_actual.append(int(playback_item[0][21:]))
+    playback_times_actual.append(int(playback_item[0][21:]) - 6000)
     playback_times_rtp_ts.append(int(playback_item[1][14:-1]))
       
 #print(start_app_times)
@@ -216,10 +219,10 @@ for i in range(len(app_seqnums)):
       playback_diff_prev = playback_times_actual[i-1] - playback_times_rtp_ts[i-1]
     #if ((playback_offsets_array[i] != 0) and (playback_offsets_array[i-1] < 0) and (playback_offsets_array[i] > 0)):
     if ((playback_diff_prev <= 0) and (playback_diff > 0)):
-      #pb_delay_counter += playback_diff
+      pb_delay_counter += playback_diff
       #compensate for 4 frame delay
       #this delay would only affect the first loss, the counter would have to increment 3 frames to accomodate the delay again
-      pb_delay_counter += (12000 + playback_diff)
+      #pb_delay_counter += (12000 + playback_diff)
     
     
     delay_encountered = (playback_diff > playback_diff_prev)
@@ -377,7 +380,7 @@ plt.ylabel("Latency (ms)")
 lines = plt.plot(x, y, 'ro')
 plt.setp(lines, markersize=0.4)
 plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 3600, 0, 300])
+plt.axis([0, 300, 0, 175])
 
 #y -= 0.5
 #plt.step(x, y, where='post', label='post')
@@ -387,7 +390,8 @@ plt.axis([0, 3600, 0, 300])
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('app-%s.png' % sys.argv[1][:-4])
+#plt.savefig('app-%s.png' % filename[-1])
+plt.savefig('%s/app-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 
 #'''
@@ -408,7 +412,7 @@ plt.ylabel("Latency (ms)")
 lines = plt.plot(x, y, 'ro')
 plt.setp(lines, markersize=0.4)
 plt.setp(lines, markerfacecolor='r')
-plt.axis([0, 3600, 0, 300])
+plt.axis([0, 300, 0, 175])
 
 #y -= 0.5
 #plt.step(x, y, where='post', label='post')
@@ -421,7 +425,8 @@ plt.axis([0, 3600, 0, 300])
 #plt.xlim(0, 300)
 #plt.ylim(0, 300)
 
-plt.savefig('stack-%s.png' % sys.argv[1][:-4])
+#plt.savefig('stack-%s.png' % filename[-1])
+plt.savefig('%s/stack-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 #'''
 
 l = lines.pop(0)
@@ -446,8 +451,8 @@ lines = plt.step(x, y, label='Actual time each packet is played when reaching ap
 
 #plt.legend()
 
-plt.xlim(0, 3600)
-plt.ylim(0, 3600)
+plt.xlim(0, 300)
+plt.ylim(0, 300)
 
 #y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
 #plt.step(x, y, label='masked (pre)')
@@ -455,7 +460,8 @@ plt.ylim(0, 3600)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-relative-%s.png' % sys.argv[1][:-4])
+#plt.savefig('offsets-relative-%s.png' % filename[-1])
+plt.savefig('%s/offsets-relative-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 l = lines.pop(0)
 l.remove()
@@ -479,8 +485,8 @@ lines = plt.step(x, y, label='Difference between actual and originally intended 
 
 #plt.legend()
 
-plt.xlim(0, 3600)
-plt.ylim(0, 200)
+plt.xlim(0, 300)
+plt.ylim(0, 2)
 
 #y = ma.masked_where((y0 > -0.15) & (y0 < 0.15), y - 0.5)
 #plt.step(x, y, label='masked (pre)')
@@ -488,7 +494,8 @@ plt.ylim(0, 200)
 
 #plt.show()
 #plt.savefig('app_latency/%s.pdf' % sys.argv[1][:-4])
-plt.savefig('offsets-%s.png' % sys.argv[1][:-4])
+#plt.savefig('%s/offsets-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
+plt.savefig('%s/offsets-%s.png' % ("/".join(str(s) for s in filename[:-1]), filename[-1]))
 
 
 

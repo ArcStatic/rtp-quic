@@ -15,6 +15,8 @@ with open(sys.argv[2]) as end:
 
 first_ts = 0
 
+filename = sys.argv[1].split("/")
+
 app_seqnums = []
 stack_seqnums = []
 start_app_times = {}
@@ -202,6 +204,7 @@ diff_per_frame_ns = 1000000000.0/60.0
 #print("diff_per_frame_ns: %f" % diff_per_frame_ns)
 fragment = 0
 frames_dropped = 0
+frames_dropped_new = 0
 
 
 
@@ -270,6 +273,7 @@ for i in range(len(app_seqnums)):
       if ((fragment != 0) and (((playback_times_rtp_ts[i] - 3000) % 30000 == 0))):
         played_time = (played_times_ns[i-1])
       #if it's the first section of an I-frame
+        fragment += 1
       elif (((playback_times_rtp_ts[i] - 3000) % 30000 == 0)):
         frame_gap = (playback_times_rtp_ts[i] - playback_times_rtp_ts[i-1]) / 3000
         frames_dropped += (frame_gap - 1)
@@ -297,6 +301,11 @@ for i in range(len(app_seqnums)):
         else:
           #played_time = (played_times_ns[i-1] + diff_per_frame_ns)
           played_time = (played_times_ns[i-1] + (diff_per_frame_ns * frame_gap))
+        #ie. an I-frame fragment was lost, so the next 9 P-frames are useless as well
+        if ((fragment != 4) and (fragment != 0)):
+          print("I-frame corrupted")
+          frames_dropped_new += 10
+        frames_dropped_new += (frame_gap - 1)
         fragment = 0
     #print("pb_delay_counter: %d " % pb_delay_counter)
     #print("pb_delay_counter ns: %d " % (((pb_delay_counter)/3000) * diff_per_frame_ns))
@@ -396,5 +405,6 @@ print("Retransmissions: %d" % (retransmissions))
 print("Stalls: %d" % (stalls))
 print("Frames dropped: %d" % (frames_dropped))
 print("Percentage of total frames played: %f" % (((18000 - frames_dropped)/18000.0)*100))
+print("Percentage of total frames played (updated): %f" % (((18000 - frames_dropped_new)/18000.0)*100))
 
 

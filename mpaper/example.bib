@@ -1,0 +1,302 @@
+%% example.bib
+%% Jeremy Singer
+%% 16 Oct 2012
+
+@article{turing37computable,
+ author = "Alan M. Turing",
+ title = "On computable numbers, with an application to the Entscheidungsproblem",
+ journal = "Proceedings of the London Mathematical Society Series 2",
+ volume = "42",
+ year = "1937",
+ pages = "230--265",
+}
+
+@book{knuth68art,
+ title = "The Art of Computer Programming, Volume 1: Fundamental Algorithms",
+ author = "Donald E. Knuth",
+ year = "1968",
+ publisher = "Addison Wesley",
+ edition = "1st",
+}
+
+@Book{BK08,
+author={C. Baier and J.-P. Katoen},
+title={Principles of Model Checking},
+publisher={MIT Press},
+year={2008},
+
+volume={},
+series={},
+address={},
+edition={},
+month={},
+note={},
+key={}
+}
+
+@article{Ruth2018,
+abstract = {For the first time since the establishment of TCP and UDP, the Internet transport layer is subject to a major change by the introduction of QUIC. Initiated by Google in 2012, QUIC provides a reliable, connection-oriented low-latency and fully encrypted transport. In this paper, we provide the first broad assessment of QUIC usage in the wild. We monitor the entire IPv4 address space since August 2016 and about 46{\%} of the DNS namespace to detected QUIC-capable infrastructures. Our scans show that the number of QUIC-capable IPs has more than tripled since then to over 617.59 K. We find around 161K domains hosted on QUIC-enabled infrastructure, but only 15K of them present valid certificates over QUIC. Second, we analyze one year of traffic traces provided by MAWI, one day of a major European tier-1 ISP and from a large IXP to understand the dominance of QUIC in the Internet traffic mix. We find QUIC to account for 2.6{\%} to 9.1{\%} of the current Internet traffic, depending on the vantage point. This share is dominated by Google pushing up to 42.1{\%} of its traffic via QUIC.},
+archivePrefix = {arXiv},
+arxivId = {1801.05168},
+author = {R{\"{u}}th, Jan and Poese, Ingmar and Dietzel, Christoph and Hohlfeld, Oliver},
+doi = {10.1007/978-3-319-76481-8_19},
+eprint = {1801.05168},
+file = {:home/vivian/Documents/L5project/papers/1801.05168.pdf:pdf},
+isbn = {9783319764801},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+mendeley-groups = {QUIC},
+pages = {255--268},
+title = {{A First Look at QUIC in the Wild}},
+volume = {10771 LNCS},
+year = {2018}
+}
+
+
+
+@article{RTP-RFC,
+author={H. Schulzrinne and S. Casner and R. Frederick and V. Jacobson},
+title={{RFC 3550: RTP: A Transport Protocol for Real-Time Applications}},
+year={2003},
+month={Jul},
+}
+
+@article{quic-transport-16,
+author={J. Iyengar and M. Thomson},
+title={{QUIC: A UDP-Based Multiplexed and Secure Transport, draft-ietf-quic-transport-16}},
+year={2018},
+month={Oct},
+}
+
+@article{RTP-retransmission-RFC,
+author={J. Rey and D. Leon and A. Miyazaki and V. Varsa and R. Hakenberg},
+title={{RFC 4588: RTP Retransmission Payload Format}},
+year={2006},
+month={Jul},
+}
+
+@article{IP-RFC,
+title={{RFC 791: Internet Protocol: DARPA Internet Program Protocol Specification}},
+year={1981},
+month={Sep},
+}
+
+@article{TCP-RFC,
+author={J. Rey and D. Leon and A. Miyazaki and V. Varsa and R. Hakenberg},
+title={{RFC 793: Transmission Control Protocol: DARPA Internet Program Protocol Specification}},
+year={1981},
+month={Sep},
+}
+
+@article{UDP-RFC,
+author={J. Postel},
+title={{RFC 768: User Datagram Protocol}},
+year={1980},
+month={Aug},
+}
+
+@article{HTTP2-RFC,
+author={M. Belshe and R. Peon and M. Thomson},
+title={{RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)}},
+year={May},
+month={2015},
+}
+
+@article{RTP-TCP-RFC,
+author={J. Lazzaro},
+title={{RFC 4571: Framing Real-time Transport Protocol (RTP) and RTP Control Protocol (RTCP) Packets over Connection-Oriented Transport}},
+year={Jul},
+month={2006},
+}
+
+@article{Tiesel2017,
+author={P. Tiesel and M. Palmer and B. Chandrasekaran and A. Feldmann and J. Ott},
+title={{Considerations for Unreliable Streams in QUIC: draft-tiesel-quic-unreliable-streams-01}},
+year={Oct},
+month={2017},
+howpublished={https://www.ietf.org/archive/id/draft-tiesel-quic-unreliable-streams-01.txt}
+}
+
+@article{Lubashev2018,
+author={I. Lubashev},
+title={{Partially Reliable Message Streams for QUIC: draft-lubashev-quic-partial-reliability-03}},
+year={May},
+month={2018},
+howpublished={https://tools.ietf.org/id/draft-lubashev-quic-partial-reliability-03.txt}
+}
+
+
+@article{Bhat2017,
+abstract = {Despite known QoE shortcomings, Dynamic Adaptive Stream-ing over HTTP (DASH) has been tied with TCP for many years now. The advent of HTTP/2 powered by transport protocols such as QUIC provides an excellent opportunity to revisit adaptive bitrate streaming with respect to QoE. QUIC promises improved congestion control, zero-RTT connection establishment and multiplexing logical streams. In this work, we adapt state-of-the-art DASH players with buffer-based and hybrid (rate/buffer-based) quality adaptation logic to use QUIC. Our main focus lies in contrasting the QoE perfor-mance of DASH algorithms running on top of QUIC versus TCP in various environments. Interestingly, we find through testbed and Internet measurements that QUIC does not provide a boost to current DASH algorithms but instead a degradation in the chosen quality bitrates.},
+annote = {QUIC does not improve DASH algorithms in their current state compared to TCP, causes a degredation in chosen quality instead. Doesn't seem to make any modifications to DASH, just highlights that QUIC should not be treated as a direct replacement to TCP.
+
+Worth reading to see if any issues described here could cause problems for RTP over QUIC.
+
+Objections raised over this paper?},
+author = {Bhat, Divyashri and Rizk, Amr and Zink, Michael},
+doi = {10.1145/3083165.3083175},
+file = {:home/vivian/Documents/L5project/papers/p13-bhat.pdf:pdf},
+isbn = {9781450350037},
+journal = {MMSys 17},
+keywords = {abr streaming,dash,qoe,quic,video quality metrics,video streaming protocols},
+mendeley-groups = {QUIC},
+pages = {1--6},
+title = {{Not so QUIC: A Performance Study of DASH over QUIC}},
+year = {2017}
+}
+
+@misc{tfo-failures,
+    author = {Praveen Balasubramanian},
+    title = {Updates on {TCP} {Fast} {Open} deployment},
+    month = mar,
+    year = {2018},
+    howpublished = {https://datatracker.ietf.org/meeting/101/materials/slides-101-tcpm-updates-on-tcp-fast-open-deployments-01.pdf},
+    note = {Accessed 14/12/2018}
+}
+
+@misc{epiq,
+    title = {{Workshop on the Evolution, Performance, and Interoperability of QUIC
+(EPIQ)}},
+    month = {Jun},
+    year = {2018},
+    howpublished = {https://conferences2.sigcomm.org/co-next/2018/\#!/workshop-epiq},
+    note = {Accessed 13/12/2018}
+}
+
+@misc{conext,
+    title = {{CoNEXT 2018 - International Conference on emerging Networking EXperiments and Technologies}},
+    month = {Jun},
+    year = {2018},
+    howpublished = {https://conferences2.sigcomm.org/co-next/2018/#!/home},
+    note = {Accessed 13/12/2018}
+}
+
+
+@article{Palmer2018,
+abstract = {Within a few years of its introduction, QUIC has gained traction: a significant chunk of traffic is now delivered over QUIC. The networking community is actively engaged in debating the fairness, performance, and applicability of QUIC for various use cases, but these debates are centered around a narrow, common theme: how does the new reliable transport built on top of UDP fare in different scenarios? Support for unreliable delivery in QUIC remains largely unexplored. The option for delivering content unreliably, as in a best-effort model, deserves the QUIC designers' and community's attention. We propose extending QUIC to support unreliable streams and present a simple approach for implementation. We discuss a simple use case of video streaming---an application that dominates the overall Internet traffic---that can leverage the unreliable streams and potentially bring immense benefits to network operators and content providers. To this end, we present a prototype implementation that, by using both the reliable and unreliable streams in QUIC, outperforms both TCP and QUIC in our evaluations.},
+archivePrefix = {arXiv},
+arxivId = {1809.10270},
+author = {Palmer, Mirko and Kr{\"{u}}ger, Thorben and Chandrasekaran, Balakrishnan and Feldmann, Anja},
+doi = {10.1145/3284850.3284857},
+eprint = {1809.10270},
+file = {:home/vivian/Documents/L5project/papers/p43-Palmer.pdf:pdf},
+isbn = {9781450360821},
+keywords = {Video Streaming, Partial Reliability, QUIC,acm reference format,anja feld-,balakrishnan chandrasekaran,mirko palmer,partial reliability,quic,thorben kr{\"{u}}ger,video streaming},
+number = {im},
+pages = {43--49},
+title = {{The QUIC Fix for Optimal Video Streaming}},
+url = {http://arxiv.org/abs/1809.10270{\%}0Ahttp://dx.doi.org/10.1145/3284850.3284857},
+year = {2018}
+}
+
+@article{Perkins2018,
+author = {Perkins, Colin and Ott, J{\"{o}}rg},
+file = {:home/vivian/Documents/L5project/papers/p36-Perkins.pdf:pdf},
+isbn = {9781450360821},
+keywords = {2018,QUIC, RTP, Video Streaming, Interactive Conferencing,acm reference format,colin perkins and j{\"{o}}rg,interactive conferencing,ott,quic,real-time audio-visual media transport,rtp,video streaming},
+pages = {36--42},
+title = {{Real-time Audio-Visual Media Transport over QUIC}}
+}
+
+@article{Liang2002,
+abstract = {By conventional wisdom dating back to the genesis of the Internet, TCP is not suitable for real- time applications because it favors reliability over timeliness. The result has been a proliferation of application-specific and candidate real-time transport protocols, none of which has achieved the matu- rity and acceptance of TCP. To our knowledge, there has not been much prior study to ask the basic engineering question: What changes in TCP and its use would be required to allow it to be used for real-time network applications of interest? In this paper, we investigate exactly this question. Our testbed-based and public Internet experiment results show that the combination of a relatively modest extension to TCP, what we call real-time mode (RTM), and several application techniques allow real-time applications to operate well over TCP, mak- ing all the benefits of TCP, including error recovery, available to the real-time application developers. The TCP-RTM approach also leads to real-time applications that are responsive to network congestion, sharing the network resources fairly with other TCP applications. 1},
+annote = {Early example of adapting a reliable transport protocol for real-time applications - important reading for the project.},
+author = {Liang, S. and Liang, S. and Cheriton, D. and Cheriton, D.},
+file = {:home/vivian/Documents/L5project/papers/10.1.1.86.3257.pdf:pdf},
+journal = {International Conference on Network Protocols},
+mendeley-groups = {Real-time media},
+pages = {1--20},
+title = {{TCP-RTM: Using TCP for real time multimedia applications}},
+url = {http://scholar.google.com/scholar?hl=en{\&}btnG=Search{\&}q=intitle:TCP-RTM:+Using+TCP+for+Real+Time+Multimedia+Applications{\#}0},
+year = {2002}
+}
+
+@article{McQuistin2016,
+abstract = {Real-time multimedia applications use either TCP or UDP at the transport layer, yet neither of these protocols offer all of the features required. Deploying a new protocol that does offer these features is made difficult by ossification: firewalls, and other middleboxes, in the network expect TCP or UDP, and block other types of traffic. We present TCP Hollywood, a protocol that is wire-compatible with TCP, while offering an unordered, partially reliable message-oriented transport service that is well suited to multimedia applic-ations. Analytical results show that TCP Hollywood extends the feasibility of using TCP for real-time multimedia applications, by reducing latency and increasing utility. Preliminary evaluations also show that TCP Hollywood is deployable on the public Internet, with safe failure modes. Measurements across all major UK fixed-line and cellular networks validate the possibility of deployment.},
+annote = {Key paper for understanding deadline awareness for partial reliability},
+author = {McQuistin, Stephen and Perkins, Colin and Fayed, Marwan},
+doi = {10.1145/2910642.2910648},
+file = {:home/vivian/Documents/L5project/papers/a5-mcquistin.pdf:pdf},
+isbn = {9781450343565},
+journal = {Proceedings of the 26th International Workshop on Network and Operating Systems Support for Digital Audio and Video - NOSSDAV '16},
+keywords = {real-time multimedia applications,transport protocols},
+mendeley-groups = {General transport protocols},
+pages = {1--6},
+title = {{TCP goes to hollywood}},
+url = {http://dl.acm.org/citation.cfm?doid=2910642.2910648},
+year = {2016}
+}
+
+@article{McQuistin2016Ossification,
+abstract = {Real-time applications require a set of transport services not cur- rently provided by widely-deployed transport protocols. Ossification prevents the deployment of novel protocols, restricting solutions to protocols using either TCP or UDP as a substrate. We describe the transport services required by real-time applications. We show that, in the short-term (i.e., while UDP is blocked at current levels), TCP offers a feasible substrate for providing these services. Over the longer term, protocols using UDP may reduce the number of networks blocking UDP, enabling a shift towards its use as a demultiplexing layer for novel transport protocols.},
+annote = {Discusses the use of UDP as a demultiplexing layer for higher-layer protocols - highly relevant to the project.},
+author = {McQuistin, Stephen and Perkins, Colin and Fayed, Marwan},
+doi = {10.1145/2959424.2959443},
+file = {:home/vivian/Documents/L5project/papers/p81-mcquistin.pdf:pdf},
+isbn = {9781450344432},
+journal = {Proceedings of the 2016 workshop on Applied Networking Research Workshop - ANRW 16},
+keywords = {real-time multimedia applications,transport protocols},
+mendeley-groups = {Real-time media},
+pages = {81--87},
+title = {{Implementing Real-Time Transport Services over an Ossified Network}},
+url = {http://dl.acm.org/citation.cfm?doid=2959424.2959443},
+year = {2016}
+}
+
+@misc{quic-implementations,
+    title = {quicwg {Implementations}},
+    month = dec,
+    year = {2018},
+    howpublished = {https://github.com/quicwg/base-drafts/wiki/Implementations},
+    note = {Accessed 18/12/2018}
+}
+
+@misc{mininet,
+    title = {{Mininet: An Instant Virtual Network on your Laptop (or other PC)}},
+    howpublished = {http://mininet.org/},
+    note = {Accessed 20/12/2018}
+}
+
+@misc{ffmpeg,
+    title = {{FFmpeg: A complete, cross-platform solution to record, convert and stream audio and video.}},
+    howpublished = {https://www.ffmpeg.org/},
+    note = {Accessed 20/12/2018}
+}
+
+@article{Clark1990,
+abstract = {The current generation of protocol architectures, such as TCP/IP or the IS0 suite, seem successful at meeting the demands of todays networks. However, a number of new requirements have been proposed for the networks of tomorrow, and some innovation in protocol structuring may be necessary. In this paper, we review some key requirements for tomorrow's networks, and propose some architectural principles to structure a new generation of protocols. In particular, this paper identifies two new design principles, Application Level Framing and Integrated Layer Processing. Additionally, it identifies the presentation layer as a key aspect of overall protocol performance.},
+annote = {This was a difficult paper to read - lots of questions!
+
+Many accurate predictions made in this paper for the state of the current Internet - published 28 years ago
+
+Seems to advocate application-led protocol design - ie. there are too many uses to design for individually, so keep designs as generalised as possible. Also seems to reject the layer model of the Internet in favour of parallel sections ("next to each other, not on top of").},
+author = {Clark, D. D. and Tennenhouse, D. L.},
+doi = {10.1145/99508.99553},
+file = {:home/vivian/Documents/L5project/papers/p200-clark.pdf:pdf},
+isbn = {0897914058},
+issn = {01464833},
+journal = {Proceedings of the ACM symposium on Communications architectures {\&} protocols  - SIGCOMM '90},
+mendeley-groups = {Context/background},
+pages = {200--208},
+title = {{Architectural considerations for a new generation of protocols}},
+url = {http://portal.acm.org/citation.cfm?doid=99508.99553},
+year = {1990}
+}
+
+@misc{frame-diagram,
+    title = {{UDP and Network Address Translation - Networked Systems (H), Lecture 8}},
+    author = {Perkins, Colin},
+    year = {2018},
+    howpublished = {https://csperkins.org/teaching/2017-2018/networked-systems/lecture08.pdf},
+    note = {Accessed 21/12/2018}
+}
+
+
+@article{ITU-REC,
+author={International Telecommunication Union},
+title={{ITU-T Recommendation G.114}},
+year={May},
+month={2003},
+}
+
+
