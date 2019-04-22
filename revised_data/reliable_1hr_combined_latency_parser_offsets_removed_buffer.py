@@ -502,25 +502,33 @@ for s in range(2):
     plt.setp(lines[a], markerfacecolor=colours[a])
   
   #ie. 5 min playback buffer
-  #y = 200 
   y = []
-  for g in range(len(time_axis_data_app_array_collected[a])):
-    y.append(200)
-  lines.append(plt.plot(x, y, label = "Playback buffer (5 min)"))
+  x = []
+  x.append(0)
+  x.append(3600)
+  y.append(200)
+  y.append(200)
+  #for g in range(len(time_axis_data_app_array_collected[a])):
+    #y.append(200)
+    
+  lines.append(plt.step(x, y, label = "Playback buffer"))
   plt.setp(lines[3], markerfacecolor='k')
 
   #ie. 10 min playback buffer
-  #y = 400 
   y = []
-  for g in range(len(time_axis_data_app_array_collected[a])):
-    y.append(200)
-  lines.append(plt.plot(x, y, label = "Playback buffer (10 min)"))
+  x = []
+  x.append(0)
+  x.append(3600)
+  y.append(400)
+  y.append(400)
+
+  lines.append(plt.step(x, y, label = "Playback buffer"))
   plt.setp(lines[4], markerfacecolor='m')
 
   plt.legend()
 
   plt.xlim(0, 3600)
-  plt.ylim(0, 3600)
+  plt.ylim(0, 1000)
 
 
   if (s == 0):

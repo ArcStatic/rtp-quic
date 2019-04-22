@@ -7,9 +7,12 @@
 \BOOKMARK [2][-]{subsection.4.1}{Differences in Stack Latency}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.2}{Differences in Application Latency}{section.4}% 8
 \BOOKMARK [2][-]{subsection.4.3}{Differences in Playback Time}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Related Work}{}% 10
-\BOOKMARK [1][-]{section.6}{Future Work}{}% 11
-\BOOKMARK [2][-]{subsection.6.1}{Congestion Control}{section.6}% 12
-\BOOKMARK [2][-]{subsection.6.2}{Improved I-frame Handling}{section.6}% 13
-\BOOKMARK [2][-]{subsection.6.3}{Multiple Streams}{section.6}% 14
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 15
+\BOOKMARK [1][-]{section.5}{Future Work}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Congestion Control}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{Improved I-frame Handling}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Multiple Streams}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Placement of Complexity}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Partial Reliability for Other Real-Time Applcations}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.3}{Uses for QUICsilver}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{References}{}% 18
